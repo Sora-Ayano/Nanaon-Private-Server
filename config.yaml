@@ -1,0 +1,36 @@
+# NanaonPrivate Server runtime configuration
+
+api:
+  host: "0.0.0.0"
+  port: 8888
+  debug: false
+
+cdn:
+  host: "0.0.0.0"
+  port: 8000
+
+gateway:
+  # The client network must route the original HTTPS hosts to this gateway.
+  host: "0.0.0.0"
+  port: 443
+  cert: "var/certs/gateway_trust_cert.pem"
+  key: "var/certs/game_key.pem"
+
+crypto:
+  # Released v2.4.0 NanaPacker AES-256 key, encoded as hexadecimal bytes.
+  # This is client protocol material, not an operator/user credential.
+  aes_key: "6471564271364c506b634e487944483543735845354e3548554d4d7643744552"
+  aes_iv: ""
+
+game:
+  api_url: "https://227.hand.co.jp"
+  asset_url: "https://prd-asset.227.hand.co.jp"
+  environment: "private"
+  asset_hash: "52501a157136111ea47b76da71be1aa5"
+  asset_version: 1652074651
+  # Every recovered card is exposed. Missing Live/result CardPanel bundles are
+  # supplied by the local resource package from preserved Card/CardIcon art.
+  playable_minimal_cards: false
+
+environment: "private"
+log_level: "INFO"

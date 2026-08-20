@@ -1,0 +1,2708 @@
+{
+  "100": {
+    "func_name": "SERVER",
+    "response_class": "RecvServerRData",
+    "defaults": {
+      "api_url": "",
+      "asset_url": "",
+      "environment": ""
+    },
+    "types": {
+      "api_url": "string",
+      "asset_url": "string",
+      "environment": "string"
+    }
+  },
+  "150": {
+    "func_name": "CLIENT_ERROR",
+    "response_class": "RecvClientErrorRData",
+    "defaults": {},
+    "types": {}
+  },
+  "970": {
+    "func_name": "LOGIN",
+    "response_class": "RecvLoginRData",
+    "defaults": {
+      "access_token": "",
+      "take_over_info": null
+    },
+    "types": {
+      "access_token": "string",
+      "take_over_info": "TakeOverUserInfo"
+    }
+  },
+  "980": {
+    "func_name": "START",
+    "response_class": "RecvStartRData",
+    "defaults": {
+      "asset_hash": "",
+      "asset_version": 0,
+      "token": "",
+      "screening_version": 0,
+      "is_service_closed": false,
+      "message": null
+    },
+    "types": {
+      "asset_hash": "string",
+      "asset_version": "ulong",
+      "token": "string",
+      "screening_version": "int",
+      "is_service_closed": "bool",
+      "message": "AppCloseMessage"
+    }
+  },
+  "1000": {
+    "func_name": "USER_GET",
+    "response_class": "RecvUserGetRData",
+    "defaults": {
+      "user": null,
+      "gem": null,
+      "master_title_ids": [],
+      "card_list": [],
+      "card_sub_list": [],
+      "deck_list": [],
+      "costume_list": [],
+      "item_list": [],
+      "point_list": [],
+      "stamina": null,
+      "area_item_list": [],
+      "area_item_setting_list": [],
+      "released_master_area_item_ids": [],
+      "live_list": [],
+      "live_mission_list": [],
+      "master_music_ids": [],
+      "music_shop_releases": [],
+      "master_live_music_video_ids": [],
+      "master_live_three_d_ids": [],
+      "master_talk_ids": [],
+      "story_list": [],
+      "character_list": [],
+      "master_stamp_ids": [],
+      "model_costume_list": [],
+      "tutorial_progress": 0,
+      "event_point_list": [],
+      "master_live_lane_skin_ids": [],
+      "subscription_info": null,
+      "start_time": 0,
+      "take_over_id": "",
+      "social_id": "",
+      "local_movie_detail_list": [],
+      "multi_live_open_time": 0,
+      "npcount": 0,
+      "live_battle_point": null,
+      "piece_list": [],
+      "member_multi_live": null,
+      "billing_list": [],
+      "ability_card_list": [],
+      "backstage_background_setting_list": [],
+      "match_live": null
+    },
+    "types": {
+      "user": "User",
+      "gem": "Gem",
+      "master_title_ids": "uint[]",
+      "card_list": "Card[]",
+      "card_sub_list": "CardSub[]",
+      "deck_list": "Deck[]",
+      "costume_list": "Costume[]",
+      "item_list": "Item[]",
+      "point_list": "Point[]",
+      "stamina": "Stamina",
+      "area_item_list": "AreaItem[]",
+      "area_item_setting_list": "AreaItemSetting[]",
+      "released_master_area_item_ids": "uint[]",
+      "live_list": "Live[]",
+      "live_mission_list": "LiveMission[]",
+      "master_music_ids": "uint[]",
+      "music_shop_releases": "uint[]",
+      "master_live_music_video_ids": "uint[]",
+      "master_live_three_d_ids": "uint[]",
+      "master_talk_ids": "uint[]",
+      "story_list": "Story[]",
+      "character_list": "Group[]",
+      "master_stamp_ids": "uint[]",
+      "model_costume_list": "ModelCostume[]",
+      "tutorial_progress": "uint",
+      "event_point_list": "EventPoint[]",
+      "master_live_lane_skin_ids": "uint[]",
+      "subscription_info": "SubscriptionInfo",
+      "start_time": "long",
+      "take_over_id": "string",
+      "social_id": "string",
+      "local_movie_detail_list": "LocalMovieDetailList[]",
+      "multi_live_open_time": "int",
+      "npcount": "int",
+      "live_battle_point": "LiveBattlePoint",
+      "piece_list": "Piece[]",
+      "member_multi_live": "MemberMultiLiveMember",
+      "billing_list": "BillingProductInfo[]",
+      "ability_card_list": "AbilityCard[]",
+      "backstage_background_setting_list": "BackstageBackgroundSetting[]",
+      "match_live": "MatchLive"
+    }
+  },
+  "1002": {
+    "func_name": "USER_INFO",
+    "response_class": "RecvUserInfoRData",
+    "defaults": {
+      "access_token": "",
+      "data": null
+    },
+    "types": {
+      "access_token": "string",
+      "data": "TakeOverUserInfo"
+    }
+  },
+  "1010": {
+    "func_name": "USER_INITIALIZE",
+    "response_class": "RecvUserInitializeRData",
+    "defaults": {
+      "user": null
+    },
+    "types": {
+      "user": "User"
+    }
+  },
+  "1040": {
+    "func_name": "START_USER",
+    "response_class": "RecvStartUserRData",
+    "defaults": {
+      "user_id": 0,
+      "access_token": "",
+      "is_service_closed": false,
+      "message": null
+    },
+    "types": {
+      "user_id": "ulong",
+      "access_token": "string",
+      "is_service_closed": "bool",
+      "message": "AppCloseMessage"
+    }
+  },
+  "1020": {
+    "func_name": "USER_DETAIL",
+    "response_class": "RecvUserDetailRData",
+    "defaults": {
+      "user_detail_list": []
+    },
+    "types": {
+      "user_detail_list": "UserDetail[]"
+    }
+  },
+  "1030": {
+    "func_name": "USER_MIGRATION",
+    "response_class": "RecvUserMigrationRData",
+    "defaults": {
+      "user_name": "",
+      "user_rank": 0
+    },
+    "types": {
+      "user_name": "string",
+      "user_rank": "int"
+    }
+  },
+  "1100": {
+    "func_name": "USER_UPDATE",
+    "response_class": "RecvUserUpdateRData",
+    "defaults": {
+      "user": null,
+      "clear_mission_ids": []
+    },
+    "types": {
+      "user": "User",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "1110": {
+    "func_name": "USER_UPDATE_MAIN_DECK_SLOT",
+    "response_class": "RecvUserUpdateMainDeckSlotRData",
+    "defaults": {
+      "user": null
+    },
+    "types": {
+      "user": "User"
+    }
+  },
+  "1120": {
+    "func_name": "USER_UPDATE_FAVORITE_CARD_ID",
+    "response_class": "RecvUserUpdateFavoriteCardIdRData",
+    "defaults": {
+      "user": null,
+      "clear_mission_ids": []
+    },
+    "types": {
+      "user": "User",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "1130": {
+    "func_name": "USER_UPDATE_PROFILE_SETTINGS",
+    "response_class": "RecvUserUpdateProfileSettingsRData",
+    "defaults": {
+      "user": null
+    },
+    "types": {
+      "user": "User"
+    }
+  },
+  "1140": {
+    "func_name": "USER_UPDATE_TITLE_ID",
+    "response_class": "RecvUserUpdateTitleIdRData",
+    "defaults": {
+      "user": null,
+      "clear_mission_ids": []
+    },
+    "types": {
+      "user": "User",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "1142": {
+    "func_name": "USER_UPDATE_BIRTH_DATE",
+    "response_class": "RecvUserUpdateBirthDateRData",
+    "defaults": {
+      "user": null
+    },
+    "types": {
+      "user": "User"
+    }
+  },
+  "1200": {
+    "func_name": "HOME",
+    "response_class": "RecvHomeRData",
+    "defaults": {
+      "home": null
+    },
+    "types": {
+      "home": "HomeData"
+    }
+  },
+  "2000": {
+    "func_name": "GIFT_GET",
+    "response_class": "RecvGiftGetRData",
+    "defaults": {
+      "gift_list": []
+    },
+    "types": {
+      "gift_list": "Gift[]"
+    }
+  },
+  "2010": {
+    "func_name": "GIFT_RECEIVE",
+    "response_class": "RecvGiftReceiveRData",
+    "defaults": {
+      "failed_gift_ids": [],
+      "expire_gift_ids": [],
+      "updated_value_list": null,
+      "clear_mission_ids": [],
+      "reward_list": []
+    },
+    "types": {
+      "failed_gift_ids": "ulong[]",
+      "expire_gift_ids": "ulong[]",
+      "updated_value_list": "UpdatedValueList",
+      "clear_mission_ids": "uint[]",
+      "reward_list": "Reward[]"
+    }
+  },
+  "3000": {
+    "func_name": "LIVE_START",
+    "response_class": "RecvLiveStartRData",
+    "defaults": {},
+    "types": {}
+  },
+  "3010": {
+    "func_name": "LIVE_END",
+    "response_class": "RecvLiveEndRData",
+    "defaults": {
+      "live": null,
+      "all_perfected_date": "",
+      "clear_live_mission_ids": [],
+      "user": null,
+      "stamina": null,
+      "gem": null,
+      "card_list": [],
+      "card_sub_list": [],
+      "card_breakthrough_list": [],
+      "item_list": [],
+      "point_list": [],
+      "character_list": [],
+      "area_item_list": [],
+      "released_master_area_item_ids": [],
+      "level_up_area_item_list": [],
+      "reward_list": [],
+      "remove_reward_list": [],
+      "clear_mission_ids": [],
+      "event_point_list": [],
+      "event_point_reward_list": [],
+      "try_event": null,
+      "showdown_event": null,
+      "add_exp": null,
+      "master_title_ids": [],
+      "master_costume_ids": [],
+      "model_costumes": [],
+      "master_music_ids": [],
+      "master_stamp_ids": [],
+      "rank_up_rewards": [],
+      "piece_list": [],
+      "convert_piece_list": [],
+      "card_breakthrough_reward_list": [],
+      "master_local_movie_ids": [],
+      "ability_card_list": [],
+      "ability_card_level_up_list": [],
+      "ability_level_up_reward_list": []
+    },
+    "types": {
+      "live": "Live",
+      "all_perfected_date": "string",
+      "clear_live_mission_ids": "uint[]",
+      "user": "User",
+      "stamina": "Stamina",
+      "gem": "Gem",
+      "card_list": "Card[]",
+      "card_sub_list": "CardSub[]",
+      "card_breakthrough_list": "CardBreakthrough[]",
+      "item_list": "Item[]",
+      "point_list": "Point[]",
+      "character_list": "Group[]",
+      "area_item_list": "AreaItem[]",
+      "released_master_area_item_ids": "uint[]",
+      "level_up_area_item_list": "AreaItem[]",
+      "reward_list": "Reward[]",
+      "remove_reward_list": "Reward[]",
+      "clear_mission_ids": "uint[]",
+      "event_point_list": "EventPoint[]",
+      "event_point_reward_list": "Reward[]",
+      "try_event": "TryEventLiveResult",
+      "showdown_event": "ShowdownEventLiveResult",
+      "add_exp": "LiveExp",
+      "master_title_ids": "uint[]",
+      "master_costume_ids": "uint[]",
+      "model_costumes": "UpdatedModelCostume[]",
+      "master_music_ids": "uint[]",
+      "master_stamp_ids": "uint[]",
+      "rank_up_rewards": "Reward[]",
+      "piece_list": "Piece[]",
+      "convert_piece_list": "ConvertPiece[]",
+      "card_breakthrough_reward_list": "Reward[]",
+      "master_local_movie_ids": "uint[]",
+      "ability_card_list": "AbilityCard[]",
+      "ability_card_level_up_list": "AbilityCardLevelUp[]",
+      "ability_level_up_reward_list": "Reward[]"
+    }
+  },
+  "3020": {
+    "func_name": "LIVE_RETIRE",
+    "response_class": "RecvLiveRetireRData",
+    "defaults": {
+      "stamina": null,
+      "event_point": null
+    },
+    "types": {
+      "stamina": "Stamina",
+      "event_point": "EventPoint"
+    }
+  },
+  "3030": {
+    "func_name": "LIVE_CONTINUE",
+    "response_class": "RecvLiveContinueRData",
+    "defaults": {
+      "gem": null
+    },
+    "types": {
+      "gem": "Gem"
+    }
+  },
+  "3040": {
+    "func_name": "LIVE_VIEWING",
+    "response_class": "RecvLiveViewingRData",
+    "defaults": {
+      "clear_mission_ids": []
+    },
+    "types": {
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "3050": {
+    "func_name": "LIVE",
+    "response_class": "RecvLiveRData",
+    "defaults": {
+      "live_list": []
+    },
+    "types": {
+      "live_list": "Live[]"
+    }
+  },
+  "3060": {
+    "func_name": "LIVE_SETUP",
+    "response_class": "RecvLiveSetupRData",
+    "defaults": {
+      "can_multi": false
+    },
+    "types": {
+      "can_multi": "bool"
+    }
+  },
+  "4000": {
+    "func_name": "CARD_REINFORCE",
+    "response_class": "RecvCardReinforceRData",
+    "defaults": {
+      "card": null,
+      "item_list": [],
+      "clear_mission_ids": []
+    },
+    "types": {
+      "card": "Card",
+      "item_list": "Item[]",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "4010": {
+    "func_name": "CARD_SKILL_REINFORCE",
+    "response_class": "RecvCardSkillReinforceRData",
+    "defaults": {
+      "card": null,
+      "delete_card_sub_ids": [],
+      "item_list": [],
+      "card_sub_list": [],
+      "clear_mission_ids": []
+    },
+    "types": {
+      "card": "Card",
+      "delete_card_sub_ids": "ulong[]",
+      "item_list": "Item[]",
+      "card_sub_list": "CardSub[]",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "4020": {
+    "func_name": "CARD_EVOLVE",
+    "response_class": "RecvCardEvolveRData",
+    "defaults": {
+      "card": null,
+      "item_list": [],
+      "point_list": [],
+      "clear_mission_ids": []
+    },
+    "types": {
+      "card": "Card",
+      "item_list": "Item[]",
+      "point_list": "Point[]",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "4030": {
+    "func_name": "CARD_EPISODE_UNLOCK",
+    "response_class": "RecvCardEpisodeUnlockRData",
+    "defaults": {
+      "card": null,
+      "item_list": [],
+      "clear_mission_ids": []
+    },
+    "types": {
+      "card": "Card",
+      "item_list": "Item[]",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "4040": {
+    "func_name": "CARD_EPISODE_READ",
+    "response_class": "RecvCardEpisodeReadRData",
+    "defaults": {
+      "card": null,
+      "clear_mission_ids": []
+    },
+    "types": {
+      "card": "Card",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "4050": {
+    "func_name": "CARD_ILLUST_CHANGE",
+    "response_class": "RecvCardIllustChangeRData",
+    "defaults": {
+      "card": null
+    },
+    "types": {
+      "card": "Card"
+    }
+  },
+  "4100": {
+    "func_name": "CARD_SUB_EXCHANGE",
+    "response_class": "RecvCardSubExchangeRData",
+    "defaults": {
+      "point": null,
+      "delete_card_sub_ids": []
+    },
+    "types": {
+      "point": "Point",
+      "delete_card_sub_ids": "ulong[]"
+    }
+  },
+  "5000": {
+    "func_name": "DECK_UPDATE",
+    "response_class": "RecvDeckUpdateRData",
+    "defaults": {
+      "deck": null
+    },
+    "types": {
+      "deck": "Deck"
+    }
+  },
+  "5002": {
+    "func_name": "DECK_UPDATE_TOTAL_PARAM",
+    "response_class": "RecvDeckUpdateTotalParamRData",
+    "defaults": {
+      "clear_mission_ids": []
+    },
+    "types": {
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "6000": {
+    "func_name": "ITEM_USE",
+    "response_class": "RecvItemUseRData",
+    "defaults": {
+      "item_list": [],
+      "stamina": null
+    },
+    "types": {
+      "item_list": "Item[]",
+      "stamina": "Stamina"
+    }
+  },
+  "6002": {
+    "func_name": "ITEM_USE_LIVE_BATTLE_POINT_RECOVER",
+    "response_class": "RecvItemUseLiveBattlePointRecoverRData",
+    "defaults": {
+      "item_list": [],
+      "live_battle_point": null
+    },
+    "types": {
+      "item_list": "Item[]",
+      "live_battle_point": "LiveBattlePoint"
+    }
+  },
+  "7000": {
+    "func_name": "LOTTERY_GET",
+    "response_class": "RecvLotteryGetRData",
+    "defaults": {
+      "lottery_list": []
+    },
+    "types": {
+      "lottery_list": "Lottery[]"
+    }
+  },
+  "7010": {
+    "func_name": "LOTTERY_DRAW",
+    "response_class": "RecvLotteryDrawRData",
+    "defaults": {
+      "lottery_item_list": [],
+      "is_send_gift": 0,
+      "updated_value_list": null,
+      "clear_mission_ids": [],
+      "reward_list": []
+    },
+    "types": {
+      "lottery_item_list": "LotteryItem[]",
+      "is_send_gift": "byte",
+      "updated_value_list": "UpdatedValueList",
+      "clear_mission_ids": "uint[]",
+      "reward_list": "Reward[]"
+    }
+  },
+  "7020": {
+    "func_name": "LOTTERY_CONVERT",
+    "response_class": "RecvLotteryConvertRData",
+    "defaults": {
+      "converted_list": []
+    },
+    "types": {
+      "converted_list": "ConvertedItem[]"
+    }
+  },
+  "8000": {
+    "func_name": "FRIEND_GET",
+    "response_class": "RecvFriendGetRData",
+    "defaults": {
+      "friend_list": []
+    },
+    "types": {
+      "friend_list": "Friend[]"
+    }
+  },
+  "8010": {
+    "func_name": "FRIEND_REQUEST",
+    "response_class": "RecvFriendRequestRData",
+    "defaults": {},
+    "types": {}
+  },
+  "8020": {
+    "func_name": "FRIEND_REQUEST_CANCEL",
+    "response_class": "RecvFriendRequestCancelRData",
+    "defaults": {},
+    "types": {}
+  },
+  "8030": {
+    "func_name": "FRIEND_REQUEST_APPROVE",
+    "response_class": "RecvFriendRequestApproveRData",
+    "defaults": {
+      "clear_mission_ids": []
+    },
+    "types": {
+      "clear_mission_ids": "ulong[]"
+    }
+  },
+  "8040": {
+    "func_name": "FRIEND_DELETE",
+    "response_class": "RecvFriendDeleteRData",
+    "defaults": {},
+    "types": {}
+  },
+  "8050": {
+    "func_name": "FRIEND_SEARCH",
+    "response_class": "RecvFriendSearchRData",
+    "defaults": {
+      "user": null,
+      "favorite_master_costume_id": 0,
+      "leader_master_costume_id": 0,
+      "character_list": [],
+      "main_deck_detail": null,
+      "live_data_summary": null
+    },
+    "types": {
+      "user": "User",
+      "favorite_master_costume_id": "ulong",
+      "leader_master_costume_id": "ulong",
+      "character_list": "Group[]",
+      "main_deck_detail": "DeckDetail",
+      "live_data_summary": "LiveDataSummary"
+    }
+  },
+  "9000": {
+    "func_name": "MISSION_GET",
+    "response_class": "RecvMissionGetRData",
+    "defaults": {
+      "mission_list": []
+    },
+    "types": {
+      "mission_list": "Mission[]"
+    }
+  },
+  "9010": {
+    "func_name": "MISSION_RECEIVE",
+    "response_class": "RecvMissionReceiveRData",
+    "defaults": {
+      "reward_list": [],
+      "updated_value_list": null,
+      "failed_reward_list": [],
+      "expire_mission_ids": [],
+      "vip_rank_up_reward_list": [],
+      "clear_mission_ids": [],
+      "remove_reward_list": []
+    },
+    "types": {
+      "reward_list": "Reward[]",
+      "updated_value_list": "UpdatedValueList",
+      "failed_reward_list": "Reward[]",
+      "expire_mission_ids": "uint[]",
+      "vip_rank_up_reward_list": "Reward[]",
+      "clear_mission_ids": "uint[]",
+      "remove_reward_list": "Reward[]"
+    }
+  },
+  "9020": {
+    "func_name": "MISSION_CLEAR",
+    "response_class": "RecvMissionClearRData",
+    "defaults": {
+      "clear_mission_ids": []
+    },
+    "types": {
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "10000": {
+    "func_name": "AREA_ITEM_SETTING",
+    "response_class": "RecvAreaItemSettingRData",
+    "defaults": {
+      "area_item_setting_list": [],
+      "clear_mission_ids": []
+    },
+    "types": {
+      "area_item_setting_list": "AreaItemSetting[]",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "10100": {
+    "func_name": "AREA_ITEM_BUY",
+    "response_class": "RecvAreaItemBuyRData",
+    "defaults": {
+      "area_item": null,
+      "item_list": [],
+      "point_list": [],
+      "clear_mission_ids": []
+    },
+    "types": {
+      "area_item": "AreaItem",
+      "item_list": "Item[]",
+      "point_list": "Point[]",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "10200": {
+    "func_name": "AREA_ITEM",
+    "response_class": "RecvAreaItemRData",
+    "defaults": {
+      "area_item_list": []
+    },
+    "types": {
+      "area_item_list": "AreaItem[]"
+    }
+  },
+  "11000": {
+    "func_name": "TALK_READ",
+    "response_class": "RecvTalkReadRData",
+    "defaults": {
+      "stamina": null,
+      "reward_list": [],
+      "clear_mission_ids": [],
+      "updated_value_list": null
+    },
+    "types": {
+      "stamina": "Stamina",
+      "reward_list": "Reward[]",
+      "clear_mission_ids": "uint[]",
+      "updated_value_list": "UpdatedValueList"
+    }
+  },
+  "11100": {
+    "func_name": "TALK_GET",
+    "response_class": "RecvTalkGetRData",
+    "defaults": {
+      "master_talk_ids": []
+    },
+    "types": {
+      "master_talk_ids": "uint[]"
+    }
+  },
+  "11200": {
+    "func_name": "TALK_END",
+    "response_class": "RecvTalkEndRData",
+    "defaults": {},
+    "types": {}
+  },
+  "12000": {
+    "func_name": "LOGIN_BONUS",
+    "response_class": "RecvLoginBonusRData",
+    "defaults": {
+      "login_bonus_list": [],
+      "remove_reward_list": []
+    },
+    "types": {
+      "login_bonus_list": "LoginBonus[]",
+      "remove_reward_list": "Reward[]"
+    }
+  },
+  "13000": {
+    "func_name": "STORY_READ",
+    "response_class": "RecvStoryReadRData",
+    "defaults": {
+      "reward_list": [],
+      "updated_value_list": null,
+      "clear_mission_ids": []
+    },
+    "types": {
+      "reward_list": "Reward[]",
+      "updated_value_list": "UpdatedValueList",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "13100": {
+    "func_name": "STORY_END",
+    "response_class": "RecvStoryEndRData",
+    "defaults": {},
+    "types": {}
+  },
+  "13200": {
+    "func_name": "CARD_STORY_END",
+    "response_class": "RecvCardStoryEndRData",
+    "defaults": {},
+    "types": {}
+  },
+  "14000": {
+    "func_name": "PHOTO_SEAL_EXCHANGE_GET",
+    "response_class": "RecvPhotoSealExchangeGetRData",
+    "defaults": {
+      "photo_seal_exchange_list": []
+    },
+    "types": {
+      "photo_seal_exchange_list": "PhotoSealExchange[]"
+    }
+  },
+  "14100": {
+    "func_name": "PHOTO_SEAL_EXCHANGE_REQUEST",
+    "response_class": "RecvPhotoSealExchangeRequestRData",
+    "defaults": {
+      "photo_seal_exchange": null,
+      "updated_value_list": null,
+      "gift_list": [],
+      "clear_mission_ids": []
+    },
+    "types": {
+      "photo_seal_exchange": "PhotoSealExchange",
+      "updated_value_list": "UpdatedValueList",
+      "gift_list": "Gift[]",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "14200": {
+    "func_name": "POINT_EXCHANGE_GET",
+    "response_class": "RecvPointExchangeGetRData",
+    "defaults": {
+      "point_exchange_list": []
+    },
+    "types": {
+      "point_exchange_list": "PointExchange[]"
+    }
+  },
+  "14300": {
+    "func_name": "POINT_EXCHANGE",
+    "response_class": "RecvPointExchangeRData",
+    "defaults": {
+      "point_exchange": null,
+      "updated_value_list": null,
+      "gift_list": [],
+      "reward_list": [],
+      "clear_mission_ids": []
+    },
+    "types": {
+      "point_exchange": "PointExchange",
+      "updated_value_list": "UpdatedValueList",
+      "gift_list": "Gift[]",
+      "reward_list": "Reward[]",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "15000": {
+    "func_name": "TITLE_GET",
+    "response_class": "RecvTitleGetRData",
+    "defaults": {
+      "master_title_ids": []
+    },
+    "types": {
+      "master_title_ids": "uint[]"
+    }
+  },
+  "16000": {
+    "func_name": "MUSIC_BUY",
+    "response_class": "RecvMusicBuyRData",
+    "defaults": {
+      "item_list": [],
+      "clear_mission_ids": []
+    },
+    "types": {
+      "item_list": "Item[]",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "16002": {
+    "func_name": "LIVE_MUSIC",
+    "response_class": "RecvLiveMusicRData",
+    "defaults": {
+      "live_music_list": []
+    },
+    "types": {
+      "live_music_list": "AllPerfectAchievementDatetime[]"
+    }
+  },
+  "17000": {
+    "func_name": "TUTORIAL_PROGRESS_GET",
+    "response_class": "RecvTutorialProgressGetRData",
+    "defaults": {
+      "progress": 0
+    },
+    "types": {
+      "progress": "uint"
+    }
+  },
+  "17002": {
+    "func_name": "TUTORIAL_PROGRESS",
+    "response_class": "RecvTutorialProgressRData",
+    "defaults": {
+      "progress": 0,
+      "updated_value_list": null,
+      "gift_list": [],
+      "reward_list": []
+    },
+    "types": {
+      "progress": "uint",
+      "updated_value_list": "UpdatedValueList",
+      "gift_list": "Gift[]",
+      "reward_list": "Reward[]"
+    }
+  },
+  "17004": {
+    "func_name": "TUTORIAL_LOTTERY",
+    "response_class": "RecvTutorialLotteryRData",
+    "defaults": {
+      "card_list": [],
+      "deck_list": []
+    },
+    "types": {
+      "card_list": "Card[]",
+      "deck_list": "Deck[]"
+    }
+  },
+  "17006": {
+    "func_name": "TUTORIAL_LIVE_START",
+    "response_class": "RecvTutorialLiveStartRData",
+    "defaults": {},
+    "types": {}
+  },
+  "17008": {
+    "func_name": "TUTORIAL_LIVE_END",
+    "response_class": "RecvTutorialLiveEndRData",
+    "defaults": {
+      "live": null,
+      "all_perfected_date": "",
+      "clear_live_mission_ids": [],
+      "user": null,
+      "stamina": null,
+      "gem": null,
+      "card_list": [],
+      "card_sub_list": [],
+      "item_list": [],
+      "point_list": [],
+      "character_list": [],
+      "area_item_list": [],
+      "released_master_area_item_ids": [],
+      "level_up_area_item_list": [],
+      "reward_list": [],
+      "clear_mission_ids": [],
+      "event_point_list": [],
+      "event_point_reward_list": [],
+      "try_event": null,
+      "showdown_event": null,
+      "add_exp": null,
+      "master_title_ids": [],
+      "master_costume_ids": [],
+      "model_costumes": [],
+      "master_music_ids": [],
+      "master_stamp_ids": [],
+      "rank_up_rewards": [],
+      "card_breakthrough_reward_list": [],
+      "master_local_movie_ids": [],
+      "ability_card_list": [],
+      "ability_card_level_up_list": [],
+      "ability_level_up_reward_list": []
+    },
+    "types": {
+      "live": "Live",
+      "all_perfected_date": "string",
+      "clear_live_mission_ids": "uint[]",
+      "user": "User",
+      "stamina": "Stamina",
+      "gem": "Gem",
+      "card_list": "Card[]",
+      "card_sub_list": "CardSub[]",
+      "item_list": "Item[]",
+      "point_list": "Point[]",
+      "character_list": "Group[]",
+      "area_item_list": "AreaItem[]",
+      "released_master_area_item_ids": "uint[]",
+      "level_up_area_item_list": "AreaItem[]",
+      "reward_list": "Reward[]",
+      "clear_mission_ids": "uint[]",
+      "event_point_list": "EventPoint[]",
+      "event_point_reward_list": "Reward[]",
+      "try_event": "TryEventLiveResult",
+      "showdown_event": "ShowdownEventLiveResult",
+      "add_exp": "LiveExp",
+      "master_title_ids": "uint[]",
+      "master_costume_ids": "uint[]",
+      "model_costumes": "UpdatedModelCostume[]",
+      "master_music_ids": "uint[]",
+      "master_stamp_ids": "uint[]",
+      "rank_up_rewards": "Reward[]",
+      "card_breakthrough_reward_list": "Reward[]",
+      "master_local_movie_ids": "uint[]",
+      "ability_card_list": "AbilityCard[]",
+      "ability_card_level_up_list": "AbilityCardLevelUp[]",
+      "ability_level_up_reward_list": "Reward[]"
+    }
+  },
+  "19000": {
+    "func_name": "MULTI_LIVE_START",
+    "response_class": "RecvMultiLiveStartRData",
+    "defaults": {},
+    "types": {}
+  },
+  "19010": {
+    "func_name": "MULTI_LIVE_END",
+    "response_class": "RecvMultiLiveEndRData",
+    "defaults": {
+      "live": null,
+      "all_perfected_date": "",
+      "clear_live_mission_ids": [],
+      "user": null,
+      "stamina": null,
+      "gem": null,
+      "card_list": [],
+      "card_sub_list": [],
+      "card_breakthrough_list": [],
+      "item_list": [],
+      "point_list": [],
+      "character_list": [],
+      "reward_list": [],
+      "remove_reward_list": [],
+      "clear_mission_ids": [],
+      "event_point_list": [],
+      "event_point_reward_list": [],
+      "try_event": null,
+      "showdown_event": null,
+      "master_title_ids": [],
+      "master_costume_ids": [],
+      "model_costumes": [],
+      "master_music_ids": [],
+      "master_stamp_ids": [],
+      "rank_up_rewards": [],
+      "piece_list": [],
+      "convert_piece_list": [],
+      "card_breakthrough_reward_list": [],
+      "master_local_movie_ids": [],
+      "ability_card_list": [],
+      "ability_card_level_up_list": [],
+      "ability_level_up_reward_list": []
+    },
+    "types": {
+      "live": "Live",
+      "all_perfected_date": "string",
+      "clear_live_mission_ids": "uint[]",
+      "user": "User",
+      "stamina": "Stamina",
+      "gem": "Gem",
+      "card_list": "Card[]",
+      "card_sub_list": "CardSub[]",
+      "card_breakthrough_list": "CardBreakthrough[]",
+      "item_list": "Item[]",
+      "point_list": "Point[]",
+      "character_list": "Group[]",
+      "reward_list": "Reward[]",
+      "remove_reward_list": "Reward[]",
+      "clear_mission_ids": "uint[]",
+      "event_point_list": "EventPoint[]",
+      "event_point_reward_list": "Reward[]",
+      "try_event": "TryEventLiveResult",
+      "showdown_event": "ShowdownEventLiveResult",
+      "master_title_ids": "uint[]",
+      "master_costume_ids": "uint[]",
+      "model_costumes": "UpdatedModelCostume[]",
+      "master_music_ids": "uint[]",
+      "master_stamp_ids": "uint[]",
+      "rank_up_rewards": "Reward[]",
+      "piece_list": "Piece[]",
+      "convert_piece_list": "ConvertPiece[]",
+      "card_breakthrough_reward_list": "Reward[]",
+      "master_local_movie_ids": "uint[]",
+      "ability_card_list": "AbilityCard[]",
+      "ability_card_level_up_list": "AbilityCardLevelUp[]",
+      "ability_level_up_reward_list": "Reward[]"
+    }
+  },
+  "19020": {
+    "func_name": "MULTI_LIVE_SETUP",
+    "response_class": "RecvMultiLiveSetupRData",
+    "defaults": {
+      "photon": null
+    },
+    "types": {
+      "photon": "PhotonData"
+    }
+  },
+  "19030": {
+    "func_name": "MULTI_LIVE_UP",
+    "response_class": "RecvMultiLiveUpRData",
+    "defaults": {
+      "npcount": 0,
+      "multi_live_open_time": 0
+    },
+    "types": {
+      "npcount": "int",
+      "multi_live_open_time": "int"
+    }
+  },
+  "19040": {
+    "func_name": "MULTI_LIVE_DOWN",
+    "response_class": "RecvMultiLiveDownRData",
+    "defaults": {
+      "npcount": 0
+    },
+    "types": {
+      "npcount": "int"
+    }
+  },
+  "20000": {
+    "func_name": "COSTUME_UPDATE",
+    "response_class": "RecvCostumeUpdateRData",
+    "defaults": {
+      "costume_list": [],
+      "clear_mission_ids": []
+    },
+    "types": {
+      "costume_list": "Costume[]",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "20002": {
+    "func_name": "MODEL_COSTUME_UPDATE",
+    "response_class": "RecvModelCostumeUpdateRData",
+    "defaults": {
+      "model_costume_list": [],
+      "clear_mission_ids": []
+    },
+    "types": {
+      "model_costume_list": "ModelCostume[]",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "20004": {
+    "func_name": "COSTUME_MULTI_UPDATE",
+    "response_class": "RecvCostumeMultiUpdateRData",
+    "defaults": {
+      "costume_list": [],
+      "clear_mission_ids": []
+    },
+    "types": {
+      "costume_list": "Costume[]",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "20006": {
+    "func_name": "MODEL_COSTUME_MULTI_UPDATE",
+    "response_class": "RecvModelCostumeMultiUpdateRData",
+    "defaults": {
+      "model_costume_list": [],
+      "clear_mission_ids": []
+    },
+    "types": {
+      "model_costume_list": "ModelCostume[]",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "21000": {
+    "func_name": "EVENT_GET",
+    "response_class": "RecvEventGetRData",
+    "defaults": {
+      "score": 0,
+      "rank": 0,
+      "try_event": null,
+      "showdown_event": null,
+      "group_ids": [],
+      "before_master_event_id": 0
+    },
+    "types": {
+      "score": "int",
+      "rank": "uint",
+      "try_event": "TryEvent",
+      "showdown_event": "ShowdownEvent",
+      "group_ids": "ScoreRanking[]",
+      "before_master_event_id": "uint"
+    }
+  },
+  "21010": {
+    "func_name": "EVENT_RANKING_GET",
+    "response_class": "RecvEventRankingGetRData",
+    "defaults": {
+      "top_ranking_detail_list": [],
+      "user_ranking_detail_list": [],
+      "team_ranking_detail_list": []
+    },
+    "types": {
+      "top_ranking_detail_list": "RankingDetail[]",
+      "user_ranking_detail_list": "RankingDetail[]",
+      "team_ranking_detail_list": "TeamRankingDetail[]"
+    }
+  },
+  "21020": {
+    "func_name": "EVENT_SELECT_TEAM",
+    "response_class": "RecvEventSelectTeamRData",
+    "defaults": {
+      "showdown_event": null
+    },
+    "types": {
+      "showdown_event": "ShowdownEvent"
+    }
+  },
+  "21022": {
+    "func_name": "EVENT_VOTE",
+    "response_class": "RecvEventVoteRData",
+    "defaults": {
+      "showdown_event": null
+    },
+    "types": {
+      "showdown_event": "ShowdownEvent"
+    }
+  },
+  "22000": {
+    "func_name": "SHOP",
+    "response_class": "RecvShopRData",
+    "defaults": {
+      "shop_list": []
+    },
+    "types": {
+      "shop_list": "Shop[]"
+    }
+  },
+  "22100": {
+    "func_name": "SHOP_ITEM_BUY",
+    "response_class": "RecvShopItemBuyRData",
+    "defaults": {
+      "gem": null,
+      "shop_list": null,
+      "updated_value_list": null
+    },
+    "types": {
+      "gem": "Gem",
+      "shop_list": "Shop",
+      "updated_value_list": "UpdatedValueList"
+    }
+  },
+  "23000": {
+    "func_name": "NGWORD_CHECK",
+    "response_class": "RecvNgwordCheckRData",
+    "defaults": {},
+    "types": {}
+  },
+  "24000": {
+    "func_name": "BILLING_READY",
+    "response_class": "RecvBillingReadyRData",
+    "defaults": {
+      "status": 0,
+      "master_billing_age_limit_id": 0
+    },
+    "types": {
+      "status": "int",
+      "master_billing_age_limit_id": "uint"
+    }
+  },
+  "24002": {
+    "func_name": "BILLING",
+    "response_class": "RecvBillingRData",
+    "defaults": {
+      "status": 0,
+      "updated_value_list": null,
+      "subscription_info_list": [],
+      "vip_rank_up_reward_list": []
+    },
+    "types": {
+      "status": "int",
+      "updated_value_list": "UpdatedValueList",
+      "subscription_info_list": "SubscriptionInfo[]",
+      "vip_rank_up_reward_list": "Reward[]"
+    }
+  },
+  "24004": {
+    "func_name": "BILLING_CANCEL",
+    "response_class": "RecvBillingCancelRData",
+    "defaults": {},
+    "types": {}
+  },
+  "24006": {
+    "func_name": "BILLING_SETUP",
+    "response_class": "RecvBillingSetupRData",
+    "defaults": {
+      "can_buy": false,
+      "billing_list": [],
+      "subscription_info": null,
+      "stop_billing_date": 0
+    },
+    "types": {
+      "can_buy": "bool",
+      "billing_list": "BillingProductInfo[]",
+      "subscription_info": "SubscriptionInfo",
+      "stop_billing_date": "long"
+    }
+  },
+  "24008": {
+    "func_name": "BILLING_RESTORE",
+    "response_class": "RecvBillingRestoreRData",
+    "defaults": {
+      "result": false,
+      "status": 0,
+      "updated_value_list": null
+    },
+    "types": {
+      "result": "bool",
+      "status": "int",
+      "updated_value_list": "UpdatedValueList"
+    }
+  },
+  "24010": {
+    "func_name": "BILLING_GET_AGE_LIMIT_MASTER_ID",
+    "response_class": "RecvBillingGetAgeLimitMasterIdRData",
+    "defaults": {
+      "master_billing_age_limit_id": 0
+    },
+    "types": {
+      "master_billing_age_limit_id": "uint"
+    }
+  },
+  "25000": {
+    "func_name": "TAKE_OVER_SAVE",
+    "response_class": "RecvTakeOverSaveRData",
+    "defaults": {
+      "take_over_id": "",
+      "clear_mission_ids": []
+    },
+    "types": {
+      "take_over_id": "string",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "25002": {
+    "func_name": "TAKE_OVER",
+    "response_class": "RecvTakeOverRData",
+    "defaults": {
+      "take_over_id": ""
+    },
+    "types": {
+      "take_over_id": "string"
+    }
+  },
+  "25004": {
+    "func_name": "TAKE_OVER_LOAD",
+    "response_class": "RecvTakeOverLoadRData",
+    "defaults": {
+      "user_id": 0,
+      "uuid": ""
+    },
+    "types": {
+      "user_id": "ulong",
+      "uuid": "string"
+    }
+  },
+  "25006": {
+    "func_name": "TAKE_OVER_LOAD_INFO",
+    "response_class": "RecvTakeOverLoadInfoRData",
+    "defaults": {
+      "take_over_info": null
+    },
+    "types": {
+      "take_over_info": "TakeOverUserInfo"
+    }
+  },
+  "25008": {
+    "func_name": "TAKE_OVER_CANCEL",
+    "response_class": "RecvTakeOverCancelRData",
+    "defaults": {
+      "result": false
+    },
+    "types": {
+      "result": "bool"
+    }
+  },
+  "26000": {
+    "func_name": "MONTHLY_RANKING",
+    "response_class": "RecvMonthlyRankingRData",
+    "defaults": {
+      "user_rank_data": null,
+      "ranking_detail_lists": []
+    },
+    "types": {
+      "user_rank_data": "MonthlyRankingMyRankData",
+      "ranking_detail_lists": "MonthlyRankingDetailList[]"
+    }
+  },
+  "27000": {
+    "func_name": "SUBSCRIPTION",
+    "response_class": "RecvSubscriptionRData",
+    "defaults": {
+      "subscription_info": null
+    },
+    "types": {
+      "subscription_info": "SubscriptionInfo"
+    }
+  },
+  "27002": {
+    "func_name": "SUBSCRIPTION_SHOULD_RESTORE",
+    "response_class": "RecvSubscriptionShouldRestoreRData",
+    "defaults": {
+      "should_restore": false
+    },
+    "types": {
+      "should_restore": "bool"
+    }
+  },
+  "28000": {
+    "func_name": "ANNOUNCEMENT",
+    "response_class": "RecvAnnouncementRData",
+    "defaults": {},
+    "types": {}
+  },
+  "28002": {
+    "func_name": "ANNOUNCEMENT_DETAIL",
+    "response_class": "RecvAnnouncementDetailRData",
+    "defaults": {},
+    "types": {}
+  },
+  "29000": {
+    "func_name": "LOCAL_MOVIE",
+    "response_class": "RecvLocalMovieRData",
+    "defaults": {
+      "local_movie_detail_list": []
+    },
+    "types": {
+      "local_movie_detail_list": "LocalMovieDetailList[]"
+    }
+  },
+  "29002": {
+    "func_name": "LOCAL_MOVIE_GET_SECRET_PATH",
+    "response_class": "RecvLocalMovieGetSecretPathRData",
+    "defaults": {
+      "secret_path": ""
+    },
+    "types": {
+      "secret_path": "string"
+    }
+  },
+  "30000": {
+    "func_name": "TROPHY",
+    "response_class": "RecvTrophyRData",
+    "defaults": {
+      "trophy_list": [],
+      "user_data": null,
+      "upgraded_trophy_list": [],
+      "upgraded_showroom": null
+    },
+    "types": {
+      "trophy_list": "Trophy[]",
+      "user_data": "Showroom",
+      "upgraded_trophy_list": "UpgradedTrophy[]",
+      "upgraded_showroom": "UpgradedShowroom"
+    }
+  },
+  "31000": {
+    "func_name": "MESSAGE",
+    "response_class": "RecvMessageRData",
+    "defaults": {
+      "message_list": [],
+      "unread_count": 0
+    },
+    "types": {
+      "message_list": "MsgData[]",
+      "unread_count": "int"
+    }
+  },
+  "31002": {
+    "func_name": "MESSAGE_DETAIL",
+    "response_class": "RecvMessageDetailRData",
+    "defaults": {
+      "detail": ""
+    },
+    "types": {
+      "detail": "string"
+    }
+  },
+  "31004": {
+    "func_name": "MESSAGE_READ",
+    "response_class": "RecvMessageReadRData",
+    "defaults": {
+      "gift_list": []
+    },
+    "types": {
+      "gift_list": "Gift[]"
+    }
+  },
+  "32000": {
+    "func_name": "LIVE_BATTLE_START",
+    "response_class": "RecvLiveBattleStartRData",
+    "defaults": {},
+    "types": {}
+  },
+  "32002": {
+    "func_name": "LIVE_BATTLE_END",
+    "response_class": "RecvLiveBattleEndRData",
+    "defaults": {
+      "live": null,
+      "all_perfected_date": "",
+      "clear_live_mission_ids": [],
+      "user": null,
+      "stamina": null,
+      "gem": null,
+      "card_list": [],
+      "card_breakthrough_list": [],
+      "card_sub_list": [],
+      "item_list": [],
+      "point_list": [],
+      "character_list": [],
+      "area_item_list": [],
+      "released_master_area_item_ids": [],
+      "level_up_area_item_list": [],
+      "reward_list": [],
+      "first_clear_reward_list": [],
+      "remove_reward_list": [],
+      "clear_mission_ids": [],
+      "event_point_list": [],
+      "event_point_reward_list": [],
+      "try_event": null,
+      "add_exp": null,
+      "master_title_ids": [],
+      "master_costume_ids": [],
+      "model_costumes": [],
+      "master_music_ids": [],
+      "master_stamp_ids": [],
+      "rank_up_rewards": [],
+      "live_battle_stage": null,
+      "live_battle_area": null,
+      "live_battle_point": null,
+      "card_breakthrough_reward_list": [],
+      "master_local_movie_ids": [],
+      "ability_card_list": [],
+      "ability_card_level_up_list": [],
+      "ability_level_up_reward_list": []
+    },
+    "types": {
+      "live": "Live",
+      "all_perfected_date": "string",
+      "clear_live_mission_ids": "uint[]",
+      "user": "User",
+      "stamina": "Stamina",
+      "gem": "Gem",
+      "card_list": "Card[]",
+      "card_breakthrough_list": "CardBreakthrough[]",
+      "card_sub_list": "CardSub[]",
+      "item_list": "Item[]",
+      "point_list": "Point[]",
+      "character_list": "Group[]",
+      "area_item_list": "AreaItem[]",
+      "released_master_area_item_ids": "uint[]",
+      "level_up_area_item_list": "AreaItem[]",
+      "reward_list": "Reward[]",
+      "first_clear_reward_list": "Reward[]",
+      "remove_reward_list": "Reward[]",
+      "clear_mission_ids": "uint[]",
+      "event_point_list": "EventPoint[]",
+      "event_point_reward_list": "Reward[]",
+      "try_event": "TryEventLiveResult",
+      "add_exp": "LiveExp",
+      "master_title_ids": "uint[]",
+      "master_costume_ids": "uint[]",
+      "model_costumes": "UpdatedModelCostume[]",
+      "master_music_ids": "uint[]",
+      "master_stamp_ids": "uint[]",
+      "rank_up_rewards": "Reward[]",
+      "live_battle_stage": "LiveBattleStage",
+      "live_battle_area": "LiveBattleArea",
+      "live_battle_point": "LiveBattlePoint",
+      "card_breakthrough_reward_list": "Reward[]",
+      "master_local_movie_ids": "uint[]",
+      "ability_card_list": "AbilityCard[]",
+      "ability_card_level_up_list": "AbilityCardLevelUp[]",
+      "ability_level_up_reward_list": "Reward[]"
+    }
+  },
+  "32004": {
+    "func_name": "LIVE_BATTLE_RETIRE",
+    "response_class": "RecvLiveBattleRetireRData",
+    "defaults": {
+      "clear_mission_ids": [],
+      "live_battle_point": null,
+      "all_perfected_date": ""
+    },
+    "types": {
+      "clear_mission_ids": "uint[]",
+      "live_battle_point": "LiveBattlePoint",
+      "all_perfected_date": "string"
+    }
+  },
+  "32006": {
+    "func_name": "LIVE_BATTLE_CONTINUE",
+    "response_class": "RecvLiveBattleContinueRData",
+    "defaults": {
+      "gem": null
+    },
+    "types": {
+      "gem": "Gem"
+    }
+  },
+  "32008": {
+    "func_name": "LIVE_BATTLE_ITEM_USE",
+    "response_class": "RecvLiveBattleItemUseRData",
+    "defaults": {
+      "item_list": [],
+      "live_battle_point": null
+    },
+    "types": {
+      "item_list": "Item[]",
+      "live_battle_point": "LiveBattlePoint"
+    }
+  },
+  "32010": {
+    "func_name": "LIVE_BATTLE_AREA",
+    "response_class": "RecvLiveBattleAreaRData",
+    "defaults": {
+      "live_battle_area_list": []
+    },
+    "types": {
+      "live_battle_area_list": "LiveBattleArea[]"
+    }
+  },
+  "32012": {
+    "func_name": "LIVE_BATTLE_STAGE",
+    "response_class": "RecvLiveBattleStageRData",
+    "defaults": {
+      "live_battle_stage_list": []
+    },
+    "types": {
+      "live_battle_stage_list": "LiveBattleStage[]"
+    }
+  },
+  "33000": {
+    "func_name": "NANACOMI",
+    "response_class": "RecvNanacomiRData",
+    "defaults": {
+      "user_id": 0,
+      "nanacomi_id": "",
+      "is_enabled": false
+    },
+    "types": {
+      "user_id": "ulong",
+      "nanacomi_id": "string",
+      "is_enabled": "bool"
+    }
+  },
+  "33002": {
+    "func_name": "NANACOMI_UPDATE",
+    "response_class": "RecvNanacomiUpdateRData",
+    "defaults": {
+      "user_id": 0,
+      "nanacomi_id": "",
+      "clear_mission_ids": []
+    },
+    "types": {
+      "user_id": "ulong",
+      "nanacomi_id": "string",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "33004": {
+    "func_name": "NANACOMI_IS_ENABLED",
+    "response_class": "RecvNanacomiIsEnabledRData",
+    "defaults": {
+      "is_enabled": false
+    },
+    "types": {
+      "is_enabled": "bool"
+    }
+  },
+  "34000": {
+    "func_name": "SERIAL_CODE_CHECK",
+    "response_class": "RecvSerialCodeCheckRData",
+    "defaults": {
+      "master_serial_code_rewards_id": 0
+    },
+    "types": {
+      "master_serial_code_rewards_id": "int"
+    }
+  },
+  "34002": {
+    "func_name": "SERIAL_CODE",
+    "response_class": "RecvSerialCodeRData",
+    "defaults": {
+      "reward_list": [],
+      "gift_list": [],
+      "updated_value_list": null
+    },
+    "types": {
+      "reward_list": "Reward[]",
+      "gift_list": "Gift[]",
+      "updated_value_list": "UpdatedValueList"
+    }
+  },
+  "35000": {
+    "func_name": "MEMBER_MULTI_LIVE_PERIOD",
+    "response_class": "RecvMemberMultiLivePeriodRData",
+    "defaults": {
+      "member_multi_live_period_list": []
+    },
+    "types": {
+      "member_multi_live_period_list": "MemberMultiLivePeriod[]"
+    }
+  },
+  "35002": {
+    "func_name": "MEMBER_MULTI_LIVE_SET_ROOM",
+    "response_class": "RecvMemberMultiLiveSetRoomRData",
+    "defaults": {},
+    "types": {}
+  },
+  "35004": {
+    "func_name": "MEMBER_MULTI_LIVE_DELETE_ROOM",
+    "response_class": "RecvMemberMultiLiveDeleteRoomRData",
+    "defaults": {},
+    "types": {}
+  },
+  "35006": {
+    "func_name": "MEMBER_MULTI_LIVE_START_JOIN",
+    "response_class": "RecvMemberMultiLiveStartJoinRData",
+    "defaults": {
+      "time": 0,
+      "room_id": 0
+    },
+    "types": {
+      "time": "int",
+      "room_id": "uint"
+    }
+  },
+  "35008": {
+    "func_name": "MEMBER_MULTI_LIVE_CHECK_JOIN",
+    "response_class": "RecvMemberMultiLiveCheckJoinRData",
+    "defaults": {
+      "time": 0,
+      "room_id": 0
+    },
+    "types": {
+      "time": "int",
+      "room_id": "uint"
+    }
+  },
+  "35010": {
+    "func_name": "MEMBER_MULTI_LIVE_START",
+    "response_class": "RecvMemberMultiLiveStartRData",
+    "defaults": {
+      "item_list": []
+    },
+    "types": {
+      "item_list": "Item[]"
+    }
+  },
+  "35012": {
+    "func_name": "MEMBER_MULTI_LIVE_END",
+    "response_class": "RecvMemberMultiLiveEndRData",
+    "defaults": {
+      "live": null,
+      "all_perfected_date": "",
+      "clear_live_mission_ids": [],
+      "user": null,
+      "stamina": null,
+      "gem": null,
+      "card_list": [],
+      "card_sub_list": [],
+      "card_breakthrough_list": [],
+      "item_list": [],
+      "point_list": [],
+      "character_list": [],
+      "reward_list": [],
+      "remove_reward_list": [],
+      "clear_mission_ids": [],
+      "event_point_list": [],
+      "event_point_reward_list": [],
+      "try_event": null,
+      "showdown_event": null,
+      "master_title_ids": [],
+      "master_costume_ids": [],
+      "model_costumes": [],
+      "master_music_ids": [],
+      "master_stamp_ids": [],
+      "rank_up_rewards": [],
+      "piece_list": [],
+      "convert_piece_list": [],
+      "card_breakthrough_reward_list": [],
+      "member_multi_reward_list": [],
+      "master_local_movie_ids": [],
+      "ability_card_list": [],
+      "ability_card_level_up_list": [],
+      "ability_level_up_reward_list": []
+    },
+    "types": {
+      "live": "Live",
+      "all_perfected_date": "string",
+      "clear_live_mission_ids": "uint[]",
+      "user": "User",
+      "stamina": "Stamina",
+      "gem": "Gem",
+      "card_list": "Card[]",
+      "card_sub_list": "CardSub[]",
+      "card_breakthrough_list": "CardBreakthrough[]",
+      "item_list": "Item[]",
+      "point_list": "Point[]",
+      "character_list": "Group[]",
+      "reward_list": "Reward[]",
+      "remove_reward_list": "Reward[]",
+      "clear_mission_ids": "uint[]",
+      "event_point_list": "EventPoint[]",
+      "event_point_reward_list": "Reward[]",
+      "try_event": "TryEventLiveResult",
+      "showdown_event": "ShowdownEventLiveResult",
+      "master_title_ids": "uint[]",
+      "master_costume_ids": "uint[]",
+      "model_costumes": "UpdatedModelCostume[]",
+      "master_music_ids": "uint[]",
+      "master_stamp_ids": "uint[]",
+      "rank_up_rewards": "Reward[]",
+      "piece_list": "Piece[]",
+      "convert_piece_list": "ConvertPiece[]",
+      "card_breakthrough_reward_list": "Reward[]",
+      "member_multi_reward_list": "Reward[]",
+      "master_local_movie_ids": "uint[]",
+      "ability_card_list": "AbilityCard[]",
+      "ability_card_level_up_list": "AbilityCardLevelUp[]",
+      "ability_level_up_reward_list": "Reward[]"
+    }
+  },
+  "35014": {
+    "func_name": "MEMBER_MULTI_LIVE_BREAKUP",
+    "response_class": "RecvMemberMultiLiveBreakupRData",
+    "defaults": {},
+    "types": {}
+  },
+  "35016": {
+    "func_name": "MEMBER_MULTI_LIVE_RETURN",
+    "response_class": "RecvMemberMultiLiveReturnRData",
+    "defaults": {
+      "gift_list": []
+    },
+    "types": {
+      "gift_list": "Gift[]"
+    }
+  },
+  "35018": {
+    "func_name": "MEMBER_MULTI_LIVE_MAKE_LOG",
+    "response_class": "RecvMemberMultiLiveMakeLogRData",
+    "defaults": {},
+    "types": {}
+  },
+  "36000": {
+    "func_name": "CONFIRM_NANACOMI_SHOP",
+    "response_class": "RecvConfirmNanacomiShopRData",
+    "defaults": {
+      "updated_value_list": null,
+      "vip_rank_up_reward_list": [],
+      "get_vip_exp": 0
+    },
+    "types": {
+      "updated_value_list": "UpdatedValueList",
+      "vip_rank_up_reward_list": "Reward[]",
+      "get_vip_exp": "uint"
+    }
+  },
+  "37000": {
+    "func_name": "ABILITY_CARD",
+    "response_class": "RecvAbilityCardRData",
+    "defaults": {
+      "ability_card_list": []
+    },
+    "types": {
+      "ability_card_list": "AbilityCard[]"
+    }
+  },
+  "37002": {
+    "func_name": "ABILITY_CARD_BUY",
+    "response_class": "RecvAbilityCardBuyRData",
+    "defaults": {
+      "reward_list": [],
+      "updated_value_list": null,
+      "point_list": [],
+      "ability_card_list": [],
+      "ability_card_level_up_list": [],
+      "clear_mission_ids": []
+    },
+    "types": {
+      "reward_list": "Reward[]",
+      "updated_value_list": "UpdatedValueList",
+      "point_list": "Point[]",
+      "ability_card_list": "AbilityCard[]",
+      "ability_card_level_up_list": "AbilityCardLevelUp[]",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "37004": {
+    "func_name": "ABILITY_CARD_SET",
+    "response_class": "RecvAbilityCardSetRData",
+    "defaults": {
+      "deck": null,
+      "clear_mission_ids": []
+    },
+    "types": {
+      "deck": "Deck",
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "38000": {
+    "func_name": "MUSICAL_SCORE",
+    "response_class": "RecvMusicalScoreRData",
+    "defaults": {
+      "musical_score_list": []
+    },
+    "types": {
+      "musical_score_list": "MusicalScoreList[]"
+    }
+  },
+  "38002": {
+    "func_name": "MUSICAL_SCORE_DETAIL",
+    "response_class": "RecvMusicalScoreDetailRData",
+    "defaults": {
+      "score_detail": "",
+      "lane_1": "",
+      "lane_2": "",
+      "lane_3": "",
+      "lane_4": "",
+      "lane_5": "",
+      "comment": "",
+      "good_count": 0,
+      "is_favorite": false,
+      "master_live_id": 0,
+      "play_count": 0,
+      "player_count": 0,
+      "clear_count": 0,
+      "high_score": 0,
+      "high_score_user_id": 0,
+      "high_score_date": "",
+      "feedback_musical_score": null,
+      "feedback_difficulty_rating": null,
+      "bad_count": 0,
+      "is_cleared": false,
+      "is_official": false,
+      "ratio": 0,
+      "high_score_user_name": "",
+      "create_user": null,
+      "level": 0
+    },
+    "types": {
+      "score_detail": "string",
+      "lane_1": "string",
+      "lane_2": "string",
+      "lane_3": "string",
+      "lane_4": "string",
+      "lane_5": "string",
+      "comment": "string",
+      "good_count": "int",
+      "is_favorite": "bool",
+      "master_live_id": "uint",
+      "play_count": "int",
+      "player_count": "int",
+      "clear_count": "int",
+      "high_score": "int",
+      "high_score_user_id": "ulong",
+      "high_score_date": "string",
+      "feedback_musical_score": "FeedbackMusicalScore",
+      "feedback_difficulty_rating": "FeedbackDifficultyRating",
+      "bad_count": "int",
+      "is_cleared": "bool",
+      "is_official": "bool",
+      "ratio": "int",
+      "high_score_user_name": "string",
+      "create_user": "CreateUser",
+      "level": "int"
+    }
+  },
+  "38004": {
+    "func_name": "MUSICAL_SCORE_REGISTER",
+    "response_class": "RecvMusicalScoreRegisterRData",
+    "defaults": {
+      "id": 0,
+      "score_id": 0,
+      "user_id": 0,
+      "master_live_id": 0,
+      "status": 0,
+      "publish_date": "",
+      "level": 0,
+      "level_base_value": 0,
+      "comment": "",
+      "ratio": 0,
+      "good_count": 0,
+      "score_detail": "",
+      "lane_1": "",
+      "lane_2": "",
+      "lane_3": "",
+      "lane_4": "",
+      "lane_5": ""
+    },
+    "types": {
+      "id": "ulong",
+      "score_id": "ulong",
+      "user_id": "ulong",
+      "master_live_id": "uint",
+      "status": "int",
+      "publish_date": "string",
+      "level": "int",
+      "level_base_value": "int",
+      "comment": "string",
+      "ratio": "int",
+      "good_count": "int",
+      "score_detail": "string",
+      "lane_1": "string",
+      "lane_2": "string",
+      "lane_3": "string",
+      "lane_4": "string",
+      "lane_5": "string"
+    }
+  },
+  "38006": {
+    "func_name": "MUSICAL_SCORE_COPY_AND_DELETE",
+    "response_class": "RecvMusicalScoreCopyAndDeleteRData",
+    "defaults": {
+      "id": 0,
+      "score_id": 0,
+      "user_id": 0,
+      "master_live_id": 0,
+      "status": 0,
+      "publish_date": "",
+      "level": 0,
+      "level_base_value": 0,
+      "comment": "",
+      "ratio": 0,
+      "good_count": 0,
+      "updated_at": "",
+      "score_detail": "",
+      "lane_1": "",
+      "lane_2": "",
+      "lane_3": "",
+      "lane_4": "",
+      "lane_5": ""
+    },
+    "types": {
+      "id": "ulong",
+      "score_id": "ulong",
+      "user_id": "ulong",
+      "master_live_id": "uint",
+      "status": "int",
+      "publish_date": "string",
+      "level": "int",
+      "level_base_value": "int",
+      "comment": "string",
+      "ratio": "int",
+      "good_count": "int",
+      "updated_at": "string",
+      "score_detail": "string",
+      "lane_1": "string",
+      "lane_2": "string",
+      "lane_3": "string",
+      "lane_4": "string",
+      "lane_5": "string"
+    }
+  },
+  "38008": {
+    "func_name": "MUSICAL_SCORE_UPDATE_SCORE",
+    "response_class": "RecvMusicalScoreUpdateScoreRData",
+    "defaults": {
+      "id": 0,
+      "score_id": 0,
+      "user_id": 0,
+      "master_live_id": 0,
+      "status": 0,
+      "publish_date": "",
+      "level": 0,
+      "ratio": 0,
+      "good_count": 0,
+      "comment": "",
+      "level_base_value": 0,
+      "updated_at": "",
+      "score_detail": "",
+      "lane_1": "",
+      "lane_2": "",
+      "lane_3": "",
+      "lane_4": "",
+      "lane_5": ""
+    },
+    "types": {
+      "id": "ulong",
+      "score_id": "ulong",
+      "user_id": "ulong",
+      "master_live_id": "uint",
+      "status": "int",
+      "publish_date": "string",
+      "level": "int",
+      "ratio": "int",
+      "good_count": "int",
+      "comment": "string",
+      "level_base_value": "int",
+      "updated_at": "string",
+      "score_detail": "string",
+      "lane_1": "string",
+      "lane_2": "string",
+      "lane_3": "string",
+      "lane_4": "string",
+      "lane_5": "string"
+    }
+  },
+  "38010": {
+    "func_name": "MUSICAL_SCORE_UPDATE_STATUS",
+    "response_class": "RecvMusicalScoreUpdateStatusRData",
+    "defaults": {
+      "id": 0,
+      "score_id": 0,
+      "user_id": 0,
+      "master_live_id": 0,
+      "status": 0,
+      "publish_date": "",
+      "level": 0,
+      "level_base_value": 0,
+      "comment": "",
+      "ratio": 0,
+      "good_count": 0,
+      "clear_mission_ids": [],
+      "score_detail": "",
+      "lane_1": "",
+      "lane_2": "",
+      "lane_3": "",
+      "lane_4": "",
+      "lane_5": ""
+    },
+    "types": {
+      "id": "ulong",
+      "score_id": "ulong",
+      "user_id": "ulong",
+      "master_live_id": "uint",
+      "status": "int",
+      "publish_date": "string",
+      "level": "int",
+      "level_base_value": "int",
+      "comment": "string",
+      "ratio": "int",
+      "good_count": "int",
+      "clear_mission_ids": "uint[]",
+      "score_detail": "string",
+      "lane_1": "string",
+      "lane_2": "string",
+      "lane_3": "string",
+      "lane_4": "string",
+      "lane_5": "string"
+    }
+  },
+  "38012": {
+    "func_name": "MUSICAL_SCORE_UPDATE_COMMENT",
+    "response_class": "RecvMusicalScoreUpdateCommentRData",
+    "defaults": {
+      "comment": ""
+    },
+    "types": {
+      "comment": "string"
+    }
+  },
+  "38014": {
+    "func_name": "MUSICAL_SCORE_GET_BY_SCORE_ID",
+    "response_class": "RecvMusicalScoreGetByScoreIdRData",
+    "defaults": {
+      "id": 0,
+      "score_id": 0,
+      "user_id": 0,
+      "master_live_id": 0,
+      "status": 0,
+      "publish_date": "",
+      "level": 0,
+      "level_base_value": 0,
+      "comment": "",
+      "ratio": 0,
+      "score_detail": "",
+      "user_name": "",
+      "is_cleared": false,
+      "is_official": false
+    },
+    "types": {
+      "id": "ulong",
+      "score_id": "ulong",
+      "user_id": "ulong",
+      "master_live_id": "uint",
+      "status": "int",
+      "publish_date": "string",
+      "level": "int",
+      "level_base_value": "int",
+      "comment": "string",
+      "ratio": "int",
+      "score_detail": "string",
+      "user_name": "string",
+      "is_cleared": "bool",
+      "is_official": "bool"
+    }
+  },
+  "38016": {
+    "func_name": "MUSICAL_SCORE_LIST_BY_RANDOM",
+    "response_class": "RecvMusicalScoreListByRandomRData",
+    "defaults": {
+      "musical_score_list": []
+    },
+    "types": {
+      "musical_score_list": "MusicalScoreSearchedList[]"
+    }
+  },
+  "38018": {
+    "func_name": "MUSICAL_SCORE_LIST_BY_FEEDBACK",
+    "response_class": "RecvMusicalScoreListByFeedbackRData",
+    "defaults": {
+      "musical_score_list": []
+    },
+    "types": {
+      "musical_score_list": "MusicalScoreSearchedList[]"
+    }
+  },
+  "38020": {
+    "func_name": "MUSICAL_SCORE_LIST_BY_RATIO",
+    "response_class": "RecvMusicalScoreListByRatioRData",
+    "defaults": {
+      "musical_score_list": []
+    },
+    "types": {
+      "musical_score_list": "MusicalScoreSearchedList[]"
+    }
+  },
+  "38022": {
+    "func_name": "MUSICAL_SCORE_LIST_BY_LEVEL",
+    "response_class": "RecvMusicalScoreListByLevelRData",
+    "defaults": {
+      "musical_score_list": []
+    },
+    "types": {
+      "musical_score_list": "MusicalScoreSearchedList[]"
+    }
+  },
+  "38024": {
+    "func_name": "MUSICAL_SCORE_LIST_BY_NEWEST",
+    "response_class": "RecvMusicalScoreListByNewestRData",
+    "defaults": {
+      "musical_score_list": []
+    },
+    "types": {
+      "musical_score_list": "MusicalScoreSearchedList[]"
+    }
+  },
+  "38026": {
+    "func_name": "MUSICAL_SCORE_LIST_ALL",
+    "response_class": "RecvMusicalScoreListAllRData",
+    "defaults": {
+      "musical_score_list": []
+    },
+    "types": {
+      "musical_score_list": "MusicalScoreSearchedList[]"
+    }
+  },
+  "38028": {
+    "func_name": "MUSICAL_SCORE_LIST_BY_CREATED_USER",
+    "response_class": "RecvMusicalScoreListByCreatedUserRData",
+    "defaults": {
+      "musical_score_list": []
+    },
+    "types": {
+      "musical_score_list": "MusicalScoreSearchedList[]"
+    }
+  },
+  "38030": {
+    "func_name": "MUSICAL_SCORE_LIST_BY_FAVORITE",
+    "response_class": "RecvMusicalScoreListByFavoriteRData",
+    "defaults": {
+      "musical_score_list": []
+    },
+    "types": {
+      "musical_score_list": "MusicalScoreSearchedList[]"
+    }
+  },
+  "38032": {
+    "func_name": "MUSICAL_SCORE_ADD_FAVORITE",
+    "response_class": "RecvMusicalScoreAddFavoriteRData",
+    "defaults": {
+      "favorite_count": 0
+    },
+    "types": {
+      "favorite_count": "int"
+    }
+  },
+  "38034": {
+    "func_name": "MUSICAL_SCORE_DELETE_FAVORITE",
+    "response_class": "RecvMusicalScoreDeleteFavoriteRData",
+    "defaults": {
+      "favorite_count": 0
+    },
+    "types": {
+      "favorite_count": "int"
+    }
+  },
+  "38036": {
+    "func_name": "MUSICAL_SCORE_REPORT",
+    "response_class": "RecvMusicalScoreReportRData",
+    "defaults": {},
+    "types": {}
+  },
+  "38038": {
+    "func_name": "MUSICAL_SCORE_GET_SHARE",
+    "response_class": "RecvMusicalScoreGetShareRData",
+    "defaults": {
+      "can_share": false
+    },
+    "types": {
+      "can_share": "bool"
+    }
+  },
+  "38040": {
+    "func_name": "MUSICAL_SCORE_GIFT_AFTER_SHARE",
+    "response_class": "RecvMusicalScoreGiftAfterShareRData",
+    "defaults": {
+      "send_gift": false
+    },
+    "types": {
+      "send_gift": "bool"
+    }
+  },
+  "38042": {
+    "func_name": "MUSICAL_SCORE_GOOD_COUNT",
+    "response_class": "RecvMusicalScoreGoodCountRData",
+    "defaults": {
+      "good_count_list": []
+    },
+    "types": {
+      "good_count_list": "GoodCount[]"
+    }
+  },
+  "38044": {
+    "func_name": "MUSICAL_SCORE_GET_FAOVIRTE_COUNT",
+    "response_class": "RecvMusicalScoreGetFaovirteCountRData",
+    "defaults": {
+      "favorite_count": 0
+    },
+    "types": {
+      "favorite_count": "int"
+    }
+  },
+  "38046": {
+    "func_name": "MUSICAL_SCORE_LIST_BY_OFFICIAL",
+    "response_class": "RecvMusicalScoreListByOfficialRData",
+    "defaults": {
+      "musical_score_list": []
+    },
+    "types": {
+      "musical_score_list": "MusicalScoreSearchedList[]"
+    }
+  },
+  "39000": {
+    "func_name": "MUSICAL_SCORE_LIVE_START",
+    "response_class": "RecvMusicalScoreLiveStartRData",
+    "defaults": {},
+    "types": {}
+  },
+  "39002": {
+    "func_name": "MUSICAL_SCORE_LIVE_END",
+    "response_class": "RecvMusicalScoreLiveEndRData",
+    "defaults": {
+      "live": null,
+      "all_perfected_date": "",
+      "clear_live_mission_ids": [],
+      "user": null,
+      "stamina": null,
+      "gem": null,
+      "card_list": [],
+      "card_sub_list": [],
+      "card_breakthrough_list": [],
+      "item_list": [],
+      "point_list": [],
+      "character_list": [],
+      "area_item_list": [],
+      "released_master_area_item_ids": [],
+      "level_up_area_item_list": [],
+      "reward_list": [],
+      "remove_reward_list": [],
+      "clear_mission_ids": [],
+      "event_point_list": [],
+      "event_point_reward_list": [],
+      "try_event": null,
+      "showdown_event": null,
+      "add_exp": null,
+      "master_title_ids": [],
+      "master_costume_ids": [],
+      "model_costumes": [],
+      "master_music_ids": [],
+      "master_stamp_ids": [],
+      "rank_up_rewards": [],
+      "piece_list": [],
+      "convert_piece_list": [],
+      "card_breakthrough_reward_list": [],
+      "master_local_movie_ids": [],
+      "ability_card_list": [],
+      "ability_card_level_up_list": [],
+      "ability_level_up_reward_list": []
+    },
+    "types": {
+      "live": "Live",
+      "all_perfected_date": "string",
+      "clear_live_mission_ids": "uint[]",
+      "user": "User",
+      "stamina": "Stamina",
+      "gem": "Gem",
+      "card_list": "Card[]",
+      "card_sub_list": "CardSub[]",
+      "card_breakthrough_list": "CardBreakthrough[]",
+      "item_list": "Item[]",
+      "point_list": "Point[]",
+      "character_list": "Group[]",
+      "area_item_list": "AreaItem[]",
+      "released_master_area_item_ids": "uint[]",
+      "level_up_area_item_list": "AreaItem[]",
+      "reward_list": "Reward[]",
+      "remove_reward_list": "Reward[]",
+      "clear_mission_ids": "uint[]",
+      "event_point_list": "EventPoint[]",
+      "event_point_reward_list": "Reward[]",
+      "try_event": "TryEventLiveResult",
+      "showdown_event": "ShowdownEventLiveResult",
+      "add_exp": "LiveExp",
+      "master_title_ids": "uint[]",
+      "master_costume_ids": "uint[]",
+      "model_costumes": "UpdatedModelCostume[]",
+      "master_music_ids": "uint[]",
+      "master_stamp_ids": "uint[]",
+      "rank_up_rewards": "Reward[]",
+      "piece_list": "Piece[]",
+      "convert_piece_list": "ConvertPiece[]",
+      "card_breakthrough_reward_list": "Reward[]",
+      "master_local_movie_ids": "uint[]",
+      "ability_card_list": "AbilityCard[]",
+      "ability_card_level_up_list": "AbilityCardLevelUp[]",
+      "ability_level_up_reward_list": "Reward[]"
+    }
+  },
+  "39004": {
+    "func_name": "MUSICAL_SCORE_LIVE_RETIRE",
+    "response_class": "RecvMusicalScoreLiveRetireRData",
+    "defaults": {
+      "clear_mission_ids": []
+    },
+    "types": {
+      "clear_mission_ids": "uint[]"
+    }
+  },
+  "39006": {
+    "func_name": "MUSICAL_SCORE_LIVE_CONTINUE",
+    "response_class": "RecvMusicalScoreLiveContinueRData",
+    "defaults": {},
+    "types": {}
+  },
+  "39008": {
+    "func_name": "MUSICAL_SCORE_LIVE_FEEDBACK",
+    "response_class": "RecvMusicalScoreLiveFeedbackRData",
+    "defaults": {},
+    "types": {}
+  },
+  "39010": {
+    "func_name": "MUSICAL_SCORE_MATERIAL",
+    "response_class": "RecvMusicalScoreMaterialRData",
+    "defaults": {
+      "master_musical_score_material_ids": []
+    },
+    "types": {
+      "master_musical_score_material_ids": "uint[]"
+    }
+  },
+  "40000": {
+    "func_name": "UPDATE_BACKSTAGE_SETTING",
+    "response_class": "RecvUpdateBackstageSettingRData",
+    "defaults": {
+      "setting_list": []
+    },
+    "types": {
+      "setting_list": "BackstageBackgroundSetting[]"
+    }
+  },
+  "41000": {
+    "func_name": "MATCH_LIVE_SET_MATCH_TITLE",
+    "response_class": "RecvMatchLiveSetMatchTitleRData",
+    "defaults": {
+      "match_point": 0,
+      "is_set_match_title": 0,
+      "is_set_ranking_title": 0
+    },
+    "types": {
+      "match_point": "int",
+      "is_set_match_title": "int",
+      "is_set_ranking_title": "int"
+    }
+  },
+  "41002": {
+    "func_name": "MATCH_LIVE_SET_RANKING_TITLE",
+    "response_class": "RecvMatchLiveSetRankingTitleRData",
+    "defaults": {
+      "match_point": 0,
+      "is_set_match_title": 0,
+      "is_set_ranking_title": 0
+    },
+    "types": {
+      "match_point": "int",
+      "is_set_match_title": "int",
+      "is_set_ranking_title": "int"
+    }
+  },
+  "41004": {
+    "func_name": "MATCH_LIVE_RANKING_RANGE",
+    "response_class": "RecvMatchLiveRankingRangeRData",
+    "defaults": {
+      "user_ranking_data": null,
+      "ranking_list": []
+    },
+    "types": {
+      "user_ranking_data": "MatchLiveRankingUserData",
+      "ranking_list": "MatchLiveRankingData[]"
+    }
+  },
+  "41006": {
+    "func_name": "MATCH_LIVE_RANKING_AROUND",
+    "response_class": "RecvMatchLiveRankingAroundRData",
+    "defaults": {
+      "ranking_list": []
+    },
+    "types": {
+      "ranking_list": "MatchLiveRankingData[]"
+    }
+  },
+  "41008": {
+    "func_name": "MATCH_LIVE_START",
+    "response_class": "RecvMatchLiveStartRData",
+    "defaults": {
+      "match_live": null
+    },
+    "types": {
+      "match_live": "MatchLive"
+    }
+  },
+  "41010": {
+    "func_name": "MATCH_LIVE_END",
+    "response_class": "RecvMatchLiveEndRData",
+    "defaults": {
+      "live": null,
+      "all_perfected_date": "",
+      "clear_live_mission_ids": [],
+      "user": null,
+      "stamina": null,
+      "gem": null,
+      "card_list": [],
+      "card_sub_list": [],
+      "card_breakthrough_list": [],
+      "item_list": [],
+      "point_list": [],
+      "character_list": [],
+      "area_item_list": [],
+      "released_master_area_item_ids": [],
+      "level_up_area_item_list": [],
+      "master_title_ids": [],
+      "master_costume_ids": [],
+      "model_costumes": [],
+      "master_music_ids": [],
+      "master_stamp_ids": [],
+      "master_local_movie_ids": [],
+      "reward_list": [],
+      "clear_mission_ids": [],
+      "event_point_list": [],
+      "event_point_reward_list": [],
+      "try_event": null,
+      "showdown_event": null,
+      "add_exp": null,
+      "remove_reward_list": [],
+      "piece_list": [],
+      "convert_piece_list": [],
+      "rank_up_rewards": [],
+      "card_breakthrough_reward_list": [],
+      "match_live": null,
+      "match_live_result_type": 0,
+      "ability_card_list": [],
+      "ability_card_level_up_list": [],
+      "ability_level_up_reward_list": []
+    },
+    "types": {
+      "live": "Live",
+      "all_perfected_date": "string",
+      "clear_live_mission_ids": "uint[]",
+      "user": "User",
+      "stamina": "Stamina",
+      "gem": "Gem",
+      "card_list": "Card[]",
+      "card_sub_list": "CardSub[]",
+      "card_breakthrough_list": "CardBreakthrough[]",
+      "item_list": "Item[]",
+      "point_list": "Point[]",
+      "character_list": "Group[]",
+      "area_item_list": "AreaItem[]",
+      "released_master_area_item_ids": "uint[]",
+      "level_up_area_item_list": "AreaItem[]",
+      "master_title_ids": "uint[]",
+      "master_costume_ids": "uint[]",
+      "model_costumes": "UpdatedModelCostume[]",
+      "master_music_ids": "uint[]",
+      "master_stamp_ids": "uint[]",
+      "master_local_movie_ids": "uint[]",
+      "reward_list": "Reward[]",
+      "clear_mission_ids": "uint[]",
+      "event_point_list": "EventPoint[]",
+      "event_point_reward_list": "Reward[]",
+      "try_event": "TryEventLiveResult",
+      "showdown_event": "ShowdownEventLiveResult",
+      "add_exp": "LiveExp",
+      "remove_reward_list": "Reward[]",
+      "piece_list": "Piece[]",
+      "convert_piece_list": "ConvertPiece[]",
+      "rank_up_rewards": "Reward[]",
+      "card_breakthrough_reward_list": "Reward[]",
+      "match_live": "MatchLive",
+      "match_live_result_type": "int",
+      "ability_card_list": "AbilityCard[]",
+      "ability_card_level_up_list": "AbilityCardLevelUp[]",
+      "ability_level_up_reward_list": "Reward[]"
+    }
+  },
+  "42000": {
+    "func_name": "CHARACTER_VOTE_GET_SINGLE",
+    "response_class": "RecvCharacterVoteGetSingleRData",
+    "defaults": {
+      "character_vote": null
+    },
+    "types": {
+      "character_vote": "CharacterVote"
+    }
+  },
+  "42002": {
+    "func_name": "CHARACTER_VOTE_GET_ALL",
+    "response_class": "RecvCharacterVoteGetAllRData",
+    "defaults": {
+      "character_vote_list": []
+    },
+    "types": {
+      "character_vote_list": "CharacterVote[]"
+    }
+  },
+  "42004": {
+    "func_name": "CHARACTER_VOTE_VOTE",
+    "response_class": "RecvCharacterVoteVoteRData",
+    "defaults": {
+      "reward_list": [],
+      "character_vote": null,
+      "clear_mission_ids": [],
+      "updated_value_list": null
+    },
+    "types": {
+      "reward_list": "Reward[]",
+      "character_vote": "CharacterVote",
+      "clear_mission_ids": "uint[]",
+      "updated_value_list": "UpdatedValueList"
+    }
+  },
+  "42006": {
+    "func_name": "CHARACTER_VOTE_BANNERS",
+    "response_class": "RecvCharacterVoteBannersRData",
+    "defaults": {
+      "banner_list": []
+    },
+    "types": {
+      "banner_list": "BannerData[]"
+    }
+  },
+  "43000": {
+    "func_name": "TUTORIAL_SKIP",
+    "response_class": "RecvTutorialSkipRData",
+    "defaults": {},
+    "types": {}
+  },
+  "44000": {
+    "func_name": "IS_SERVICE_CLOSED",
+    "response_class": "RecvIsServiceClosedRData",
+    "defaults": {
+      "message": null
+    },
+    "types": {
+      "message": "AppCloseMessage"
+    }
+  }
+}

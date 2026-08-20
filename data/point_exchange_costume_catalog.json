@@ -1,0 +1,1589 @@
+{
+  "schema_version": 1,
+  "costume_rewards": {
+    "110014001": {
+      "master_character_id": 10100000,
+      "master_costume_id": 14002101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014002": {
+      "master_character_id": 10200000,
+      "master_costume_id": 14002102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014003": {
+      "master_character_id": 10300000,
+      "master_costume_id": 14002103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014004": {
+      "master_character_id": 10400000,
+      "master_costume_id": 14002104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014005": {
+      "master_character_id": 10500000,
+      "master_costume_id": 14002105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014006": {
+      "master_character_id": 10600000,
+      "master_costume_id": 14002106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014007": {
+      "master_character_id": 10700000,
+      "master_costume_id": 14002107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014008": {
+      "master_character_id": 10800000,
+      "master_costume_id": 14002108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014009": {
+      "master_character_id": 10900000,
+      "master_costume_id": 14002109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014010": {
+      "master_character_id": 11000000,
+      "master_costume_id": 14002110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014011": {
+      "master_character_id": 11100000,
+      "master_costume_id": 14002111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014012": {
+      "master_character_id": 10100000,
+      "master_costume_id": 14003101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014013": {
+      "master_character_id": 10200000,
+      "master_costume_id": 14003102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014014": {
+      "master_character_id": 10300000,
+      "master_costume_id": 14003103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014015": {
+      "master_character_id": 10400000,
+      "master_costume_id": 14003104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014016": {
+      "master_character_id": 10500000,
+      "master_costume_id": 14003105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014017": {
+      "master_character_id": 10600000,
+      "master_costume_id": 14003106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014018": {
+      "master_character_id": 10700000,
+      "master_costume_id": 14003107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014019": {
+      "master_character_id": 10800000,
+      "master_costume_id": 14003108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014020": {
+      "master_character_id": 10900000,
+      "master_costume_id": 14003109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014021": {
+      "master_character_id": 11000000,
+      "master_costume_id": 14003110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014022": {
+      "master_character_id": 11100000,
+      "master_costume_id": 14003111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014023": {
+      "master_character_id": 10100000,
+      "master_costume_id": 14004101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014024": {
+      "master_character_id": 10200000,
+      "master_costume_id": 14004102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014025": {
+      "master_character_id": 10300000,
+      "master_costume_id": 14004103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014026": {
+      "master_character_id": 10400000,
+      "master_costume_id": 14004104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014027": {
+      "master_character_id": 10500000,
+      "master_costume_id": 14004105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014028": {
+      "master_character_id": 10600000,
+      "master_costume_id": 14004106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014029": {
+      "master_character_id": 10700000,
+      "master_costume_id": 14004107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014030": {
+      "master_character_id": 10800000,
+      "master_costume_id": 14004108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014031": {
+      "master_character_id": 10900000,
+      "master_costume_id": 14004109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014032": {
+      "master_character_id": 11000000,
+      "master_costume_id": 14004110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014033": {
+      "master_character_id": 11100000,
+      "master_costume_id": 14004111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014034": {
+      "master_character_id": 10100000,
+      "master_costume_id": 14005101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014035": {
+      "master_character_id": 10200000,
+      "master_costume_id": 14005102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014036": {
+      "master_character_id": 10300000,
+      "master_costume_id": 14005103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014037": {
+      "master_character_id": 10400000,
+      "master_costume_id": 14005104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014038": {
+      "master_character_id": 10500000,
+      "master_costume_id": 14005105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014039": {
+      "master_character_id": 10600000,
+      "master_costume_id": 14005106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014040": {
+      "master_character_id": 10700000,
+      "master_costume_id": 14005107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014041": {
+      "master_character_id": 10800000,
+      "master_costume_id": 14005108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014042": {
+      "master_character_id": 10900000,
+      "master_costume_id": 14005109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014043": {
+      "master_character_id": 11000000,
+      "master_costume_id": 14005110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014044": {
+      "master_character_id": 11100000,
+      "master_costume_id": 14005111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014045": {
+      "master_character_id": 10100000,
+      "master_costume_id": 11002101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014046": {
+      "master_character_id": 10200000,
+      "master_costume_id": 11002102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014047": {
+      "master_character_id": 10300000,
+      "master_costume_id": 11002103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014048": {
+      "master_character_id": 10400000,
+      "master_costume_id": 11002104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014049": {
+      "master_character_id": 10500000,
+      "master_costume_id": 11002105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014050": {
+      "master_character_id": 10600000,
+      "master_costume_id": 11002106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014051": {
+      "master_character_id": 10700000,
+      "master_costume_id": 11002107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014052": {
+      "master_character_id": 10800000,
+      "master_costume_id": 11002108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014053": {
+      "master_character_id": 10900000,
+      "master_costume_id": 11002109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014054": {
+      "master_character_id": 11000000,
+      "master_costume_id": 11002110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014055": {
+      "master_character_id": 11100000,
+      "master_costume_id": 11002111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014056": {
+      "master_character_id": 10100000,
+      "master_costume_id": 35001101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014057": {
+      "master_character_id": 10200000,
+      "master_costume_id": 35001102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014058": {
+      "master_character_id": 10300000,
+      "master_costume_id": 35001103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014059": {
+      "master_character_id": 10400000,
+      "master_costume_id": 35001104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014060": {
+      "master_character_id": 10500000,
+      "master_costume_id": 35001105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014061": {
+      "master_character_id": 10600000,
+      "master_costume_id": 35001106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014062": {
+      "master_character_id": 10700000,
+      "master_costume_id": 35001107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014063": {
+      "master_character_id": 10800000,
+      "master_costume_id": 35001108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014064": {
+      "master_character_id": 10900000,
+      "master_costume_id": 35001109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014065": {
+      "master_character_id": 11000000,
+      "master_costume_id": 35001110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014066": {
+      "master_character_id": 11100000,
+      "master_costume_id": 35001111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014067": {
+      "master_character_id": 10100000,
+      "master_costume_id": 35002101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014068": {
+      "master_character_id": 10200000,
+      "master_costume_id": 35002102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014069": {
+      "master_character_id": 10300000,
+      "master_costume_id": 35002103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014070": {
+      "master_character_id": 10400000,
+      "master_costume_id": 35002104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014071": {
+      "master_character_id": 10500000,
+      "master_costume_id": 35002105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014072": {
+      "master_character_id": 10600000,
+      "master_costume_id": 35002106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014073": {
+      "master_character_id": 10700000,
+      "master_costume_id": 35002107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014074": {
+      "master_character_id": 10800000,
+      "master_costume_id": 35002108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014075": {
+      "master_character_id": 10900000,
+      "master_costume_id": 35002109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014076": {
+      "master_character_id": 11000000,
+      "master_costume_id": 35002110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014077": {
+      "master_character_id": 11100000,
+      "master_costume_id": 35002111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014078": {
+      "master_character_id": 10100000,
+      "master_costume_id": 35004101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014079": {
+      "master_character_id": 10200000,
+      "master_costume_id": 35004102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014080": {
+      "master_character_id": 10300000,
+      "master_costume_id": 35004103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014081": {
+      "master_character_id": 10400000,
+      "master_costume_id": 35004104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014082": {
+      "master_character_id": 10500000,
+      "master_costume_id": 35004105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014083": {
+      "master_character_id": 10600000,
+      "master_costume_id": 35004106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014084": {
+      "master_character_id": 10700000,
+      "master_costume_id": 35004107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014085": {
+      "master_character_id": 10800000,
+      "master_costume_id": 35004108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014086": {
+      "master_character_id": 10900000,
+      "master_costume_id": 35004109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014087": {
+      "master_character_id": 11000000,
+      "master_costume_id": 35004110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014088": {
+      "master_character_id": 11100000,
+      "master_costume_id": 35004111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014089": {
+      "master_character_id": 10100000,
+      "master_costume_id": 35005101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014090": {
+      "master_character_id": 10200000,
+      "master_costume_id": 35005102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014091": {
+      "master_character_id": 10300000,
+      "master_costume_id": 35005103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014092": {
+      "master_character_id": 10400000,
+      "master_costume_id": 35005104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014093": {
+      "master_character_id": 10500000,
+      "master_costume_id": 35005105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014094": {
+      "master_character_id": 10600000,
+      "master_costume_id": 35005106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014095": {
+      "master_character_id": 10700000,
+      "master_costume_id": 35005107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014096": {
+      "master_character_id": 10800000,
+      "master_costume_id": 35005108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014097": {
+      "master_character_id": 10900000,
+      "master_costume_id": 35005109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014098": {
+      "master_character_id": 11000000,
+      "master_costume_id": 35005110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014099": {
+      "master_character_id": 11100000,
+      "master_costume_id": 35005111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014100": {
+      "master_character_id": 10100000,
+      "master_costume_id": 35009101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014101": {
+      "master_character_id": 10200000,
+      "master_costume_id": 35009102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014102": {
+      "master_character_id": 10300000,
+      "master_costume_id": 35009103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014103": {
+      "master_character_id": 10400000,
+      "master_costume_id": 35009104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014104": {
+      "master_character_id": 10500000,
+      "master_costume_id": 35009105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014105": {
+      "master_character_id": 10600000,
+      "master_costume_id": 35009106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014106": {
+      "master_character_id": 10700000,
+      "master_costume_id": 35009107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014107": {
+      "master_character_id": 10800000,
+      "master_costume_id": 35009108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014108": {
+      "master_character_id": 10900000,
+      "master_costume_id": 35009109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014109": {
+      "master_character_id": 11000000,
+      "master_costume_id": 35009110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014110": {
+      "master_character_id": 11100000,
+      "master_costume_id": 35009111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014111": {
+      "master_character_id": 10100000,
+      "master_costume_id": 35010101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014112": {
+      "master_character_id": 10200000,
+      "master_costume_id": 35010102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014113": {
+      "master_character_id": 10300000,
+      "master_costume_id": 35010103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014114": {
+      "master_character_id": 10400000,
+      "master_costume_id": 35010104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014115": {
+      "master_character_id": 10500000,
+      "master_costume_id": 35010105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014116": {
+      "master_character_id": 10600000,
+      "master_costume_id": 35010106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014117": {
+      "master_character_id": 10700000,
+      "master_costume_id": 35010107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014118": {
+      "master_character_id": 10800000,
+      "master_costume_id": 35010108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014119": {
+      "master_character_id": 10900000,
+      "master_costume_id": 35010109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014120": {
+      "master_character_id": 11000000,
+      "master_costume_id": 35010110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014121": {
+      "master_character_id": 11100000,
+      "master_costume_id": 35010111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014122": {
+      "master_character_id": 10100000,
+      "master_costume_id": 35013101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014123": {
+      "master_character_id": 10200000,
+      "master_costume_id": 35013102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014124": {
+      "master_character_id": 10300000,
+      "master_costume_id": 35013103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014125": {
+      "master_character_id": 10400000,
+      "master_costume_id": 35013104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014126": {
+      "master_character_id": 10500000,
+      "master_costume_id": 35013105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014127": {
+      "master_character_id": 10600000,
+      "master_costume_id": 35013106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014128": {
+      "master_character_id": 10700000,
+      "master_costume_id": 35013107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014129": {
+      "master_character_id": 10800000,
+      "master_costume_id": 35013108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014130": {
+      "master_character_id": 10900000,
+      "master_costume_id": 35013109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014131": {
+      "master_character_id": 11000000,
+      "master_costume_id": 35013110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014132": {
+      "master_character_id": 11100000,
+      "master_costume_id": 35013111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014133": {
+      "master_character_id": 10100000,
+      "master_costume_id": 35003101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014134": {
+      "master_character_id": 10200000,
+      "master_costume_id": 35003102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014135": {
+      "master_character_id": 10300000,
+      "master_costume_id": 35003103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014136": {
+      "master_character_id": 10400000,
+      "master_costume_id": 35003104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014137": {
+      "master_character_id": 10500000,
+      "master_costume_id": 35003105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014138": {
+      "master_character_id": 10600000,
+      "master_costume_id": 35003106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014139": {
+      "master_character_id": 10700000,
+      "master_costume_id": 35003107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014140": {
+      "master_character_id": 10800000,
+      "master_costume_id": 35003108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014141": {
+      "master_character_id": 10900000,
+      "master_costume_id": 35003109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014142": {
+      "master_character_id": 11000000,
+      "master_costume_id": 35003110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014143": {
+      "master_character_id": 11100000,
+      "master_costume_id": 35003111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014144": {
+      "master_character_id": 10100000,
+      "master_costume_id": 35006101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014145": {
+      "master_character_id": 10200000,
+      "master_costume_id": 35006102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014146": {
+      "master_character_id": 10300000,
+      "master_costume_id": 35006103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014147": {
+      "master_character_id": 10400000,
+      "master_costume_id": 35006104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014148": {
+      "master_character_id": 10500000,
+      "master_costume_id": 35006105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014149": {
+      "master_character_id": 10600000,
+      "master_costume_id": 35006106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014150": {
+      "master_character_id": 10700000,
+      "master_costume_id": 35006107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014151": {
+      "master_character_id": 10800000,
+      "master_costume_id": 35006108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014152": {
+      "master_character_id": 10900000,
+      "master_costume_id": 35006109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014153": {
+      "master_character_id": 11000000,
+      "master_costume_id": 35006110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014154": {
+      "master_character_id": 11100000,
+      "master_costume_id": 35006111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014155": {
+      "master_character_id": 10100000,
+      "master_costume_id": 35007101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014156": {
+      "master_character_id": 10200000,
+      "master_costume_id": 35007102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014157": {
+      "master_character_id": 10300000,
+      "master_costume_id": 35007103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014158": {
+      "master_character_id": 10400000,
+      "master_costume_id": 35007104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014159": {
+      "master_character_id": 10500000,
+      "master_costume_id": 35007105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014160": {
+      "master_character_id": 10600000,
+      "master_costume_id": 35007106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014161": {
+      "master_character_id": 10700000,
+      "master_costume_id": 35007107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014162": {
+      "master_character_id": 10800000,
+      "master_costume_id": 35007108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014163": {
+      "master_character_id": 10900000,
+      "master_costume_id": 35007109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014164": {
+      "master_character_id": 11000000,
+      "master_costume_id": 35007110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014165": {
+      "master_character_id": 11100000,
+      "master_costume_id": 35007111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014166": {
+      "master_character_id": 10100000,
+      "master_costume_id": 35008101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014167": {
+      "master_character_id": 10200000,
+      "master_costume_id": 35008102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014168": {
+      "master_character_id": 10300000,
+      "master_costume_id": 35008103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014169": {
+      "master_character_id": 10400000,
+      "master_costume_id": 35008104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014170": {
+      "master_character_id": 10500000,
+      "master_costume_id": 35008105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014171": {
+      "master_character_id": 10600000,
+      "master_costume_id": 35008106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014172": {
+      "master_character_id": 10700000,
+      "master_costume_id": 35008107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014173": {
+      "master_character_id": 10800000,
+      "master_costume_id": 35008108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014174": {
+      "master_character_id": 10900000,
+      "master_costume_id": 35008109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014175": {
+      "master_character_id": 11000000,
+      "master_costume_id": 35008110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014176": {
+      "master_character_id": 11100000,
+      "master_costume_id": 35008111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014177": {
+      "master_character_id": 10100000,
+      "master_costume_id": 35011101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014178": {
+      "master_character_id": 10200000,
+      "master_costume_id": 35011102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014179": {
+      "master_character_id": 10300000,
+      "master_costume_id": 35011103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014180": {
+      "master_character_id": 10400000,
+      "master_costume_id": 35011104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014181": {
+      "master_character_id": 10500000,
+      "master_costume_id": 35011105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014182": {
+      "master_character_id": 10600000,
+      "master_costume_id": 35011106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014183": {
+      "master_character_id": 10700000,
+      "master_costume_id": 35011107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014184": {
+      "master_character_id": 10800000,
+      "master_costume_id": 35011108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014185": {
+      "master_character_id": 10900000,
+      "master_costume_id": 35011109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014186": {
+      "master_character_id": 11000000,
+      "master_costume_id": 35011110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014187": {
+      "master_character_id": 11100000,
+      "master_costume_id": 35011111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014188": {
+      "master_character_id": 10100000,
+      "master_costume_id": 35012101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014189": {
+      "master_character_id": 10200000,
+      "master_costume_id": 35012102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014190": {
+      "master_character_id": 10300000,
+      "master_costume_id": 35012103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014191": {
+      "master_character_id": 10400000,
+      "master_costume_id": 35012104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014192": {
+      "master_character_id": 10500000,
+      "master_costume_id": 35012105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014193": {
+      "master_character_id": 10600000,
+      "master_costume_id": 35012106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014194": {
+      "master_character_id": 10700000,
+      "master_costume_id": 35012107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014195": {
+      "master_character_id": 10800000,
+      "master_costume_id": 35012108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014196": {
+      "master_character_id": 10900000,
+      "master_costume_id": 35012109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014197": {
+      "master_character_id": 11000000,
+      "master_costume_id": 35012110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014198": {
+      "master_character_id": 11100000,
+      "master_costume_id": 35012111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "160014001": {
+      "master_character_id": 10100000,
+      "master_costume_id": 35014101,
+      "master_exchange_id": 21800100,
+      "price": 40
+    },
+    "160014002": {
+      "master_character_id": 10200000,
+      "master_costume_id": 35014102,
+      "master_exchange_id": 21800100,
+      "price": 40
+    },
+    "160014003": {
+      "master_character_id": 10300000,
+      "master_costume_id": 35014103,
+      "master_exchange_id": 21800100,
+      "price": 40
+    },
+    "160014004": {
+      "master_character_id": 10400000,
+      "master_costume_id": 35014104,
+      "master_exchange_id": 21800100,
+      "price": 40
+    },
+    "160014005": {
+      "master_character_id": 10500000,
+      "master_costume_id": 35014105,
+      "master_exchange_id": 21800100,
+      "price": 40
+    },
+    "160014006": {
+      "master_character_id": 10600000,
+      "master_costume_id": 35014106,
+      "master_exchange_id": 21800100,
+      "price": 40
+    },
+    "160014007": {
+      "master_character_id": 10700000,
+      "master_costume_id": 35014107,
+      "master_exchange_id": 21800100,
+      "price": 40
+    },
+    "160014008": {
+      "master_character_id": 10800000,
+      "master_costume_id": 35014108,
+      "master_exchange_id": 21800100,
+      "price": 40
+    },
+    "160014009": {
+      "master_character_id": 10900000,
+      "master_costume_id": 35014109,
+      "master_exchange_id": 21800100,
+      "price": 40
+    },
+    "160014010": {
+      "master_character_id": 11000000,
+      "master_costume_id": 35014110,
+      "master_exchange_id": 21800100,
+      "price": 40
+    },
+    "160014011": {
+      "master_character_id": 11100000,
+      "master_costume_id": 35014111,
+      "master_exchange_id": 21800100,
+      "price": 40
+    },
+    "260014001": {
+      "master_character_id": 10100000,
+      "master_costume_id": 35015101,
+      "master_exchange_id": 22700100,
+      "price": 40
+    },
+    "260014002": {
+      "master_character_id": 10200000,
+      "master_costume_id": 35015102,
+      "master_exchange_id": 22700100,
+      "price": 40
+    },
+    "260014003": {
+      "master_character_id": 10300000,
+      "master_costume_id": 35015103,
+      "master_exchange_id": 22700100,
+      "price": 40
+    },
+    "260014004": {
+      "master_character_id": 10400000,
+      "master_costume_id": 35015104,
+      "master_exchange_id": 22700100,
+      "price": 40
+    },
+    "260014005": {
+      "master_character_id": 10500000,
+      "master_costume_id": 35015105,
+      "master_exchange_id": 22700100,
+      "price": 40
+    },
+    "260014006": {
+      "master_character_id": 10600000,
+      "master_costume_id": 35015106,
+      "master_exchange_id": 22700100,
+      "price": 40
+    },
+    "260014007": {
+      "master_character_id": 10700000,
+      "master_costume_id": 35015107,
+      "master_exchange_id": 22700100,
+      "price": 40
+    },
+    "260014008": {
+      "master_character_id": 10800000,
+      "master_costume_id": 35015108,
+      "master_exchange_id": 22700100,
+      "price": 40
+    },
+    "260014009": {
+      "master_character_id": 10900000,
+      "master_costume_id": 35015109,
+      "master_exchange_id": 22700100,
+      "price": 40
+    },
+    "260014010": {
+      "master_character_id": 11000000,
+      "master_costume_id": 35015110,
+      "master_exchange_id": 22700100,
+      "price": 40
+    },
+    "260014011": {
+      "master_character_id": 11100000,
+      "master_costume_id": 35015111,
+      "master_exchange_id": 22700100,
+      "price": 40
+    },
+    "310014001": {
+      "master_character_id": 10100000,
+      "master_costume_id": 36010101,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014002": {
+      "master_character_id": 10200000,
+      "master_costume_id": 36010102,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014003": {
+      "master_character_id": 10300000,
+      "master_costume_id": 36010103,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014004": {
+      "master_character_id": 10400000,
+      "master_costume_id": 36010104,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014005": {
+      "master_character_id": 10500000,
+      "master_costume_id": 36010105,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014006": {
+      "master_character_id": 10600000,
+      "master_costume_id": 36010106,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014007": {
+      "master_character_id": 10700000,
+      "master_costume_id": 36010107,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014008": {
+      "master_character_id": 10800000,
+      "master_costume_id": 36010108,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014009": {
+      "master_character_id": 10900000,
+      "master_costume_id": 36010109,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014010": {
+      "master_character_id": 11000000,
+      "master_costume_id": 36010110,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014011": {
+      "master_character_id": 11100000,
+      "master_costume_id": 36010111,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014012": {
+      "master_character_id": 10100000,
+      "master_costume_id": 36009101,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014013": {
+      "master_character_id": 10200000,
+      "master_costume_id": 36009102,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014014": {
+      "master_character_id": 10300000,
+      "master_costume_id": 36009103,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014015": {
+      "master_character_id": 10400000,
+      "master_costume_id": 36009104,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014016": {
+      "master_character_id": 10500000,
+      "master_costume_id": 36009105,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014017": {
+      "master_character_id": 10600000,
+      "master_costume_id": 36009106,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014018": {
+      "master_character_id": 10700000,
+      "master_costume_id": 36009107,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014019": {
+      "master_character_id": 10800000,
+      "master_costume_id": 36009108,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014020": {
+      "master_character_id": 10900000,
+      "master_costume_id": 36009109,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014021": {
+      "master_character_id": 11000000,
+      "master_costume_id": 36009110,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "310014022": {
+      "master_character_id": 11100000,
+      "master_costume_id": 36009111,
+      "master_exchange_id": 23100100,
+      "price": 40
+    },
+    "370014001": {
+      "master_character_id": 10100000,
+      "master_costume_id": 35016101,
+      "master_exchange_id": 23400100,
+      "price": 30
+    },
+    "370014002": {
+      "master_character_id": 10200000,
+      "master_costume_id": 35016102,
+      "master_exchange_id": 23400100,
+      "price": 30
+    },
+    "370014003": {
+      "master_character_id": 10300000,
+      "master_costume_id": 35016103,
+      "master_exchange_id": 23400100,
+      "price": 30
+    },
+    "370014004": {
+      "master_character_id": 10400000,
+      "master_costume_id": 35016104,
+      "master_exchange_id": 23400100,
+      "price": 30
+    },
+    "370014005": {
+      "master_character_id": 10500000,
+      "master_costume_id": 35016105,
+      "master_exchange_id": 23400100,
+      "price": 30
+    },
+    "370014006": {
+      "master_character_id": 10600000,
+      "master_costume_id": 35016106,
+      "master_exchange_id": 23400100,
+      "price": 30
+    },
+    "370014007": {
+      "master_character_id": 10700000,
+      "master_costume_id": 35016107,
+      "master_exchange_id": 23400100,
+      "price": 30
+    },
+    "370014008": {
+      "master_character_id": 10800000,
+      "master_costume_id": 35016108,
+      "master_exchange_id": 23400100,
+      "price": 30
+    },
+    "370014009": {
+      "master_character_id": 10900000,
+      "master_costume_id": 35016109,
+      "master_exchange_id": 23400100,
+      "price": 30
+    },
+    "370014010": {
+      "master_character_id": 11000000,
+      "master_costume_id": 35016110,
+      "master_exchange_id": 23400100,
+      "price": 30
+    },
+    "370014011": {
+      "master_character_id": 11100000,
+      "master_costume_id": 35016111,
+      "master_exchange_id": 23400100,
+      "price": 30
+    },
+    "110014199": {
+      "master_character_id": 10100000,
+      "master_costume_id": 44001101,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014200": {
+      "master_character_id": 10500000,
+      "master_costume_id": 44001105,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014201": {
+      "master_character_id": 10800000,
+      "master_costume_id": 44001108,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014202": {
+      "master_character_id": 10300000,
+      "master_costume_id": 44001103,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014203": {
+      "master_character_id": 10200000,
+      "master_costume_id": 44001102,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014204": {
+      "master_character_id": 10900000,
+      "master_costume_id": 44001109,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014205": {
+      "master_character_id": 10600000,
+      "master_costume_id": 44001106,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014206": {
+      "master_character_id": 11000000,
+      "master_costume_id": 44001110,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014207": {
+      "master_character_id": 10400000,
+      "master_costume_id": 44001104,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014208": {
+      "master_character_id": 11100000,
+      "master_costume_id": 44001111,
+      "master_exchange_id": 11100100,
+      "price": 200
+    },
+    "110014209": {
+      "master_character_id": 10700000,
+      "master_costume_id": 44001107,
+      "master_exchange_id": 11100100,
+      "price": 200
+    }
+  }
+}

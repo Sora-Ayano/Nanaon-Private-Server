@@ -1,0 +1,21 @@
+# Local runtime state and logs
+var/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Bundled Python and ADB are shipped with release archives, not source control.
+runtime/
+
+# Per-install TLS material. Generate locally; never publish private keys.
+*.key
+*.pem
+*.csr
+*.cer
+*.crt
+c[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].0
+
+# Automatic database backups and temporary exports.
+data/private_server.before_*.sqlite3
+data/runtime/
+backups/

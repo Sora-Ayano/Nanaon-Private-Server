@@ -1,0 +1,4 @@
+UI_Fade_Out||0|0|0.15|#000000|Front#EOL
+System_Start||0|0#EOL
+UI_Fade_In||0|0|0.15|#000000|Front#EOL
+UI_TalkMsg_Show||0|0|0|ナナオン|今日も一緒に頑張りましょう！[end]|13|1|48|||#EOL

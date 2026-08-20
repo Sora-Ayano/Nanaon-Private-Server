@@ -1,0 +1,8403 @@
+{
+  "schema_version": 1,
+  "source": "NanaOn v2.4.0 decrypted master bundle",
+  "stories": [
+    {
+      "id": 90000100,
+      "type": "TUTORIAL",
+      "chapter_number": 1,
+      "name": "",
+      "part_ids": [
+        90000101,
+        90000102
+      ]
+    },
+    {
+      "id": 10000000,
+      "type": "MAIN",
+      "chapter_number": 0,
+      "name": "ナナブンノニジュウニの軌跡",
+      "part_ids": [
+        10000001,
+        10000002,
+        10000003,
+        10000004,
+        10000005,
+        10000006,
+        10000007,
+        10000008,
+        10000009,
+        10000010,
+        10000011,
+        10000012,
+        10000013,
+        10000014,
+        10000015,
+        10000016,
+        10000017,
+        10000018,
+        10000019,
+        10000020,
+        10000021,
+        10000022,
+        10000023,
+        10000024,
+        10000025,
+        10000026,
+        10000027,
+        10000028,
+        10000029,
+        10000030,
+        10000031,
+        10000032,
+        10000033,
+        10000034,
+        10000035,
+        10000036,
+        10000037,
+        10000038,
+        10000039,
+        10000040,
+        10000041,
+        10000042
+      ]
+    },
+    {
+      "id": 10000100,
+      "type": "MAIN",
+      "chapter_number": 1,
+      "name": "立ち塞がる高き壁",
+      "part_ids": [
+        10000101,
+        10000102,
+        10000103,
+        10000104,
+        10000105,
+        10000106,
+        10000107,
+        10000108,
+        10000109,
+        10000110,
+        10000111,
+        10000112,
+        10000113,
+        10000114,
+        10000115,
+        10000116,
+        10000117,
+        10000118,
+        10000119,
+        10000120,
+        10000121,
+        10000122,
+        10000123
+      ]
+    },
+    {
+      "id": 21010100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "笑う門には福来たる",
+      "part_ids": [
+        21010101,
+        21010102,
+        21010103,
+        21010104,
+        21010105,
+        21010106,
+        21010107,
+        21010108,
+        21010109,
+        21010110
+      ]
+    },
+    {
+      "id": 21020100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "目指すは完璧",
+      "part_ids": [
+        21020101,
+        21020102,
+        21020103,
+        21020104,
+        21020105,
+        21020106,
+        21020107,
+        21020108,
+        21020109,
+        21020110
+      ]
+    },
+    {
+      "id": 21030100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "頼れるみんなのリーダー",
+      "part_ids": [
+        21030101,
+        21030102,
+        21030103,
+        21030104,
+        21030105,
+        21030106,
+        21030107,
+        21030108,
+        21030109,
+        21030110
+      ]
+    },
+    {
+      "id": 21040100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "メンバー想いの帰国子女",
+      "part_ids": [
+        21040101,
+        21040102,
+        21040103,
+        21040104,
+        21040105,
+        21040106,
+        21040107,
+        21040108,
+        21040109,
+        21040110
+      ]
+    },
+    {
+      "id": 21050100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "冷静沈着な合理主義者",
+      "part_ids": [
+        21050101,
+        21050102,
+        21050103,
+        21050104,
+        21050105,
+        21050106,
+        21050107,
+        21050108,
+        21050109,
+        21050110
+      ]
+    },
+    {
+      "id": 21060100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "内気なセンター",
+      "part_ids": [
+        21060101,
+        21060102,
+        21060103,
+        21060104,
+        21060105,
+        21060106,
+        21060107,
+        21060108,
+        21060109,
+        21060110
+      ]
+    },
+    {
+      "id": 21070100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "他人は他人、自分は自分",
+      "part_ids": [
+        21070101,
+        21070102,
+        21070103,
+        21070104,
+        21070105,
+        21070106,
+        21070107,
+        21070108,
+        21070109,
+        21070110
+      ]
+    },
+    {
+      "id": 21080100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "人生は遊園地",
+      "part_ids": [
+        21080101,
+        21080102,
+        21080103,
+        21080104,
+        21080105,
+        21080106,
+        21080107,
+        21080108,
+        21080109,
+        21080110
+      ]
+    },
+    {
+      "id": 21090100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "鳥の上にも三年",
+      "part_ids": [
+        21090101,
+        21090102,
+        21090103,
+        21090104,
+        21090105,
+        21090106,
+        21090107,
+        21090108,
+        21090109,
+        21090110
+      ]
+    },
+    {
+      "id": 21100100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "願えば叶う、何事も",
+      "part_ids": [
+        21100101,
+        21100102,
+        21100103,
+        21100104,
+        21100105,
+        21100106,
+        21100107,
+        21100108,
+        21100109,
+        21100110
+      ]
+    },
+    {
+      "id": 21110100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "死ぬこと以外かすり傷",
+      "part_ids": [
+        21110101,
+        21110102,
+        21110103,
+        21110104,
+        21110105,
+        21110106,
+        21110107,
+        21110108,
+        21110109,
+        21110110
+      ]
+    },
+    {
+      "id": 30010000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "芽吹き奏でるはじまりのメロディー",
+      "part_ids": [
+        30010001,
+        30010002,
+        30010003,
+        30010004,
+        30010005,
+        30010006,
+        30010007
+      ]
+    },
+    {
+      "id": 30020000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "物語シリーズコラボイベント・前編",
+      "part_ids": [
+        30020001,
+        30020002,
+        30020003,
+        30020004,
+        30020005,
+        30020006,
+        30020007
+      ]
+    },
+    {
+      "id": 30030000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "迷える花嫁に導きのファンファーレ",
+      "part_ids": [
+        30030001,
+        30030002,
+        30030003,
+        30030004,
+        30030005,
+        30030006,
+        30030007
+      ]
+    },
+    {
+      "id": 30040000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "物語シリーズコラボイベント・後編",
+      "part_ids": [
+        30040001,
+        30040002,
+        30040003,
+        30040004,
+        30040005,
+        30040006,
+        30040007
+      ]
+    },
+    {
+      "id": 30050000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "追憶のプリクエル　case:斎藤ニコル/神木みかみ　前編",
+      "part_ids": [
+        30050001,
+        30050002,
+        30050003
+      ]
+    },
+    {
+      "id": 30060000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "追憶のプリクエル　case:斎藤ニコル/神木みかみ　後編",
+      "part_ids": [
+        30060001,
+        30060002,
+        30060003
+      ]
+    },
+    {
+      "id": 30070000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "22/7×SUMMER×SUMMER×SUMMER！ 前編",
+      "part_ids": [
+        30070001,
+        30070002,
+        30070003,
+        30070004,
+        30070005,
+        30070006,
+        30070007
+      ]
+    },
+    {
+      "id": 30080000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "22/7×SUMMER×SUMMER×SUMMER！ 中編",
+      "part_ids": [
+        30080001,
+        30080002,
+        30080003
+      ]
+    },
+    {
+      "id": 30090000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "22/7×SUMMER×SUMMER×SUMMER！ 後編",
+      "part_ids": [
+        30090001,
+        30090002,
+        30090003,
+        30090004,
+        30090005,
+        30090006,
+        30090007
+      ]
+    },
+    {
+      "id": 30100000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "追憶のプリクエル case:戸田ジュン",
+      "part_ids": [
+        30100001,
+        30100002,
+        30100003
+      ]
+    },
+    {
+      "id": 10000200,
+      "type": "MAIN",
+      "chapter_number": 2,
+      "name": "遠い存在に近づくには",
+      "part_ids": [
+        10000201,
+        10000202,
+        10000203,
+        10000204,
+        10000205,
+        10000206,
+        10000207,
+        10000208,
+        10000209,
+        10000210,
+        10000211,
+        10000212,
+        10000213,
+        10000214,
+        10000215,
+        10000216,
+        10000217,
+        10000218,
+        10000219,
+        10000220
+      ]
+    },
+    {
+      "id": 30110000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "稲穂に宿る月夜の姫",
+      "part_ids": [
+        30110001,
+        30110002,
+        30110003,
+        30110004,
+        30110005,
+        30110006,
+        30110007
+      ]
+    },
+    {
+      "id": 30120000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "追憶のプリクエル case:藤間桜",
+      "part_ids": [
+        30120001,
+        30120002,
+        30120003
+      ]
+    },
+    {
+      "id": 30130000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "魔法科高校の劣等生コラボイベント",
+      "part_ids": [
+        30130001,
+        30130002,
+        30130003,
+        30130004,
+        30130005,
+        30130006,
+        30130007
+      ]
+    },
+    {
+      "id": 30140000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "追憶のプリクエル case:丸山あかね",
+      "part_ids": [
+        30140001,
+        30140002,
+        30140003
+      ]
+    },
+    {
+      "id": 30150000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "とりっく・おあ・とりーと！～お菓子が好きなオバケの噂～",
+      "part_ids": [
+        30150001,
+        30150002,
+        30150003,
+        30150004,
+        30150005,
+        30150006,
+        30150007
+      ]
+    },
+    {
+      "id": 30160000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "We are \"ChouChou\"! ～トップアイドルの証～",
+      "part_ids": [
+        30160001,
+        30160002,
+        30160003,
+        30160004,
+        30160005,
+        30160006,
+        30160007
+      ]
+    },
+    {
+      "id": 30170000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "割り切れない文化祭 演劇メイド喫茶にようこそ！",
+      "part_ids": [
+        30170001,
+        30170002,
+        30170003,
+        30170004,
+        30170005,
+        30170006,
+        30170007
+      ]
+    },
+    {
+      "id": 30180000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "追憶のプリクエル case:佐藤麗華",
+      "part_ids": [
+        30180001,
+        30180002,
+        30180003
+      ]
+    },
+    {
+      "id": 30190000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "「22/7 計算中」コラボイベント いつでもどこでも計算中！",
+      "part_ids": [
+        30190001,
+        30190002,
+        30190003
+      ]
+    },
+    {
+      "id": 30200000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "追憶のプリクエル case:立川絢香",
+      "part_ids": [
+        30200001,
+        30200002,
+        30200003
+      ]
+    },
+    {
+      "id": 30210000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "聖なる夜のトラブルギフト",
+      "part_ids": [
+        30210001,
+        30210002,
+        30210003
+      ]
+    },
+    {
+      "id": 30220000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "紅白ナナオン歌合戦",
+      "part_ids": [
+        30220001,
+        30220002,
+        30220003,
+        30220004
+      ]
+    },
+    {
+      "id": 30230000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "追憶のプリクエル case:柊つぼみ",
+      "part_ids": [
+        30230001,
+        30230002,
+        30230003
+      ]
+    },
+    {
+      "id": 30240000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "熱戦！激戦！雪合戦！",
+      "part_ids": [
+        30240001,
+        30240002,
+        30240003
+      ]
+    },
+    {
+      "id": 10000300,
+      "type": "MAIN",
+      "chapter_number": 3,
+      "name": "運命の向こう側",
+      "part_ids": [
+        10000301,
+        10000302,
+        10000303,
+        10000304,
+        10000305,
+        10000306,
+        10000307,
+        10000308,
+        10000309,
+        10000310,
+        10000311,
+        10000312,
+        10000313,
+        10000314,
+        10000315,
+        10000316,
+        10000317,
+        10000318,
+        10000319,
+        10000320
+      ]
+    },
+    {
+      "id": 30250000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "Love Like Valentine",
+      "part_ids": [
+        30250001,
+        30250002,
+        30250003
+      ]
+    },
+    {
+      "id": 30260000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "追憶のプリクエル case:東条悠希",
+      "part_ids": [
+        30260001,
+        30260002,
+        30260003
+      ]
+    },
+    {
+      "id": 30270000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "夢幻霜のシークエル case:佐藤麗華",
+      "part_ids": [
+        30270001,
+        30270002,
+        30270003
+      ]
+    },
+    {
+      "id": 30280000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "追憶のプリクエル case:河野都",
+      "part_ids": [
+        30280001,
+        30280002,
+        30280003
+      ]
+    },
+    {
+      "id": 30290000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "計算中コラボ勝者ユニットイベント",
+      "part_ids": [
+        30290001,
+        30290002,
+        30290003
+      ]
+    },
+    {
+      "id": 30300000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "追憶のプリクエル case:滝川みう",
+      "part_ids": [
+        30300001,
+        30300002,
+        30300003
+      ]
+    },
+    {
+      "id": 30310000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "22/7×ChouChou 熱して、混ぜて、解けて、笑顔",
+      "part_ids": [
+        30310001,
+        30310002,
+        30310003
+      ]
+    },
+    {
+      "id": 30320000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "ナナニジシアター Stage.01 なにわの探偵①",
+      "part_ids": [
+        30320001,
+        30320002,
+        30320003,
+        30320004,
+        30320005
+      ]
+    },
+    {
+      "id": 40000100,
+      "type": "PROJECT",
+      "chapter_number": 1,
+      "name": "二人三脚プロジェクト",
+      "part_ids": [
+        40000100,
+        40000101,
+        40000102,
+        40000103,
+        40000104,
+        40000105,
+        40000106,
+        40000107,
+        40000108,
+        40000109,
+        40000110
+      ]
+    },
+    {
+      "id": 30330000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "Next stage ～ナナブンノニジュウニの軌跡～",
+      "part_ids": [
+        30330001,
+        30330002,
+        30330003,
+        30330004,
+        30330005,
+        30330006,
+        30330007,
+        30330008,
+        30330009,
+        30330010,
+        30330011,
+        30330012,
+        30330013,
+        30330014,
+        30330015,
+        30330016,
+        30330017,
+        30330018,
+        30330019,
+        30330020,
+        30330021,
+        30330022,
+        30330023,
+        30330024,
+        30330025,
+        30330026,
+        30330027,
+        30330028,
+        30330029,
+        30330030,
+        30330031,
+        30330032,
+        30330033,
+        30330034,
+        30330035,
+        30330036,
+        30330037,
+        30330038,
+        30330039,
+        30330040,
+        30330041,
+        30330042
+      ]
+    },
+    {
+      "id": 30340000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "ナナニジシアター Stage.01 なにわの探偵②",
+      "part_ids": [
+        30340001,
+        30340002,
+        30340003,
+        30340004,
+        30340005
+      ]
+    },
+    {
+      "id": 27010100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "プライベートストーリー阿久津 かすか",
+      "part_ids": [
+        27010101,
+        27010102,
+        27010103,
+        27010104
+      ]
+    },
+    {
+      "id": 27020100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "プライベートストーリー五十嵐 真紀",
+      "part_ids": [
+        27020101,
+        27020102,
+        27020103,
+        27020104
+      ]
+    },
+    {
+      "id": 27030100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "プライベートストーリー黒瀬 京子",
+      "part_ids": [
+        27030101,
+        27030102,
+        27030103,
+        27030104
+      ]
+    },
+    {
+      "id": 27040100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "プライベートストーリー椎名 紅葉",
+      "part_ids": [
+        27040101,
+        27040102,
+        27040103,
+        27040104
+      ]
+    },
+    {
+      "id": 27050100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "プライベートストーリー七崎 紫苑",
+      "part_ids": [
+        27050101,
+        27050102,
+        27050103,
+        27050104
+      ]
+    },
+    {
+      "id": 27060100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "プライベートストーリー蓮沼 巴",
+      "part_ids": [
+        27060101,
+        27060102,
+        27060103,
+        27060104
+      ]
+    },
+    {
+      "id": 27070100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "プライベートストーリー岬 心彩",
+      "part_ids": [
+        27070101,
+        27070102,
+        27070103,
+        27070104
+      ]
+    },
+    {
+      "id": 27080100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "プライベートストーリー村中 晴菜",
+      "part_ids": [
+        27080101,
+        27080102,
+        27080103,
+        27080104
+      ]
+    },
+    {
+      "id": 27090100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "プライベートストーリー森 鈴音",
+      "part_ids": [
+        27090101,
+        27090102,
+        27090103,
+        27090104
+      ]
+    },
+    {
+      "id": 27100100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "プライベートストーリー矢代 陽夏莉",
+      "part_ids": [
+        27100101,
+        27100102,
+        27100103,
+        27100104
+      ]
+    },
+    {
+      "id": 27110100,
+      "type": "CHARACTER",
+      "chapter_number": 1,
+      "name": "プライベートストーリー若泉 月渚",
+      "part_ids": [
+        27110101,
+        27110102,
+        27110103,
+        27110104
+      ]
+    },
+    {
+      "id": 30350000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "星に願いを 天に架け橋を",
+      "part_ids": [
+        30350001,
+        30350002,
+        30350003
+      ]
+    },
+    {
+      "id": 30360000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "ナナニジシアター Stage.01 なにわの探偵③",
+      "part_ids": [
+        30360001,
+        30360002,
+        30360003,
+        30360004,
+        30360005
+      ]
+    },
+    {
+      "id": 30370000,
+      "type": "EVENT",
+      "chapter_number": 0,
+      "name": "レジャー！トレジャー！！プールサイドハンティング！！！",
+      "part_ids": [
+        30370001,
+        30370002,
+        30370003
+      ]
+    },
+    {
+      "id": 10000400,
+      "type": "MAIN",
+      "chapter_number": 4,
+      "name": "これからもずっと",
+      "part_ids": [
+        10000401,
+        10000402,
+        10000403,
+        10000404,
+        10000405,
+        10000406,
+        10000407,
+        10000408
+      ]
+    }
+  ],
+  "story_parts": [
+    {
+      "id": 10000101,
+      "story_id": 10000100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season1/10000101"
+    },
+    {
+      "id": 10000102,
+      "story_id": 10000100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season1/10000102"
+    },
+    {
+      "id": 10000103,
+      "story_id": 10000100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season1/10000103"
+    },
+    {
+      "id": 10000104,
+      "story_id": 10000100,
+      "number": 4,
+      "music_reward_id": 13100020,
+      "scenario_path": "Main/Season1/10000104"
+    },
+    {
+      "id": 10000105,
+      "story_id": 10000100,
+      "number": 5,
+      "music_reward_id": 13100011,
+      "scenario_path": "Main/Season1/10000105"
+    },
+    {
+      "id": 10000106,
+      "story_id": 10000100,
+      "number": 6,
+      "music_reward_id": 13100016,
+      "scenario_path": "Main/Season1/10000106"
+    },
+    {
+      "id": 10000107,
+      "story_id": 10000100,
+      "number": 7,
+      "music_reward_id": 13100018,
+      "scenario_path": "Main/Season1/10000107"
+    },
+    {
+      "id": 10000108,
+      "story_id": 10000100,
+      "number": 8,
+      "music_reward_id": 13100007,
+      "scenario_path": "Main/Season1/10000108"
+    },
+    {
+      "id": 10000109,
+      "story_id": 10000100,
+      "number": 9,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season1/10000109"
+    },
+    {
+      "id": 10000110,
+      "story_id": 10000100,
+      "number": 10,
+      "music_reward_id": 13100006,
+      "scenario_path": "Main/Season1/10000110"
+    },
+    {
+      "id": 10000111,
+      "story_id": 10000100,
+      "number": 11,
+      "music_reward_id": 13100017,
+      "scenario_path": "Main/Season1/10000111"
+    },
+    {
+      "id": 10000112,
+      "story_id": 10000100,
+      "number": 12,
+      "music_reward_id": 13100005,
+      "scenario_path": "Main/Season1/10000112"
+    },
+    {
+      "id": 10000113,
+      "story_id": 10000100,
+      "number": 13,
+      "music_reward_id": 13100004,
+      "scenario_path": "Main/Season1/10000113"
+    },
+    {
+      "id": 10000114,
+      "story_id": 10000100,
+      "number": 14,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season1/10000114"
+    },
+    {
+      "id": 10000115,
+      "story_id": 10000100,
+      "number": 15,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season1/10000115"
+    },
+    {
+      "id": 10000116,
+      "story_id": 10000100,
+      "number": 16,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season1/10000116"
+    },
+    {
+      "id": 10000117,
+      "story_id": 10000100,
+      "number": 17,
+      "music_reward_id": 13100015,
+      "scenario_path": "Main/Season1/10000117"
+    },
+    {
+      "id": 10000118,
+      "story_id": 10000100,
+      "number": 18,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season1/10000118"
+    },
+    {
+      "id": 10000119,
+      "story_id": 10000100,
+      "number": 19,
+      "music_reward_id": 13100009,
+      "scenario_path": "Main/Season1/10000119"
+    },
+    {
+      "id": 10000120,
+      "story_id": 10000100,
+      "number": 20,
+      "music_reward_id": 13100008,
+      "scenario_path": "Main/Season1/10000120"
+    },
+    {
+      "id": 10000121,
+      "story_id": 10000100,
+      "number": 21,
+      "music_reward_id": 13100013,
+      "scenario_path": "Main/Season1/10000121"
+    },
+    {
+      "id": 10000122,
+      "story_id": 10000100,
+      "number": 22,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season1/10000122"
+    },
+    {
+      "id": 10000123,
+      "story_id": 10000100,
+      "number": 23,
+      "music_reward_id": 13100010,
+      "scenario_path": "Main/Season1/10000123"
+    },
+    {
+      "id": 21010101,
+      "story_id": 21010100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/101_Miyako/21010101"
+    },
+    {
+      "id": 21010102,
+      "story_id": 21010100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/101_Miyako/21010102"
+    },
+    {
+      "id": 21010103,
+      "story_id": 21010100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/101_Miyako/21010103"
+    },
+    {
+      "id": 21010104,
+      "story_id": 21010100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/101_Miyako/21010104"
+    },
+    {
+      "id": 21010105,
+      "story_id": 21010100,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/101_Miyako/21010105"
+    },
+    {
+      "id": 21010106,
+      "story_id": 21010100,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/101_Miyako/21010106"
+    },
+    {
+      "id": 21010107,
+      "story_id": 21010100,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/101_Miyako/21010107"
+    },
+    {
+      "id": 21010108,
+      "story_id": 21010100,
+      "number": 8,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/101_Miyako/21010108"
+    },
+    {
+      "id": 21010109,
+      "story_id": 21010100,
+      "number": 9,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/101_Miyako/21010109"
+    },
+    {
+      "id": 21010110,
+      "story_id": 21010100,
+      "number": 10,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/101_Miyako/21010110"
+    },
+    {
+      "id": 21020101,
+      "story_id": 21020100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/102_Nicole/21020101"
+    },
+    {
+      "id": 21020102,
+      "story_id": 21020100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/102_Nicole/21020102"
+    },
+    {
+      "id": 21020103,
+      "story_id": 21020100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/102_Nicole/21020103"
+    },
+    {
+      "id": 21020104,
+      "story_id": 21020100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/102_Nicole/21020104"
+    },
+    {
+      "id": 21020105,
+      "story_id": 21020100,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/102_Nicole/21020105"
+    },
+    {
+      "id": 21020106,
+      "story_id": 21020100,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/102_Nicole/21020106"
+    },
+    {
+      "id": 21020107,
+      "story_id": 21020100,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/102_Nicole/21020107"
+    },
+    {
+      "id": 21020108,
+      "story_id": 21020100,
+      "number": 8,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/102_Nicole/21020108"
+    },
+    {
+      "id": 21020109,
+      "story_id": 21020100,
+      "number": 9,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/102_Nicole/21020109"
+    },
+    {
+      "id": 21020110,
+      "story_id": 21020100,
+      "number": 10,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/102_Nicole/21020110"
+    },
+    {
+      "id": 21030101,
+      "story_id": 21030100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/103_Reika/21030101"
+    },
+    {
+      "id": 21030102,
+      "story_id": 21030100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/103_Reika/21030102"
+    },
+    {
+      "id": 21030103,
+      "story_id": 21030100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/103_Reika/21030103"
+    },
+    {
+      "id": 21030104,
+      "story_id": 21030100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/103_Reika/21030104"
+    },
+    {
+      "id": 21030105,
+      "story_id": 21030100,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/103_Reika/21030105"
+    },
+    {
+      "id": 21030106,
+      "story_id": 21030100,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/103_Reika/21030106"
+    },
+    {
+      "id": 21030107,
+      "story_id": 21030100,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/103_Reika/21030107"
+    },
+    {
+      "id": 21030108,
+      "story_id": 21030100,
+      "number": 8,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/103_Reika/21030108"
+    },
+    {
+      "id": 21030109,
+      "story_id": 21030100,
+      "number": 9,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/103_Reika/21030109"
+    },
+    {
+      "id": 21030110,
+      "story_id": 21030100,
+      "number": 10,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/103_Reika/21030110"
+    },
+    {
+      "id": 21040101,
+      "story_id": 21040100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/104_Sakura/21040101"
+    },
+    {
+      "id": 21040102,
+      "story_id": 21040100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/104_Sakura/21040102"
+    },
+    {
+      "id": 21040103,
+      "story_id": 21040100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/104_Sakura/21040103"
+    },
+    {
+      "id": 21040104,
+      "story_id": 21040100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/104_Sakura/21040104"
+    },
+    {
+      "id": 21040105,
+      "story_id": 21040100,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/104_Sakura/21040105"
+    },
+    {
+      "id": 21040106,
+      "story_id": 21040100,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/104_Sakura/21040106"
+    },
+    {
+      "id": 21040107,
+      "story_id": 21040100,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/104_Sakura/21040107"
+    },
+    {
+      "id": 21040108,
+      "story_id": 21040100,
+      "number": 8,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/104_Sakura/21040108"
+    },
+    {
+      "id": 21040109,
+      "story_id": 21040100,
+      "number": 9,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/104_Sakura/21040109"
+    },
+    {
+      "id": 21040110,
+      "story_id": 21040100,
+      "number": 10,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/104_Sakura/21040110"
+    },
+    {
+      "id": 21050101,
+      "story_id": 21050100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/105_Akane/21050101"
+    },
+    {
+      "id": 21050102,
+      "story_id": 21050100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/105_Akane/21050102"
+    },
+    {
+      "id": 21050103,
+      "story_id": 21050100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/105_Akane/21050103"
+    },
+    {
+      "id": 21050104,
+      "story_id": 21050100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/105_Akane/21050104"
+    },
+    {
+      "id": 21050105,
+      "story_id": 21050100,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/105_Akane/21050105"
+    },
+    {
+      "id": 21050106,
+      "story_id": 21050100,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/105_Akane/21050106"
+    },
+    {
+      "id": 21050107,
+      "story_id": 21050100,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/105_Akane/21050107"
+    },
+    {
+      "id": 21050108,
+      "story_id": 21050100,
+      "number": 8,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/105_Akane/21050108"
+    },
+    {
+      "id": 21050109,
+      "story_id": 21050100,
+      "number": 9,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/105_Akane/21050109"
+    },
+    {
+      "id": 21050110,
+      "story_id": 21050100,
+      "number": 10,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/105_Akane/21050110"
+    },
+    {
+      "id": 21060101,
+      "story_id": 21060100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/106_Miu/21060101"
+    },
+    {
+      "id": 21060102,
+      "story_id": 21060100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/106_Miu/21060102"
+    },
+    {
+      "id": 21060103,
+      "story_id": 21060100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/106_Miu/21060103"
+    },
+    {
+      "id": 21060104,
+      "story_id": 21060100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/106_Miu/21060104"
+    },
+    {
+      "id": 21060105,
+      "story_id": 21060100,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/106_Miu/21060105"
+    },
+    {
+      "id": 21060106,
+      "story_id": 21060100,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/106_Miu/21060106"
+    },
+    {
+      "id": 21060107,
+      "story_id": 21060100,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/106_Miu/21060107"
+    },
+    {
+      "id": 21060108,
+      "story_id": 21060100,
+      "number": 8,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/106_Miu/21060108"
+    },
+    {
+      "id": 21060109,
+      "story_id": 21060100,
+      "number": 9,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/106_Miu/21060109"
+    },
+    {
+      "id": 21060110,
+      "story_id": 21060100,
+      "number": 10,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/106_Miu/21060110"
+    },
+    {
+      "id": 21070101,
+      "story_id": 21070100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/107_Ayaka/21070101"
+    },
+    {
+      "id": 21070102,
+      "story_id": 21070100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/107_Ayaka/21070102"
+    },
+    {
+      "id": 21070103,
+      "story_id": 21070100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/107_Ayaka/21070103"
+    },
+    {
+      "id": 21070104,
+      "story_id": 21070100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/107_Ayaka/21070104"
+    },
+    {
+      "id": 21070105,
+      "story_id": 21070100,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/107_Ayaka/21070105"
+    },
+    {
+      "id": 21070106,
+      "story_id": 21070100,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/107_Ayaka/21070106"
+    },
+    {
+      "id": 21070107,
+      "story_id": 21070100,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/107_Ayaka/21070107"
+    },
+    {
+      "id": 21070108,
+      "story_id": 21070100,
+      "number": 8,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/107_Ayaka/21070108"
+    },
+    {
+      "id": 21070109,
+      "story_id": 21070100,
+      "number": 9,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/107_Ayaka/21070109"
+    },
+    {
+      "id": 21070110,
+      "story_id": 21070100,
+      "number": 10,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/107_Ayaka/21070110"
+    },
+    {
+      "id": 21080101,
+      "story_id": 21080100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/108_Jun/21080101"
+    },
+    {
+      "id": 21080102,
+      "story_id": 21080100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/108_Jun/21080102"
+    },
+    {
+      "id": 21080103,
+      "story_id": 21080100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/108_Jun/21080103"
+    },
+    {
+      "id": 21080104,
+      "story_id": 21080100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/108_Jun/21080104"
+    },
+    {
+      "id": 21080105,
+      "story_id": 21080100,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/108_Jun/21080105"
+    },
+    {
+      "id": 21080106,
+      "story_id": 21080100,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/108_Jun/21080106"
+    },
+    {
+      "id": 21080107,
+      "story_id": 21080100,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/108_Jun/21080107"
+    },
+    {
+      "id": 21080108,
+      "story_id": 21080100,
+      "number": 8,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/108_Jun/21080108"
+    },
+    {
+      "id": 21080109,
+      "story_id": 21080100,
+      "number": 9,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/108_Jun/21080109"
+    },
+    {
+      "id": 21080110,
+      "story_id": 21080100,
+      "number": 10,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/108_Jun/21080110"
+    },
+    {
+      "id": 21090101,
+      "story_id": 21090100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/109_Mikami/21090101"
+    },
+    {
+      "id": 21090102,
+      "story_id": 21090100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/109_Mikami/21090102"
+    },
+    {
+      "id": 21090103,
+      "story_id": 21090100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/109_Mikami/21090103"
+    },
+    {
+      "id": 21090104,
+      "story_id": 21090100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/109_Mikami/21090104"
+    },
+    {
+      "id": 21090105,
+      "story_id": 21090100,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/109_Mikami/21090105"
+    },
+    {
+      "id": 21090106,
+      "story_id": 21090100,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/109_Mikami/21090106"
+    },
+    {
+      "id": 21090107,
+      "story_id": 21090100,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/109_Mikami/21090107"
+    },
+    {
+      "id": 21090108,
+      "story_id": 21090100,
+      "number": 8,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/109_Mikami/21090108"
+    },
+    {
+      "id": 21090109,
+      "story_id": 21090100,
+      "number": 9,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/109_Mikami/21090109"
+    },
+    {
+      "id": 21090110,
+      "story_id": 21090100,
+      "number": 10,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/109_Mikami/21090110"
+    },
+    {
+      "id": 21100101,
+      "story_id": 21100100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/110_Yuki/21100101"
+    },
+    {
+      "id": 21100102,
+      "story_id": 21100100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/110_Yuki/21100102"
+    },
+    {
+      "id": 21100103,
+      "story_id": 21100100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/110_Yuki/21100103"
+    },
+    {
+      "id": 21100104,
+      "story_id": 21100100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/110_Yuki/21100104"
+    },
+    {
+      "id": 21100105,
+      "story_id": 21100100,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/110_Yuki/21100105"
+    },
+    {
+      "id": 21100106,
+      "story_id": 21100100,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/110_Yuki/21100106"
+    },
+    {
+      "id": 21100107,
+      "story_id": 21100100,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/110_Yuki/21100107"
+    },
+    {
+      "id": 21100108,
+      "story_id": 21100100,
+      "number": 8,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/110_Yuki/21100108"
+    },
+    {
+      "id": 21100109,
+      "story_id": 21100100,
+      "number": 9,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/110_Yuki/21100109"
+    },
+    {
+      "id": 21100110,
+      "story_id": 21100100,
+      "number": 10,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/110_Yuki/21100110"
+    },
+    {
+      "id": 21110101,
+      "story_id": 21110100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/111_Tsubomi/21110101"
+    },
+    {
+      "id": 21110102,
+      "story_id": 21110100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/111_Tsubomi/21110102"
+    },
+    {
+      "id": 21110103,
+      "story_id": 21110100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/111_Tsubomi/21110103"
+    },
+    {
+      "id": 21110104,
+      "story_id": 21110100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/111_Tsubomi/21110104"
+    },
+    {
+      "id": 21110105,
+      "story_id": 21110100,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/111_Tsubomi/21110105"
+    },
+    {
+      "id": 21110106,
+      "story_id": 21110100,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/111_Tsubomi/21110106"
+    },
+    {
+      "id": 21110107,
+      "story_id": 21110100,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/111_Tsubomi/21110107"
+    },
+    {
+      "id": 21110108,
+      "story_id": 21110100,
+      "number": 8,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/111_Tsubomi/21110108"
+    },
+    {
+      "id": 21110109,
+      "story_id": 21110100,
+      "number": 9,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/111_Tsubomi/21110109"
+    },
+    {
+      "id": 21110110,
+      "story_id": 21110100,
+      "number": 10,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/111_Tsubomi/21110110"
+    },
+    {
+      "id": 90000101,
+      "story_id": 90000100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season1/90000101"
+    },
+    {
+      "id": 90000102,
+      "story_id": 90000100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season1/90000102"
+    },
+    {
+      "id": 30010001,
+      "story_id": 30010000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000100/30010001"
+    },
+    {
+      "id": 30010002,
+      "story_id": 30010000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000100/30010002"
+    },
+    {
+      "id": 30010003,
+      "story_id": 30010000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000100/30010003"
+    },
+    {
+      "id": 30010004,
+      "story_id": 30010000,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000100/30010004"
+    },
+    {
+      "id": 30010005,
+      "story_id": 30010000,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000100/30010005"
+    },
+    {
+      "id": 30010006,
+      "story_id": 30010000,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000100/30010006"
+    },
+    {
+      "id": 30010007,
+      "story_id": 30010000,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000100/30010007"
+    },
+    {
+      "id": 30020001,
+      "story_id": 30020000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000110/30020001"
+    },
+    {
+      "id": 30020002,
+      "story_id": 30020000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000110/30020002"
+    },
+    {
+      "id": 30020003,
+      "story_id": 30020000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000110/30020003"
+    },
+    {
+      "id": 30020004,
+      "story_id": 30020000,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000110/30020004"
+    },
+    {
+      "id": 30020005,
+      "story_id": 30020000,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000110/30020005"
+    },
+    {
+      "id": 30020006,
+      "story_id": 30020000,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000110/30020006"
+    },
+    {
+      "id": 30020007,
+      "story_id": 30020000,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000110/30020007"
+    },
+    {
+      "id": 30030001,
+      "story_id": 30030000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000200/30030001"
+    },
+    {
+      "id": 30030002,
+      "story_id": 30030000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000200/30030002"
+    },
+    {
+      "id": 30030003,
+      "story_id": 30030000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000200/30030003"
+    },
+    {
+      "id": 30030004,
+      "story_id": 30030000,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000200/30030004"
+    },
+    {
+      "id": 30030005,
+      "story_id": 30030000,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000200/30030005"
+    },
+    {
+      "id": 30030006,
+      "story_id": 30030000,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000200/30030006"
+    },
+    {
+      "id": 30030007,
+      "story_id": 30030000,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000200/30030007"
+    },
+    {
+      "id": 30040001,
+      "story_id": 30040000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000210/30040001"
+    },
+    {
+      "id": 30040002,
+      "story_id": 30040000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000210/30040002"
+    },
+    {
+      "id": 30040003,
+      "story_id": 30040000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000210/30040003"
+    },
+    {
+      "id": 30040004,
+      "story_id": 30040000,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000210/30040004"
+    },
+    {
+      "id": 30040005,
+      "story_id": 30040000,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000210/30040005"
+    },
+    {
+      "id": 30040006,
+      "story_id": 30040000,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000210/30040006"
+    },
+    {
+      "id": 30040007,
+      "story_id": 30040000,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000210/30040007"
+    },
+    {
+      "id": 30050001,
+      "story_id": 30050000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000300/30050001"
+    },
+    {
+      "id": 30050002,
+      "story_id": 30050000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000300/30050002"
+    },
+    {
+      "id": 30050003,
+      "story_id": 30050000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000300/30050003"
+    },
+    {
+      "id": 30060001,
+      "story_id": 30060000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000400/30060001"
+    },
+    {
+      "id": 30060002,
+      "story_id": 30060000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000400/30060002"
+    },
+    {
+      "id": 30060003,
+      "story_id": 30060000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000400/30060003"
+    },
+    {
+      "id": 30070001,
+      "story_id": 30070000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000300/30070001"
+    },
+    {
+      "id": 30070002,
+      "story_id": 30070000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000300/30070002"
+    },
+    {
+      "id": 30070003,
+      "story_id": 30070000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000300/30070003"
+    },
+    {
+      "id": 30070004,
+      "story_id": 30070000,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000300/30070004"
+    },
+    {
+      "id": 30070005,
+      "story_id": 30070000,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000300/30070005"
+    },
+    {
+      "id": 30070006,
+      "story_id": 30070000,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000300/30070006"
+    },
+    {
+      "id": 30070007,
+      "story_id": 30070000,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000300/30070007"
+    },
+    {
+      "id": 30080001,
+      "story_id": 30080000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000500/30080001"
+    },
+    {
+      "id": 30080002,
+      "story_id": 30080000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000500/30080002"
+    },
+    {
+      "id": 30080003,
+      "story_id": 30080000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000500/30080003"
+    },
+    {
+      "id": 30090001,
+      "story_id": 30090000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000400/30090001"
+    },
+    {
+      "id": 30090002,
+      "story_id": 30090000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000400/30090002"
+    },
+    {
+      "id": 30090003,
+      "story_id": 30090000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000400/30090003"
+    },
+    {
+      "id": 30090004,
+      "story_id": 30090000,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000400/30090004"
+    },
+    {
+      "id": 30090005,
+      "story_id": 30090000,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000400/30090005"
+    },
+    {
+      "id": 30090006,
+      "story_id": 30090000,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000400/30090006"
+    },
+    {
+      "id": 30090007,
+      "story_id": 30090000,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000400/30090007"
+    },
+    {
+      "id": 30100001,
+      "story_id": 30100000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000600/30100001"
+    },
+    {
+      "id": 30100002,
+      "story_id": 30100000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000600/30100002"
+    },
+    {
+      "id": 30100003,
+      "story_id": 30100000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000600/30100003"
+    },
+    {
+      "id": 10000201,
+      "story_id": 10000200,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000201"
+    },
+    {
+      "id": 10000202,
+      "story_id": 10000200,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000202"
+    },
+    {
+      "id": 10000203,
+      "story_id": 10000200,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000203"
+    },
+    {
+      "id": 10000204,
+      "story_id": 10000200,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000204"
+    },
+    {
+      "id": 10000205,
+      "story_id": 10000200,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000205"
+    },
+    {
+      "id": 10000206,
+      "story_id": 10000200,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000206"
+    },
+    {
+      "id": 10000207,
+      "story_id": 10000200,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000207"
+    },
+    {
+      "id": 10000208,
+      "story_id": 10000200,
+      "number": 8,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000208"
+    },
+    {
+      "id": 10000209,
+      "story_id": 10000200,
+      "number": 9,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000209"
+    },
+    {
+      "id": 10000210,
+      "story_id": 10000200,
+      "number": 10,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000210"
+    },
+    {
+      "id": 10000211,
+      "story_id": 10000200,
+      "number": 11,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000211"
+    },
+    {
+      "id": 10000212,
+      "story_id": 10000200,
+      "number": 12,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000212"
+    },
+    {
+      "id": 10000213,
+      "story_id": 10000200,
+      "number": 13,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000213"
+    },
+    {
+      "id": 10000214,
+      "story_id": 10000200,
+      "number": 14,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000214"
+    },
+    {
+      "id": 10000215,
+      "story_id": 10000200,
+      "number": 15,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000215"
+    },
+    {
+      "id": 10000216,
+      "story_id": 10000200,
+      "number": 16,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000216"
+    },
+    {
+      "id": 10000217,
+      "story_id": 10000200,
+      "number": 17,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000217"
+    },
+    {
+      "id": 10000218,
+      "story_id": 10000200,
+      "number": 18,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000218"
+    },
+    {
+      "id": 10000219,
+      "story_id": 10000200,
+      "number": 19,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000219"
+    },
+    {
+      "id": 10000220,
+      "story_id": 10000200,
+      "number": 20,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season2/10000220"
+    },
+    {
+      "id": 30110001,
+      "story_id": 30110000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000500/30110001"
+    },
+    {
+      "id": 30110002,
+      "story_id": 30110000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000500/30110002"
+    },
+    {
+      "id": 30110003,
+      "story_id": 30110000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000500/30110003"
+    },
+    {
+      "id": 30110004,
+      "story_id": 30110000,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000500/30110004"
+    },
+    {
+      "id": 30110005,
+      "story_id": 30110000,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000500/30110005"
+    },
+    {
+      "id": 30110006,
+      "story_id": 30110000,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000500/30110006"
+    },
+    {
+      "id": 30110007,
+      "story_id": 30110000,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000500/30110007"
+    },
+    {
+      "id": 30120001,
+      "story_id": 30120000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000700/30120001"
+    },
+    {
+      "id": 30120002,
+      "story_id": 30120000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000700/30120002"
+    },
+    {
+      "id": 30120003,
+      "story_id": 30120000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000700/30120003"
+    },
+    {
+      "id": 30130001,
+      "story_id": 30130000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000610/30130001"
+    },
+    {
+      "id": 30130002,
+      "story_id": 30130000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000610/30130002"
+    },
+    {
+      "id": 30130003,
+      "story_id": 30130000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000610/30130003"
+    },
+    {
+      "id": 30130004,
+      "story_id": 30130000,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000610/30130004"
+    },
+    {
+      "id": 30130005,
+      "story_id": 30130000,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000610/30130005"
+    },
+    {
+      "id": 30130006,
+      "story_id": 30130000,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000610/30130006"
+    },
+    {
+      "id": 30130007,
+      "story_id": 30130000,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000610/30130007"
+    },
+    {
+      "id": 30140001,
+      "story_id": 30140000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000800/30140001"
+    },
+    {
+      "id": 30140002,
+      "story_id": 30140000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000800/30140002"
+    },
+    {
+      "id": 30140003,
+      "story_id": 30140000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/10000800/30140003"
+    },
+    {
+      "id": 30150001,
+      "story_id": 30150000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000700/30150001"
+    },
+    {
+      "id": 30150002,
+      "story_id": 30150000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000700/30150002"
+    },
+    {
+      "id": 30150003,
+      "story_id": 30150000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000700/30150003"
+    },
+    {
+      "id": 30150004,
+      "story_id": 30150000,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000700/30150004"
+    },
+    {
+      "id": 30150005,
+      "story_id": 30150000,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000700/30150005"
+    },
+    {
+      "id": 30150006,
+      "story_id": 30150000,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000700/30150006"
+    },
+    {
+      "id": 30150007,
+      "story_id": 30150000,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000700/30150007"
+    },
+    {
+      "id": 30160001,
+      "story_id": 30160000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000100/30160001"
+    },
+    {
+      "id": 30160002,
+      "story_id": 30160000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000100/30160002"
+    },
+    {
+      "id": 30160003,
+      "story_id": 30160000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000100/30160003"
+    },
+    {
+      "id": 30160004,
+      "story_id": 30160000,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000100/30160004"
+    },
+    {
+      "id": 30160005,
+      "story_id": 30160000,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000100/30160005"
+    },
+    {
+      "id": 30160006,
+      "story_id": 30160000,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000100/30160006"
+    },
+    {
+      "id": 30160007,
+      "story_id": 30160000,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000100/30160007"
+    },
+    {
+      "id": 30170001,
+      "story_id": 30170000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000800/30170001"
+    },
+    {
+      "id": 30170002,
+      "story_id": 30170000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000800/30170002"
+    },
+    {
+      "id": 30170003,
+      "story_id": 30170000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000800/30170003"
+    },
+    {
+      "id": 30170004,
+      "story_id": 30170000,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000800/30170004"
+    },
+    {
+      "id": 30170005,
+      "story_id": 30170000,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000800/30170005"
+    },
+    {
+      "id": 30170006,
+      "story_id": 30170000,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000800/30170006"
+    },
+    {
+      "id": 30170007,
+      "story_id": 30170000,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Event/20000800/30170007"
+    },
+    {
+      "id": 30180001,
+      "story_id": 30180000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000200/30180001"
+    },
+    {
+      "id": 30180002,
+      "story_id": 30180000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000200/30180002"
+    },
+    {
+      "id": 30180003,
+      "story_id": 30180000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000200/30180003"
+    },
+    {
+      "id": 30190001,
+      "story_id": 30190000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30190002,
+      "story_id": 30190000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30190003,
+      "story_id": 30190000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30200001,
+      "story_id": 30200000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000300/30200001"
+    },
+    {
+      "id": 30200002,
+      "story_id": 30200000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000300/30200002"
+    },
+    {
+      "id": 30200003,
+      "story_id": 30200000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000300/30200003"
+    },
+    {
+      "id": 30210001,
+      "story_id": 30210000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30210002,
+      "story_id": 30210000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30210003,
+      "story_id": 30210000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30220001,
+      "story_id": 30220000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30220002,
+      "story_id": 30220000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30220003,
+      "story_id": 30220000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30220004,
+      "story_id": 30220000,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30230001,
+      "story_id": 30230000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000400/30230001"
+    },
+    {
+      "id": 30230002,
+      "story_id": 30230000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000400/30230002"
+    },
+    {
+      "id": 30230003,
+      "story_id": 30230000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000400/30230003"
+    },
+    {
+      "id": 30240001,
+      "story_id": 30240000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30240002,
+      "story_id": 30240000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30240003,
+      "story_id": 30240000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 10000301,
+      "story_id": 10000300,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000301"
+    },
+    {
+      "id": 10000302,
+      "story_id": 10000300,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000302"
+    },
+    {
+      "id": 10000303,
+      "story_id": 10000300,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000303"
+    },
+    {
+      "id": 10000304,
+      "story_id": 10000300,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000304"
+    },
+    {
+      "id": 10000305,
+      "story_id": 10000300,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000305"
+    },
+    {
+      "id": 30250001,
+      "story_id": 30250000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30250002,
+      "story_id": 30250000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30250003,
+      "story_id": 30250000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 10000306,
+      "story_id": 10000300,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000306"
+    },
+    {
+      "id": 10000307,
+      "story_id": 10000300,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000307"
+    },
+    {
+      "id": 10000308,
+      "story_id": 10000300,
+      "number": 8,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000308"
+    },
+    {
+      "id": 10000309,
+      "story_id": 10000300,
+      "number": 9,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000309"
+    },
+    {
+      "id": 10000310,
+      "story_id": 10000300,
+      "number": 10,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000310"
+    },
+    {
+      "id": 30260001,
+      "story_id": 30260000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000500/30260001"
+    },
+    {
+      "id": 30260002,
+      "story_id": 30260000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000500/30260002"
+    },
+    {
+      "id": 30260003,
+      "story_id": 30260000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000500/30260003"
+    },
+    {
+      "id": 30270001,
+      "story_id": 30270000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30270002,
+      "story_id": 30270000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30270003,
+      "story_id": 30270000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 10000311,
+      "story_id": 10000300,
+      "number": 11,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000311"
+    },
+    {
+      "id": 10000312,
+      "story_id": 10000300,
+      "number": 12,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000312"
+    },
+    {
+      "id": 10000313,
+      "story_id": 10000300,
+      "number": 13,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000313"
+    },
+    {
+      "id": 10000314,
+      "story_id": 10000300,
+      "number": 14,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000314"
+    },
+    {
+      "id": 10000315,
+      "story_id": 10000300,
+      "number": 15,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000315"
+    },
+    {
+      "id": 30280001,
+      "story_id": 30280000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000600/30280001"
+    },
+    {
+      "id": 30280002,
+      "story_id": 30280000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000600/30280002"
+    },
+    {
+      "id": 30280003,
+      "story_id": 30280000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000600/30280003"
+    },
+    {
+      "id": 30290001,
+      "story_id": 30290000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30290002,
+      "story_id": 30290000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30290003,
+      "story_id": 30290000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 10000316,
+      "story_id": 10000300,
+      "number": 16,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000316"
+    },
+    {
+      "id": 10000317,
+      "story_id": 10000300,
+      "number": 17,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000317"
+    },
+    {
+      "id": 10000318,
+      "story_id": 10000300,
+      "number": 18,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000318"
+    },
+    {
+      "id": 10000319,
+      "story_id": 10000300,
+      "number": 19,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000319"
+    },
+    {
+      "id": 10000320,
+      "story_id": 10000300,
+      "number": 20,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season3/10000320"
+    },
+    {
+      "id": 30300001,
+      "story_id": 30300000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000700/30300001"
+    },
+    {
+      "id": 30300002,
+      "story_id": 30300000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000700/30300002"
+    },
+    {
+      "id": 30300003,
+      "story_id": 30300000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000700/30300003"
+    },
+    {
+      "id": 30310001,
+      "story_id": 30310000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30310002,
+      "story_id": 30310000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30310003,
+      "story_id": 30310000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30320001,
+      "story_id": 30320000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000800/30320001"
+    },
+    {
+      "id": 30320002,
+      "story_id": 30320000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000800/30320002"
+    },
+    {
+      "id": 30320003,
+      "story_id": 30320000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000800/30320003"
+    },
+    {
+      "id": 30320004,
+      "story_id": 30320000,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000800/30320004"
+    },
+    {
+      "id": 30320005,
+      "story_id": 30320000,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000800/30320005"
+    },
+    {
+      "id": 40000100,
+      "story_id": 40000100,
+      "number": 0,
+      "music_reward_id": 0,
+      "scenario_path": "Prj/Season1/40000100"
+    },
+    {
+      "id": 40000101,
+      "story_id": 40000100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Prj/Season1/40000101"
+    },
+    {
+      "id": 30330001,
+      "story_id": 30330000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000001"
+    },
+    {
+      "id": 30330002,
+      "story_id": 30330000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000002"
+    },
+    {
+      "id": 30330003,
+      "story_id": 30330000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000003"
+    },
+    {
+      "id": 30330004,
+      "story_id": 30330000,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000004"
+    },
+    {
+      "id": 30330005,
+      "story_id": 30330000,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000005"
+    },
+    {
+      "id": 30330006,
+      "story_id": 30330000,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000006"
+    },
+    {
+      "id": 30330007,
+      "story_id": 30330000,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000007"
+    },
+    {
+      "id": 30330008,
+      "story_id": 30330000,
+      "number": 8,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000008"
+    },
+    {
+      "id": 30330009,
+      "story_id": 30330000,
+      "number": 9,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000009"
+    },
+    {
+      "id": 30330010,
+      "story_id": 30330000,
+      "number": 10,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000010"
+    },
+    {
+      "id": 30330011,
+      "story_id": 30330000,
+      "number": 11,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000011"
+    },
+    {
+      "id": 30330012,
+      "story_id": 30330000,
+      "number": 12,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000012"
+    },
+    {
+      "id": 30330013,
+      "story_id": 30330000,
+      "number": 13,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000013"
+    },
+    {
+      "id": 30330014,
+      "story_id": 30330000,
+      "number": 14,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000014"
+    },
+    {
+      "id": 30330015,
+      "story_id": 30330000,
+      "number": 15,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000015"
+    },
+    {
+      "id": 30330016,
+      "story_id": 30330000,
+      "number": 16,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000016"
+    },
+    {
+      "id": 30330017,
+      "story_id": 30330000,
+      "number": 17,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000017"
+    },
+    {
+      "id": 30330018,
+      "story_id": 30330000,
+      "number": 18,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000018"
+    },
+    {
+      "id": 30330019,
+      "story_id": 30330000,
+      "number": 19,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000019"
+    },
+    {
+      "id": 30330020,
+      "story_id": 30330000,
+      "number": 20,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000020"
+    },
+    {
+      "id": 30330021,
+      "story_id": 30330000,
+      "number": 21,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000021"
+    },
+    {
+      "id": 30330022,
+      "story_id": 30330000,
+      "number": 22,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000022"
+    },
+    {
+      "id": 30330023,
+      "story_id": 30330000,
+      "number": 23,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000023"
+    },
+    {
+      "id": 30330024,
+      "story_id": 30330000,
+      "number": 24,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000024"
+    },
+    {
+      "id": 30330025,
+      "story_id": 30330000,
+      "number": 25,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000025"
+    },
+    {
+      "id": 30330026,
+      "story_id": 30330000,
+      "number": 26,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000026"
+    },
+    {
+      "id": 30330027,
+      "story_id": 30330000,
+      "number": 27,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000027"
+    },
+    {
+      "id": 30330028,
+      "story_id": 30330000,
+      "number": 28,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000028"
+    },
+    {
+      "id": 30330029,
+      "story_id": 30330000,
+      "number": 29,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000029"
+    },
+    {
+      "id": 30330030,
+      "story_id": 30330000,
+      "number": 30,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000030"
+    },
+    {
+      "id": 30330031,
+      "story_id": 30330000,
+      "number": 31,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000031"
+    },
+    {
+      "id": 30330032,
+      "story_id": 30330000,
+      "number": 32,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000032"
+    },
+    {
+      "id": 30330033,
+      "story_id": 30330000,
+      "number": 33,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000033"
+    },
+    {
+      "id": 30330034,
+      "story_id": 30330000,
+      "number": 34,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000034"
+    },
+    {
+      "id": 30330035,
+      "story_id": 30330000,
+      "number": 35,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000035"
+    },
+    {
+      "id": 30330036,
+      "story_id": 30330000,
+      "number": 36,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000036"
+    },
+    {
+      "id": 30330037,
+      "story_id": 30330000,
+      "number": 37,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000037"
+    },
+    {
+      "id": 30330038,
+      "story_id": 30330000,
+      "number": 38,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000038"
+    },
+    {
+      "id": 30330039,
+      "story_id": 30330000,
+      "number": 39,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000039"
+    },
+    {
+      "id": 30330040,
+      "story_id": 30330000,
+      "number": 40,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000040"
+    },
+    {
+      "id": 30330041,
+      "story_id": 30330000,
+      "number": 41,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000041"
+    },
+    {
+      "id": 30330042,
+      "story_id": 30330000,
+      "number": 42,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000042"
+    },
+    {
+      "id": 30340001,
+      "story_id": 30340000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000900/30340001"
+    },
+    {
+      "id": 30340002,
+      "story_id": 30340000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000900/30340002"
+    },
+    {
+      "id": 30340003,
+      "story_id": 30340000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000900/30340003"
+    },
+    {
+      "id": 30340004,
+      "story_id": 30340000,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000900/30340004"
+    },
+    {
+      "id": 30340005,
+      "story_id": 30340000,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30000900/30340005"
+    },
+    {
+      "id": 10000001,
+      "story_id": 10000000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000001"
+    },
+    {
+      "id": 10000002,
+      "story_id": 10000000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000002"
+    },
+    {
+      "id": 10000003,
+      "story_id": 10000000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000003"
+    },
+    {
+      "id": 10000004,
+      "story_id": 10000000,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000004"
+    },
+    {
+      "id": 10000005,
+      "story_id": 10000000,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000005"
+    },
+    {
+      "id": 10000006,
+      "story_id": 10000000,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000006"
+    },
+    {
+      "id": 10000007,
+      "story_id": 10000000,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000007"
+    },
+    {
+      "id": 10000008,
+      "story_id": 10000000,
+      "number": 8,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000008"
+    },
+    {
+      "id": 10000009,
+      "story_id": 10000000,
+      "number": 9,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000009"
+    },
+    {
+      "id": 10000010,
+      "story_id": 10000000,
+      "number": 10,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000010"
+    },
+    {
+      "id": 10000011,
+      "story_id": 10000000,
+      "number": 11,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000011"
+    },
+    {
+      "id": 10000012,
+      "story_id": 10000000,
+      "number": 12,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000012"
+    },
+    {
+      "id": 10000013,
+      "story_id": 10000000,
+      "number": 13,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000013"
+    },
+    {
+      "id": 10000014,
+      "story_id": 10000000,
+      "number": 14,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000014"
+    },
+    {
+      "id": 10000015,
+      "story_id": 10000000,
+      "number": 15,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000015"
+    },
+    {
+      "id": 10000016,
+      "story_id": 10000000,
+      "number": 16,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000016"
+    },
+    {
+      "id": 10000017,
+      "story_id": 10000000,
+      "number": 17,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000017"
+    },
+    {
+      "id": 10000018,
+      "story_id": 10000000,
+      "number": 18,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000018"
+    },
+    {
+      "id": 10000019,
+      "story_id": 10000000,
+      "number": 19,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000019"
+    },
+    {
+      "id": 10000020,
+      "story_id": 10000000,
+      "number": 20,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000020"
+    },
+    {
+      "id": 10000021,
+      "story_id": 10000000,
+      "number": 21,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000021"
+    },
+    {
+      "id": 10000022,
+      "story_id": 10000000,
+      "number": 22,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000022"
+    },
+    {
+      "id": 10000023,
+      "story_id": 10000000,
+      "number": 23,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000023"
+    },
+    {
+      "id": 10000024,
+      "story_id": 10000000,
+      "number": 24,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000024"
+    },
+    {
+      "id": 10000025,
+      "story_id": 10000000,
+      "number": 25,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000025"
+    },
+    {
+      "id": 10000026,
+      "story_id": 10000000,
+      "number": 26,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000026"
+    },
+    {
+      "id": 10000027,
+      "story_id": 10000000,
+      "number": 27,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000027"
+    },
+    {
+      "id": 10000028,
+      "story_id": 10000000,
+      "number": 28,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000028"
+    },
+    {
+      "id": 10000029,
+      "story_id": 10000000,
+      "number": 29,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000029"
+    },
+    {
+      "id": 10000030,
+      "story_id": 10000000,
+      "number": 30,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000030"
+    },
+    {
+      "id": 10000031,
+      "story_id": 10000000,
+      "number": 31,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000031"
+    },
+    {
+      "id": 10000032,
+      "story_id": 10000000,
+      "number": 32,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000032"
+    },
+    {
+      "id": 10000033,
+      "story_id": 10000000,
+      "number": 33,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000033"
+    },
+    {
+      "id": 10000034,
+      "story_id": 10000000,
+      "number": 34,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000034"
+    },
+    {
+      "id": 10000035,
+      "story_id": 10000000,
+      "number": 35,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000035"
+    },
+    {
+      "id": 10000036,
+      "story_id": 10000000,
+      "number": 36,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000036"
+    },
+    {
+      "id": 10000037,
+      "story_id": 10000000,
+      "number": 37,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000037"
+    },
+    {
+      "id": 10000038,
+      "story_id": 10000000,
+      "number": 38,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000038"
+    },
+    {
+      "id": 10000039,
+      "story_id": 10000000,
+      "number": 39,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000039"
+    },
+    {
+      "id": 10000040,
+      "story_id": 10000000,
+      "number": 40,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000040"
+    },
+    {
+      "id": 10000041,
+      "story_id": 10000000,
+      "number": 41,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000041"
+    },
+    {
+      "id": 10000042,
+      "story_id": 10000000,
+      "number": 42,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season0/10000042"
+    },
+    {
+      "id": 27010101,
+      "story_id": 27010100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/701_Kasuka/27010101"
+    },
+    {
+      "id": 27010102,
+      "story_id": 27010100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/701_Kasuka/27010102"
+    },
+    {
+      "id": 27020101,
+      "story_id": 27020100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/702_Maki/27020101"
+    },
+    {
+      "id": 27020102,
+      "story_id": 27020100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/702_Maki/27020102"
+    },
+    {
+      "id": 27030101,
+      "story_id": 27030100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/703_Kyoko/27030101"
+    },
+    {
+      "id": 27030102,
+      "story_id": 27030100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/703_Kyoko/27030102"
+    },
+    {
+      "id": 27040101,
+      "story_id": 27040100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/704_Momiji/27040101"
+    },
+    {
+      "id": 27040102,
+      "story_id": 27040100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/704_Momiji/27040102"
+    },
+    {
+      "id": 27050101,
+      "story_id": 27050100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/705_Shion/27050101"
+    },
+    {
+      "id": 27050102,
+      "story_id": 27050100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/705_Shion/27050102"
+    },
+    {
+      "id": 27060101,
+      "story_id": 27060100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/706_Tomoe/27060101"
+    },
+    {
+      "id": 27060102,
+      "story_id": 27060100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/706_Tomoe/27060102"
+    },
+    {
+      "id": 27070101,
+      "story_id": 27070100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/707_Kokoa/27070101"
+    },
+    {
+      "id": 27070102,
+      "story_id": 27070100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/707_Kokoa/27070102"
+    },
+    {
+      "id": 27080101,
+      "story_id": 27080100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/708_Haruna/27080101"
+    },
+    {
+      "id": 27080102,
+      "story_id": 27080100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/708_Haruna/27080102"
+    },
+    {
+      "id": 27090101,
+      "story_id": 27090100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/709_Suzune/27090101"
+    },
+    {
+      "id": 27090102,
+      "story_id": 27090100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/709_Suzune/27090102"
+    },
+    {
+      "id": 27100101,
+      "story_id": 27100100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/710_Hikari/27100101"
+    },
+    {
+      "id": 27100102,
+      "story_id": 27100100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/710_Hikari/27100102"
+    },
+    {
+      "id": 27110101,
+      "story_id": 27110100,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/711_Runa/27110101"
+    },
+    {
+      "id": 27110102,
+      "story_id": 27110100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/711_Runa/27110102"
+    },
+    {
+      "id": 30350001,
+      "story_id": 30350000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30350002,
+      "story_id": 30350000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30350003,
+      "story_id": 30350000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 40000102,
+      "story_id": 40000100,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Prj/Season1/40000102"
+    },
+    {
+      "id": 30360001,
+      "story_id": 30360000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30001000/30360001"
+    },
+    {
+      "id": 30360002,
+      "story_id": 30360000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30001000/30360002"
+    },
+    {
+      "id": 30360003,
+      "story_id": 30360000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30001000/30360003"
+    },
+    {
+      "id": 30360004,
+      "story_id": 30360000,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30001000/30360004"
+    },
+    {
+      "id": 30360005,
+      "story_id": 30360000,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Event/30001000/30360005"
+    },
+    {
+      "id": 30370001,
+      "story_id": 30370000,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30370002,
+      "story_id": 30370000,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 30370003,
+      "story_id": 30370000,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": ""
+    },
+    {
+      "id": 40000103,
+      "story_id": 40000100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Prj/Season1/40000103"
+    },
+    {
+      "id": 40000104,
+      "story_id": 40000100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Prj/Season1/40000104"
+    },
+    {
+      "id": 40000105,
+      "story_id": 40000100,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Prj/Season1/40000105"
+    },
+    {
+      "id": 40000106,
+      "story_id": 40000100,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Prj/Season1/40000106"
+    },
+    {
+      "id": 27010103,
+      "story_id": 27010100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/701_Kasuka/27010103"
+    },
+    {
+      "id": 27020103,
+      "story_id": 27020100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/702_Maki/27020103"
+    },
+    {
+      "id": 27030103,
+      "story_id": 27030100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/703_Kyoko/27030103"
+    },
+    {
+      "id": 27040103,
+      "story_id": 27040100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/704_Momiji/27040103"
+    },
+    {
+      "id": 27050103,
+      "story_id": 27050100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/705_Shion/27050103"
+    },
+    {
+      "id": 27060103,
+      "story_id": 27060100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/706_Tomoe/27060103"
+    },
+    {
+      "id": 27070103,
+      "story_id": 27070100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/707_Kokoa/27070103"
+    },
+    {
+      "id": 27080103,
+      "story_id": 27080100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/708_Haruna/27080103"
+    },
+    {
+      "id": 27090103,
+      "story_id": 27090100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/709_Suzune/27090103"
+    },
+    {
+      "id": 27100103,
+      "story_id": 27100100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/710_Hikari/27100103"
+    },
+    {
+      "id": 27110103,
+      "story_id": 27110100,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/711_Runa/27110103"
+    },
+    {
+      "id": 40000107,
+      "story_id": 40000100,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Prj/Season1/40000107"
+    },
+    {
+      "id": 40000108,
+      "story_id": 40000100,
+      "number": 8,
+      "music_reward_id": 0,
+      "scenario_path": "Prj/Season1/40000108"
+    },
+    {
+      "id": 40000109,
+      "story_id": 40000100,
+      "number": 9,
+      "music_reward_id": 0,
+      "scenario_path": "Prj/Season1/40000109"
+    },
+    {
+      "id": 40000110,
+      "story_id": 40000100,
+      "number": 10,
+      "music_reward_id": 0,
+      "scenario_path": "Prj/Season1/40000110"
+    },
+    {
+      "id": 27010104,
+      "story_id": 27010100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/701_Kasuka/27010104"
+    },
+    {
+      "id": 27020104,
+      "story_id": 27020100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/702_Maki/27020104"
+    },
+    {
+      "id": 27030104,
+      "story_id": 27030100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/703_Kyoko/27030104"
+    },
+    {
+      "id": 27040104,
+      "story_id": 27040100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/704_Momiji/27040104"
+    },
+    {
+      "id": 27050104,
+      "story_id": 27050100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/705_Shion/27050104"
+    },
+    {
+      "id": 27060104,
+      "story_id": 27060100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/706_Tomoe/27060104"
+    },
+    {
+      "id": 27070104,
+      "story_id": 27070100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/707_Kokoa/27070104"
+    },
+    {
+      "id": 27080104,
+      "story_id": 27080100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/708_Haruna/27080104"
+    },
+    {
+      "id": 27090104,
+      "story_id": 27090100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/709_Suzune/27090104"
+    },
+    {
+      "id": 27100104,
+      "story_id": 27100100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/710_Hikari/27100104"
+    },
+    {
+      "id": 27110104,
+      "story_id": 27110100,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Sub/Season1/711_Runa/27110104"
+    },
+    {
+      "id": 10000401,
+      "story_id": 10000400,
+      "number": 1,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season4/10000401"
+    },
+    {
+      "id": 10000402,
+      "story_id": 10000400,
+      "number": 2,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season4/10000402"
+    },
+    {
+      "id": 10000403,
+      "story_id": 10000400,
+      "number": 3,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season4/10000403"
+    },
+    {
+      "id": 10000404,
+      "story_id": 10000400,
+      "number": 4,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season4/10000404"
+    },
+    {
+      "id": 10000405,
+      "story_id": 10000400,
+      "number": 5,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season4/10000405"
+    },
+    {
+      "id": 10000406,
+      "story_id": 10000400,
+      "number": 6,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season4/10000406"
+    },
+    {
+      "id": 10000407,
+      "story_id": 10000400,
+      "number": 7,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season4/10000407"
+    },
+    {
+      "id": 10000408,
+      "story_id": 10000400,
+      "number": 8,
+      "music_reward_id": 0,
+      "scenario_path": "Main/Season4/10000408"
+    }
+  ],
+  "battle_areas": [
+    {
+      "id": 10001000,
+      "event_id": 0,
+      "release_stage_id": 0,
+      "name": "ステージ1"
+    },
+    {
+      "id": 10002000,
+      "event_id": 0,
+      "release_stage_id": 10001050,
+      "name": "ステージ2"
+    },
+    {
+      "id": 10003000,
+      "event_id": 0,
+      "release_stage_id": 10002050,
+      "name": "ステージ3"
+    },
+    {
+      "id": 10004000,
+      "event_id": 0,
+      "release_stage_id": 10003050,
+      "name": "ステージ4"
+    },
+    {
+      "id": 10005000,
+      "event_id": 0,
+      "release_stage_id": 10004050,
+      "name": "ステージ5"
+    },
+    {
+      "id": 10006000,
+      "event_id": 0,
+      "release_stage_id": 10005050,
+      "name": "ステージ6"
+    },
+    {
+      "id": 10007000,
+      "event_id": 0,
+      "release_stage_id": 10006050,
+      "name": "ステージ7"
+    },
+    {
+      "id": 10008000,
+      "event_id": 0,
+      "release_stage_id": 10007050,
+      "name": "ステージ8"
+    },
+    {
+      "id": 10009000,
+      "event_id": 0,
+      "release_stage_id": 10008050,
+      "name": "ステージ9"
+    },
+    {
+      "id": 10010000,
+      "event_id": 0,
+      "release_stage_id": 10009050,
+      "name": "ステージ10"
+    },
+    {
+      "id": 10011000,
+      "event_id": 0,
+      "release_stage_id": 10010050,
+      "name": "ステージ11"
+    },
+    {
+      "id": 10012000,
+      "event_id": 0,
+      "release_stage_id": 10011050,
+      "name": "ステージ12"
+    },
+    {
+      "id": 10013000,
+      "event_id": 0,
+      "release_stage_id": 10012050,
+      "name": "ステージ13"
+    },
+    {
+      "id": 10014000,
+      "event_id": 0,
+      "release_stage_id": 10013050,
+      "name": "ステージ14"
+    },
+    {
+      "id": 10015000,
+      "event_id": 0,
+      "release_stage_id": 10014050,
+      "name": "ステージ15"
+    },
+    {
+      "id": 10016000,
+      "event_id": 0,
+      "release_stage_id": 10015050,
+      "name": "ステージ16"
+    },
+    {
+      "id": 10017000,
+      "event_id": 0,
+      "release_stage_id": 10016050,
+      "name": "ステージ17"
+    },
+    {
+      "id": 10018000,
+      "event_id": 0,
+      "release_stage_id": 10017050,
+      "name": "ステージ18"
+    },
+    {
+      "id": 10019000,
+      "event_id": 0,
+      "release_stage_id": 10018050,
+      "name": "ステージ19"
+    },
+    {
+      "id": 10020000,
+      "event_id": 0,
+      "release_stage_id": 10019050,
+      "name": "ステージ20"
+    },
+    {
+      "id": 20001000,
+      "event_id": 30000100,
+      "release_stage_id": 0,
+      "name": "We are \"ChouChou\"! ～トップアイドルの証～"
+    },
+    {
+      "id": 20002000,
+      "event_id": 20000800,
+      "release_stage_id": 0,
+      "name": "割り切れない文化祭　演劇メイド喫茶にようこそ！"
+    },
+    {
+      "id": 20003000,
+      "event_id": 30000200,
+      "release_stage_id": 0,
+      "name": "追憶のプリクエル case:佐藤麗華"
+    },
+    {
+      "id": 20004000,
+      "event_id": 40000100,
+      "release_stage_id": 0,
+      "name": "「22/7 計算中」コラボイベント いつでもどこでも計算中！"
+    },
+    {
+      "id": 20005000,
+      "event_id": 40000100,
+      "release_stage_id": 0,
+      "name": "ハーフアニバーサリー記念イベントクエスト"
+    },
+    {
+      "id": 20006000,
+      "event_id": 30000300,
+      "release_stage_id": 0,
+      "name": "追憶のプリクエル case:立川絢香"
+    },
+    {
+      "id": 20007000,
+      "event_id": 20000900,
+      "release_stage_id": 0,
+      "name": "聖なる夜のトラブルギフト"
+    },
+    {
+      "id": 20008000,
+      "event_id": 40000200,
+      "release_stage_id": 0,
+      "name": "22/7結成4周年記念イベントクエスト"
+    },
+    {
+      "id": 20009000,
+      "event_id": 40000200,
+      "release_stage_id": 0,
+      "name": "紅白ナナオン歌合戦"
+    },
+    {
+      "id": 20010000,
+      "event_id": 30000400,
+      "release_stage_id": 0,
+      "name": "追憶のプリクエル case:柊つぼみ"
+    },
+    {
+      "id": 20011000,
+      "event_id": 20001000,
+      "release_stage_id": 0,
+      "name": "熱戦！激戦！雪合戦！"
+    },
+    {
+      "id": 20012000,
+      "event_id": 20001100,
+      "release_stage_id": 0,
+      "name": "Love Like Valentine"
+    },
+    {
+      "id": 20013000,
+      "event_id": 30000500,
+      "release_stage_id": 0,
+      "name": "追憶のプリクエル case:東条悠希"
+    },
+    {
+      "id": 20014000,
+      "event_id": 20001200,
+      "release_stage_id": 0,
+      "name": "夢幻霜のシークエル case:佐藤麗華"
+    },
+    {
+      "id": 20015000,
+      "event_id": 30000600,
+      "release_stage_id": 0,
+      "name": "追憶のプリクエル case:河野都"
+    },
+    {
+      "id": 20016000,
+      "event_id": 20001300,
+      "release_stage_id": 0,
+      "name": "気の抜けたサイダー 古都へ行く。"
+    },
+    {
+      "id": 20017000,
+      "event_id": 30000700,
+      "release_stage_id": 0,
+      "name": "追憶のプリクエル case:滝川みう"
+    },
+    {
+      "id": 20018000,
+      "event_id": 20001400,
+      "release_stage_id": 0,
+      "name": "22/7×ChouChou 熱して、混ぜて、解けて、笑顔"
+    },
+    {
+      "id": 20019000,
+      "event_id": 30000800,
+      "release_stage_id": 0,
+      "name": "ナナニジシアター Stage.01 なにわの探偵①"
+    },
+    {
+      "id": 20020000,
+      "event_id": 20001500,
+      "release_stage_id": 0,
+      "name": "Next stage ～ナナブンノニジュウニの軌跡～"
+    },
+    {
+      "id": 20021000,
+      "event_id": 20001500,
+      "release_stage_id": 0,
+      "name": "1st Anniversary イベントクエスト"
+    },
+    {
+      "id": 20022000,
+      "event_id": 30000900,
+      "release_stage_id": 0,
+      "name": "ナナニジシアター Stage.01 なにわの探偵②"
+    },
+    {
+      "id": 20023000,
+      "event_id": 20001600,
+      "release_stage_id": 0,
+      "name": "星に願いを 天に架け橋を"
+    },
+    {
+      "id": 20024000,
+      "event_id": 30001000,
+      "release_stage_id": 0,
+      "name": "ナナニジシアター Stage.01 なにわの探偵③"
+    },
+    {
+      "id": 20025000,
+      "event_id": 20001700,
+      "release_stage_id": 0,
+      "name": "レジャー！トレジャー！！プールサイドハンティング！！！"
+    }
+  ],
+  "battle_stages": [
+    {
+      "id": 10001010,
+      "area_id": 10001000,
+      "release_stage_id": 0,
+      "live_id": 13200003,
+      "name": "ステージ1-1"
+    },
+    {
+      "id": 10001020,
+      "area_id": 10001000,
+      "release_stage_id": 10001010,
+      "live_id": 13200001,
+      "name": "ステージ1-2"
+    },
+    {
+      "id": 10001030,
+      "area_id": 10001000,
+      "release_stage_id": 10001020,
+      "live_id": 13200024,
+      "name": "ステージ1-3"
+    },
+    {
+      "id": 10001040,
+      "area_id": 10001000,
+      "release_stage_id": 10001030,
+      "live_id": 13200039,
+      "name": "ステージ1-4"
+    },
+    {
+      "id": 10001050,
+      "area_id": 10001000,
+      "release_stage_id": 10001040,
+      "live_id": 13100021,
+      "name": "ステージ1-5"
+    },
+    {
+      "id": 10002010,
+      "area_id": 10002000,
+      "release_stage_id": 0,
+      "live_id": 13200034,
+      "name": "ステージ2-1"
+    },
+    {
+      "id": 10002020,
+      "area_id": 10002000,
+      "release_stage_id": 10002010,
+      "live_id": 13200037,
+      "name": "ステージ2-2"
+    },
+    {
+      "id": 10002030,
+      "area_id": 10002000,
+      "release_stage_id": 10002020,
+      "live_id": 13200020,
+      "name": "ステージ2-3"
+    },
+    {
+      "id": 10002040,
+      "area_id": 10002000,
+      "release_stage_id": 10002030,
+      "live_id": 13200017,
+      "name": "ステージ2-4"
+    },
+    {
+      "id": 10002050,
+      "area_id": 10002000,
+      "release_stage_id": 10002040,
+      "live_id": 13100024,
+      "name": "ステージ2-5"
+    },
+    {
+      "id": 10003010,
+      "area_id": 10003000,
+      "release_stage_id": 0,
+      "live_id": 13200018,
+      "name": "ステージ3-1"
+    },
+    {
+      "id": 10003020,
+      "area_id": 10003000,
+      "release_stage_id": 10003010,
+      "live_id": 13200006,
+      "name": "ステージ3-2"
+    },
+    {
+      "id": 10003030,
+      "area_id": 10003000,
+      "release_stage_id": 10003020,
+      "live_id": 13200026,
+      "name": "ステージ3-3"
+    },
+    {
+      "id": 10003040,
+      "area_id": 10003000,
+      "release_stage_id": 10003030,
+      "live_id": 13200009,
+      "name": "ステージ3-4"
+    },
+    {
+      "id": 10003050,
+      "area_id": 10003000,
+      "release_stage_id": 10003040,
+      "live_id": 13100003,
+      "name": "ステージ3-5"
+    },
+    {
+      "id": 10004010,
+      "area_id": 10004000,
+      "release_stage_id": 0,
+      "live_id": 13200019,
+      "name": "ステージ4-1"
+    },
+    {
+      "id": 10004020,
+      "area_id": 10004000,
+      "release_stage_id": 10004010,
+      "live_id": 13200023,
+      "name": "ステージ4-2"
+    },
+    {
+      "id": 10004030,
+      "area_id": 10004000,
+      "release_stage_id": 10004020,
+      "live_id": 13100017,
+      "name": "ステージ4-3"
+    },
+    {
+      "id": 10004040,
+      "area_id": 10004000,
+      "release_stage_id": 10004030,
+      "live_id": 13200014,
+      "name": "ステージ4-4"
+    },
+    {
+      "id": 10004050,
+      "area_id": 10004000,
+      "release_stage_id": 10004040,
+      "live_id": 13100001,
+      "name": "ステージ4-5"
+    },
+    {
+      "id": 10005010,
+      "area_id": 10005000,
+      "release_stage_id": 0,
+      "live_id": 13200033,
+      "name": "ステージ5-1"
+    },
+    {
+      "id": 10005020,
+      "area_id": 10005000,
+      "release_stage_id": 10005010,
+      "live_id": 13200002,
+      "name": "ステージ5-2"
+    },
+    {
+      "id": 10005030,
+      "area_id": 10005000,
+      "release_stage_id": 10005020,
+      "live_id": 13200004,
+      "name": "ステージ5-3"
+    },
+    {
+      "id": 10005040,
+      "area_id": 10005000,
+      "release_stage_id": 10005030,
+      "live_id": 13200008,
+      "name": "ステージ5-4"
+    },
+    {
+      "id": 10005050,
+      "area_id": 10005000,
+      "release_stage_id": 10005040,
+      "live_id": 13100002,
+      "name": "ステージ5-5"
+    },
+    {
+      "id": 10006010,
+      "area_id": 10006000,
+      "release_stage_id": 0,
+      "live_id": 13200021,
+      "name": "ステージ6-1"
+    },
+    {
+      "id": 10006020,
+      "area_id": 10006000,
+      "release_stage_id": 10006010,
+      "live_id": 13200030,
+      "name": "ステージ6-2"
+    },
+    {
+      "id": 10006030,
+      "area_id": 10006000,
+      "release_stage_id": 10006020,
+      "live_id": 13200012,
+      "name": "ステージ6-3"
+    },
+    {
+      "id": 10006040,
+      "area_id": 10006000,
+      "release_stage_id": 10006030,
+      "live_id": 13100015,
+      "name": "ステージ6-4"
+    },
+    {
+      "id": 10006050,
+      "area_id": 10006000,
+      "release_stage_id": 10006040,
+      "live_id": 13100013,
+      "name": "ステージ6-5"
+    },
+    {
+      "id": 10007010,
+      "area_id": 10007000,
+      "release_stage_id": 0,
+      "live_id": 13200038,
+      "name": "ステージ7-1"
+    },
+    {
+      "id": 10007020,
+      "area_id": 10007000,
+      "release_stage_id": 10007010,
+      "live_id": 13200031,
+      "name": "ステージ7-2"
+    },
+    {
+      "id": 10007030,
+      "area_id": 10007000,
+      "release_stage_id": 10007020,
+      "live_id": 13200029,
+      "name": "ステージ7-3"
+    },
+    {
+      "id": 10007040,
+      "area_id": 10007000,
+      "release_stage_id": 10007030,
+      "live_id": 13200015,
+      "name": "ステージ7-4"
+    },
+    {
+      "id": 10007050,
+      "area_id": 10007000,
+      "release_stage_id": 10007040,
+      "live_id": 13100004,
+      "name": "ステージ7-5"
+    },
+    {
+      "id": 10008010,
+      "area_id": 10008000,
+      "release_stage_id": 0,
+      "live_id": 13200035,
+      "name": "ステージ8-1"
+    },
+    {
+      "id": 10008020,
+      "area_id": 10008000,
+      "release_stage_id": 10008010,
+      "live_id": 13100007,
+      "name": "ステージ8-2"
+    },
+    {
+      "id": 10008030,
+      "area_id": 10008000,
+      "release_stage_id": 10008020,
+      "live_id": 13100016,
+      "name": "ステージ8-3"
+    },
+    {
+      "id": 10008040,
+      "area_id": 10008000,
+      "release_stage_id": 10008030,
+      "live_id": 13200016,
+      "name": "ステージ8-4"
+    },
+    {
+      "id": 10008050,
+      "area_id": 10008000,
+      "release_stage_id": 10008040,
+      "live_id": 13100006,
+      "name": "ステージ8-5"
+    },
+    {
+      "id": 10009010,
+      "area_id": 10009000,
+      "release_stage_id": 0,
+      "live_id": 13200005,
+      "name": "ステージ9-1"
+    },
+    {
+      "id": 10009020,
+      "area_id": 10009000,
+      "release_stage_id": 10009010,
+      "live_id": 13100005,
+      "name": "ステージ9-2"
+    },
+    {
+      "id": 10009030,
+      "area_id": 10009000,
+      "release_stage_id": 10009020,
+      "live_id": 13200032,
+      "name": "ステージ9-3"
+    },
+    {
+      "id": 10009040,
+      "area_id": 10009000,
+      "release_stage_id": 10009030,
+      "live_id": 13100011,
+      "name": "ステージ9-4"
+    },
+    {
+      "id": 10009050,
+      "area_id": 10009000,
+      "release_stage_id": 10009040,
+      "live_id": 13100008,
+      "name": "ステージ9-5"
+    },
+    {
+      "id": 10010010,
+      "area_id": 10010000,
+      "release_stage_id": 0,
+      "live_id": 13100022,
+      "name": "ステージ10-1"
+    },
+    {
+      "id": 10010020,
+      "area_id": 10010000,
+      "release_stage_id": 10010010,
+      "live_id": 13200007,
+      "name": "ステージ10-2"
+    },
+    {
+      "id": 10010030,
+      "area_id": 10010000,
+      "release_stage_id": 10010020,
+      "live_id": 13200027,
+      "name": "ステージ10-3"
+    },
+    {
+      "id": 10010040,
+      "area_id": 10010000,
+      "release_stage_id": 10010030,
+      "live_id": 13200011,
+      "name": "ステージ10-4"
+    },
+    {
+      "id": 10010050,
+      "area_id": 10010000,
+      "release_stage_id": 10010040,
+      "live_id": 13100020,
+      "name": "ステージ10-5"
+    },
+    {
+      "id": 10011010,
+      "area_id": 10011000,
+      "release_stage_id": 0,
+      "live_id": 13100018,
+      "name": "ステージ11-1"
+    },
+    {
+      "id": 10011020,
+      "area_id": 10011000,
+      "release_stage_id": 10011010,
+      "live_id": 13200010,
+      "name": "ステージ11-2"
+    },
+    {
+      "id": 10011030,
+      "area_id": 10011000,
+      "release_stage_id": 10011020,
+      "live_id": 13200022,
+      "name": "ステージ11-3"
+    },
+    {
+      "id": 10011040,
+      "area_id": 10011000,
+      "release_stage_id": 10011030,
+      "live_id": 13100012,
+      "name": "ステージ11-4"
+    },
+    {
+      "id": 10011050,
+      "area_id": 10011000,
+      "release_stage_id": 10011040,
+      "live_id": 13100014,
+      "name": "ステージ11-5"
+    },
+    {
+      "id": 10012010,
+      "area_id": 10012000,
+      "release_stage_id": 0,
+      "live_id": 13200028,
+      "name": "ステージ12-1"
+    },
+    {
+      "id": 10012020,
+      "area_id": 10012000,
+      "release_stage_id": 10012010,
+      "live_id": 13100009,
+      "name": "ステージ12-2"
+    },
+    {
+      "id": 10012030,
+      "area_id": 10012000,
+      "release_stage_id": 10012020,
+      "live_id": 13200013,
+      "name": "ステージ12-3"
+    },
+    {
+      "id": 10012040,
+      "area_id": 10012000,
+      "release_stage_id": 10012030,
+      "live_id": 13100010,
+      "name": "ステージ12-4"
+    },
+    {
+      "id": 10012050,
+      "area_id": 10012000,
+      "release_stage_id": 10012040,
+      "live_id": 13200025,
+      "name": "ステージ12-5"
+    },
+    {
+      "id": 10013010,
+      "area_id": 10013000,
+      "release_stage_id": 0,
+      "live_id": 13100019,
+      "name": "ステージ13-1"
+    },
+    {
+      "id": 10013020,
+      "area_id": 10013000,
+      "release_stage_id": 10013010,
+      "live_id": 13200036,
+      "name": "ステージ13-2"
+    },
+    {
+      "id": 10013030,
+      "area_id": 10013000,
+      "release_stage_id": 10013020,
+      "live_id": 13100016,
+      "name": "ステージ13-3"
+    },
+    {
+      "id": 10013040,
+      "area_id": 10013000,
+      "release_stage_id": 10013030,
+      "live_id": 13200009,
+      "name": "ステージ13-4"
+    },
+    {
+      "id": 10013050,
+      "area_id": 10013000,
+      "release_stage_id": 10013040,
+      "live_id": 13100017,
+      "name": "ステージ13-5"
+    },
+    {
+      "id": 10014010,
+      "area_id": 10014000,
+      "release_stage_id": 0,
+      "live_id": 13200024,
+      "name": "ステージ14-1"
+    },
+    {
+      "id": 10014020,
+      "area_id": 10014000,
+      "release_stage_id": 10014010,
+      "live_id": 13200004,
+      "name": "ステージ14-2"
+    },
+    {
+      "id": 10014030,
+      "area_id": 10014000,
+      "release_stage_id": 10014020,
+      "live_id": 13100006,
+      "name": "ステージ14-3"
+    },
+    {
+      "id": 10014040,
+      "area_id": 10014000,
+      "release_stage_id": 10014030,
+      "live_id": 13200035,
+      "name": "ステージ14-4"
+    },
+    {
+      "id": 10014050,
+      "area_id": 10014000,
+      "release_stage_id": 10014040,
+      "live_id": 13100011,
+      "name": "ステージ14-5"
+    },
+    {
+      "id": 10015010,
+      "area_id": 10015000,
+      "release_stage_id": 0,
+      "live_id": 13200031,
+      "name": "ステージ15-1"
+    },
+    {
+      "id": 10015020,
+      "area_id": 10015000,
+      "release_stage_id": 10015010,
+      "live_id": 13200006,
+      "name": "ステージ15-2"
+    },
+    {
+      "id": 10015030,
+      "area_id": 10015000,
+      "release_stage_id": 10015020,
+      "live_id": 13100008,
+      "name": "ステージ15-3"
+    },
+    {
+      "id": 10015040,
+      "area_id": 10015000,
+      "release_stage_id": 10015030,
+      "live_id": 13200026,
+      "name": "ステージ15-4"
+    },
+    {
+      "id": 10015050,
+      "area_id": 10015000,
+      "release_stage_id": 10015040,
+      "live_id": 13100024,
+      "name": "ステージ15-5"
+    },
+    {
+      "id": 10016010,
+      "area_id": 10016000,
+      "release_stage_id": 0,
+      "live_id": 13200019,
+      "name": "ステージ16-1"
+    },
+    {
+      "id": 10016020,
+      "area_id": 10016000,
+      "release_stage_id": 10016010,
+      "live_id": 13200002,
+      "name": "ステージ16-2"
+    },
+    {
+      "id": 10016030,
+      "area_id": 10016000,
+      "release_stage_id": 10016020,
+      "live_id": 13100001,
+      "name": "ステージ16-3"
+    },
+    {
+      "id": 10016040,
+      "area_id": 10016000,
+      "release_stage_id": 10016030,
+      "live_id": 13200005,
+      "name": "ステージ16-4"
+    },
+    {
+      "id": 10016050,
+      "area_id": 10016000,
+      "release_stage_id": 10016040,
+      "live_id": 13100020,
+      "name": "ステージ16-5"
+    },
+    {
+      "id": 10017010,
+      "area_id": 10017000,
+      "release_stage_id": 0,
+      "live_id": 13100021,
+      "name": "ステージ17-1"
+    },
+    {
+      "id": 10017020,
+      "area_id": 10017000,
+      "release_stage_id": 10017010,
+      "live_id": 13200037,
+      "name": "ステージ17-2"
+    },
+    {
+      "id": 10017030,
+      "area_id": 10017000,
+      "release_stage_id": 10017020,
+      "live_id": 13100012,
+      "name": "ステージ17-3"
+    },
+    {
+      "id": 10017040,
+      "area_id": 10017000,
+      "release_stage_id": 10017030,
+      "live_id": 13200001,
+      "name": "ステージ17-4"
+    },
+    {
+      "id": 10017050,
+      "area_id": 10017000,
+      "release_stage_id": 10017040,
+      "live_id": 13100014,
+      "name": "ステージ17-5"
+    },
+    {
+      "id": 10018010,
+      "area_id": 10018000,
+      "release_stage_id": 0,
+      "live_id": 13200003,
+      "name": "ステージ18-1"
+    },
+    {
+      "id": 10018020,
+      "area_id": 10018000,
+      "release_stage_id": 10018010,
+      "live_id": 13200039,
+      "name": "ステージ18-2"
+    },
+    {
+      "id": 10018030,
+      "area_id": 10018000,
+      "release_stage_id": 10018020,
+      "live_id": 13100013,
+      "name": "ステージ18-3"
+    },
+    {
+      "id": 10018040,
+      "area_id": 10018000,
+      "release_stage_id": 10018030,
+      "live_id": 13200012,
+      "name": "ステージ18-4"
+    },
+    {
+      "id": 10018050,
+      "area_id": 10018000,
+      "release_stage_id": 10018040,
+      "live_id": 13100002,
+      "name": "ステージ18-5"
+    },
+    {
+      "id": 10019010,
+      "area_id": 10019000,
+      "release_stage_id": 0,
+      "live_id": 13200032,
+      "name": "ステージ19-1"
+    },
+    {
+      "id": 10019020,
+      "area_id": 10019000,
+      "release_stage_id": 10019010,
+      "live_id": 13200030,
+      "name": "ステージ19-2"
+    },
+    {
+      "id": 10019030,
+      "area_id": 10019000,
+      "release_stage_id": 10019020,
+      "live_id": 13100015,
+      "name": "ステージ19-3"
+    },
+    {
+      "id": 10019040,
+      "area_id": 10019000,
+      "release_stage_id": 10019030,
+      "live_id": 13200036,
+      "name": "ステージ19-4"
+    },
+    {
+      "id": 10019050,
+      "area_id": 10019000,
+      "release_stage_id": 10019040,
+      "live_id": 13100019,
+      "name": "ステージ19-5"
+    },
+    {
+      "id": 10020010,
+      "area_id": 10020000,
+      "release_stage_id": 0,
+      "live_id": 13200034,
+      "name": "ステージ20-1"
+    },
+    {
+      "id": 10020020,
+      "area_id": 10020000,
+      "release_stage_id": 10020010,
+      "live_id": 13200033,
+      "name": "ステージ20-2"
+    },
+    {
+      "id": 10020030,
+      "area_id": 10020000,
+      "release_stage_id": 10020020,
+      "live_id": 13100010,
+      "name": "ステージ20-3"
+    },
+    {
+      "id": 10020040,
+      "area_id": 10020000,
+      "release_stage_id": 10020030,
+      "live_id": 13100022,
+      "name": "ステージ20-4"
+    },
+    {
+      "id": 10020050,
+      "area_id": 10020000,
+      "release_stage_id": 10020040,
+      "live_id": 13100021,
+      "name": "ステージ20-5"
+    },
+    {
+      "id": 20001010,
+      "area_id": 20001000,
+      "release_stage_id": 0,
+      "live_id": 13100028,
+      "name": "ステージ1-1"
+    },
+    {
+      "id": 20001020,
+      "area_id": 20001000,
+      "release_stage_id": 20001010,
+      "live_id": 13100028,
+      "name": "ステージ1-2"
+    },
+    {
+      "id": 20001030,
+      "area_id": 20001000,
+      "release_stage_id": 20001020,
+      "live_id": 13100028,
+      "name": "ステージ1-3"
+    },
+    {
+      "id": 20001040,
+      "area_id": 20001000,
+      "release_stage_id": 20001030,
+      "live_id": 13100028,
+      "name": "ステージ1-4"
+    },
+    {
+      "id": 20001050,
+      "area_id": 20001000,
+      "release_stage_id": 20001040,
+      "live_id": 13100028,
+      "name": "ステージ1-5"
+    },
+    {
+      "id": 20002010,
+      "area_id": 20002000,
+      "release_stage_id": 0,
+      "live_id": 13200044,
+      "name": "初心者"
+    },
+    {
+      "id": 20002020,
+      "area_id": 20002000,
+      "release_stage_id": 20002010,
+      "live_id": 13200044,
+      "name": "初級"
+    },
+    {
+      "id": 20002030,
+      "area_id": 20002000,
+      "release_stage_id": 20002020,
+      "live_id": 13200043,
+      "name": "中級"
+    },
+    {
+      "id": 20002040,
+      "area_id": 20002000,
+      "release_stage_id": 20002030,
+      "live_id": 13200043,
+      "name": "上級"
+    },
+    {
+      "id": 20002050,
+      "area_id": 20002000,
+      "release_stage_id": 20002040,
+      "live_id": 13200042,
+      "name": "最上級"
+    },
+    {
+      "id": 20003010,
+      "area_id": 20003000,
+      "release_stage_id": 0,
+      "live_id": 13100029,
+      "name": "初心者"
+    },
+    {
+      "id": 20003020,
+      "area_id": 20003000,
+      "release_stage_id": 20003010,
+      "live_id": 13100029,
+      "name": "初級"
+    },
+    {
+      "id": 20003030,
+      "area_id": 20003000,
+      "release_stage_id": 20003020,
+      "live_id": 13100029,
+      "name": "中級"
+    },
+    {
+      "id": 20003040,
+      "area_id": 20003000,
+      "release_stage_id": 20003030,
+      "live_id": 13100029,
+      "name": "上級"
+    },
+    {
+      "id": 20003050,
+      "area_id": 20003000,
+      "release_stage_id": 20003040,
+      "live_id": 13100029,
+      "name": "最上級"
+    },
+    {
+      "id": 20004010,
+      "area_id": 20004000,
+      "release_stage_id": 0,
+      "live_id": 13100032,
+      "name": "初心者"
+    },
+    {
+      "id": 20004020,
+      "area_id": 20004000,
+      "release_stage_id": 20004010,
+      "live_id": 13100032,
+      "name": "初級"
+    },
+    {
+      "id": 20004030,
+      "area_id": 20004000,
+      "release_stage_id": 20004020,
+      "live_id": 13100030,
+      "name": "中級"
+    },
+    {
+      "id": 20004040,
+      "area_id": 20004000,
+      "release_stage_id": 20004030,
+      "live_id": 13100030,
+      "name": "上級"
+    },
+    {
+      "id": 20004050,
+      "area_id": 20004000,
+      "release_stage_id": 20004040,
+      "live_id": 13100031,
+      "name": "最上級"
+    },
+    {
+      "id": 20005010,
+      "area_id": 20005000,
+      "release_stage_id": 0,
+      "live_id": 13100003,
+      "name": "初心者"
+    },
+    {
+      "id": 20005020,
+      "area_id": 20005000,
+      "release_stage_id": 20005010,
+      "live_id": 13100001,
+      "name": "初級"
+    },
+    {
+      "id": 20005030,
+      "area_id": 20005000,
+      "release_stage_id": 20005020,
+      "live_id": 13100002,
+      "name": "中級"
+    },
+    {
+      "id": 20005040,
+      "area_id": 20005000,
+      "release_stage_id": 20005030,
+      "live_id": 13100014,
+      "name": "上級"
+    },
+    {
+      "id": 20005050,
+      "area_id": 20005000,
+      "release_stage_id": 20005040,
+      "live_id": 13100019,
+      "name": "最上級"
+    },
+    {
+      "id": 20006010,
+      "area_id": 20006000,
+      "release_stage_id": 0,
+      "live_id": 13100033,
+      "name": "初心者"
+    },
+    {
+      "id": 20006020,
+      "area_id": 20006000,
+      "release_stage_id": 20006010,
+      "live_id": 13100033,
+      "name": "初級"
+    },
+    {
+      "id": 20006030,
+      "area_id": 20006000,
+      "release_stage_id": 20006020,
+      "live_id": 13100033,
+      "name": "中級"
+    },
+    {
+      "id": 20006040,
+      "area_id": 20006000,
+      "release_stage_id": 20006030,
+      "live_id": 13100033,
+      "name": "上級"
+    },
+    {
+      "id": 20006050,
+      "area_id": 20006000,
+      "release_stage_id": 20006040,
+      "live_id": 13100033,
+      "name": "最上級"
+    },
+    {
+      "id": 20007010,
+      "area_id": 20007000,
+      "release_stage_id": 0,
+      "live_id": 13200045,
+      "name": "初心者"
+    },
+    {
+      "id": 20007020,
+      "area_id": 20007000,
+      "release_stage_id": 20007010,
+      "live_id": 13100034,
+      "name": "初級"
+    },
+    {
+      "id": 20007030,
+      "area_id": 20007000,
+      "release_stage_id": 20007020,
+      "live_id": 13200045,
+      "name": "中級"
+    },
+    {
+      "id": 20007040,
+      "area_id": 20007000,
+      "release_stage_id": 20007030,
+      "live_id": 13100034,
+      "name": "上級"
+    },
+    {
+      "id": 20007050,
+      "area_id": 20007000,
+      "release_stage_id": 20007040,
+      "live_id": 13200045,
+      "name": "最上級"
+    },
+    {
+      "id": 20008010,
+      "area_id": 20008000,
+      "release_stage_id": 0,
+      "live_id": 13100021,
+      "name": "初心者"
+    },
+    {
+      "id": 20008020,
+      "area_id": 20008000,
+      "release_stage_id": 20008010,
+      "live_id": 13100034,
+      "name": "最上級"
+    },
+    {
+      "id": 20009010,
+      "area_id": 20009000,
+      "release_stage_id": 0,
+      "live_id": 13100035,
+      "name": "初心者"
+    },
+    {
+      "id": 20009020,
+      "area_id": 20009000,
+      "release_stage_id": 20009010,
+      "live_id": 13100036,
+      "name": "初級"
+    },
+    {
+      "id": 20009030,
+      "area_id": 20009000,
+      "release_stage_id": 20009020,
+      "live_id": 13100035,
+      "name": "中級"
+    },
+    {
+      "id": 20009040,
+      "area_id": 20009000,
+      "release_stage_id": 20009030,
+      "live_id": 13100036,
+      "name": "上級"
+    },
+    {
+      "id": 20009050,
+      "area_id": 20009000,
+      "release_stage_id": 20009040,
+      "live_id": 13100035,
+      "name": "最上級"
+    },
+    {
+      "id": 20010010,
+      "area_id": 20010000,
+      "release_stage_id": 0,
+      "live_id": 13100037,
+      "name": "初心者"
+    },
+    {
+      "id": 20010020,
+      "area_id": 20010000,
+      "release_stage_id": 20010010,
+      "live_id": 13100037,
+      "name": "初級"
+    },
+    {
+      "id": 20010030,
+      "area_id": 20010000,
+      "release_stage_id": 20010020,
+      "live_id": 13100037,
+      "name": "中級"
+    },
+    {
+      "id": 20010040,
+      "area_id": 20010000,
+      "release_stage_id": 20010030,
+      "live_id": 13100037,
+      "name": "上級"
+    },
+    {
+      "id": 20010050,
+      "area_id": 20010000,
+      "release_stage_id": 20010040,
+      "live_id": 13100037,
+      "name": "最上級"
+    },
+    {
+      "id": 20011010,
+      "area_id": 20011000,
+      "release_stage_id": 0,
+      "live_id": 13100038,
+      "name": "初心者"
+    },
+    {
+      "id": 20011020,
+      "area_id": 20011000,
+      "release_stage_id": 20011010,
+      "live_id": 13100038,
+      "name": "初級"
+    },
+    {
+      "id": 20011030,
+      "area_id": 20011000,
+      "release_stage_id": 20011020,
+      "live_id": 13100038,
+      "name": "中級"
+    },
+    {
+      "id": 20011040,
+      "area_id": 20011000,
+      "release_stage_id": 20011030,
+      "live_id": 13100038,
+      "name": "上級"
+    },
+    {
+      "id": 20011050,
+      "area_id": 20011000,
+      "release_stage_id": 20011040,
+      "live_id": 13100038,
+      "name": "最上級"
+    },
+    {
+      "id": 20012010,
+      "area_id": 20012000,
+      "release_stage_id": 0,
+      "live_id": 13200046,
+      "name": "初心者"
+    },
+    {
+      "id": 20012020,
+      "area_id": 20012000,
+      "release_stage_id": 20012010,
+      "live_id": 13200047,
+      "name": "初級"
+    },
+    {
+      "id": 20012030,
+      "area_id": 20012000,
+      "release_stage_id": 20012020,
+      "live_id": 13200046,
+      "name": "中級"
+    },
+    {
+      "id": 20012040,
+      "area_id": 20012000,
+      "release_stage_id": 20012030,
+      "live_id": 13200047,
+      "name": "上級"
+    },
+    {
+      "id": 20012050,
+      "area_id": 20012000,
+      "release_stage_id": 20012040,
+      "live_id": 13200046,
+      "name": "最上級"
+    },
+    {
+      "id": 20013010,
+      "area_id": 20013000,
+      "release_stage_id": 0,
+      "live_id": 13100039,
+      "name": "初心者"
+    },
+    {
+      "id": 20013020,
+      "area_id": 20013000,
+      "release_stage_id": 20013010,
+      "live_id": 13100039,
+      "name": "初級"
+    },
+    {
+      "id": 20013030,
+      "area_id": 20013000,
+      "release_stage_id": 20013020,
+      "live_id": 13100039,
+      "name": "中級"
+    },
+    {
+      "id": 20013040,
+      "area_id": 20013000,
+      "release_stage_id": 20013030,
+      "live_id": 13100039,
+      "name": "上級"
+    },
+    {
+      "id": 20013050,
+      "area_id": 20013000,
+      "release_stage_id": 20013040,
+      "live_id": 13100039,
+      "name": "最上級"
+    },
+    {
+      "id": 20014010,
+      "area_id": 20014000,
+      "release_stage_id": 0,
+      "live_id": 13200048,
+      "name": "初心者"
+    },
+    {
+      "id": 20014020,
+      "area_id": 20014000,
+      "release_stage_id": 20014010,
+      "live_id": 13200048,
+      "name": "初級"
+    },
+    {
+      "id": 20014030,
+      "area_id": 20014000,
+      "release_stage_id": 20014020,
+      "live_id": 13200048,
+      "name": "中級"
+    },
+    {
+      "id": 20014040,
+      "area_id": 20014000,
+      "release_stage_id": 20014030,
+      "live_id": 13200048,
+      "name": "上級"
+    },
+    {
+      "id": 20014050,
+      "area_id": 20014000,
+      "release_stage_id": 20014040,
+      "live_id": 13200048,
+      "name": "最上級"
+    },
+    {
+      "id": 20015010,
+      "area_id": 20015000,
+      "release_stage_id": 0,
+      "live_id": 13100040,
+      "name": "初心者"
+    },
+    {
+      "id": 20015020,
+      "area_id": 20015000,
+      "release_stage_id": 20015010,
+      "live_id": 13100040,
+      "name": "初級"
+    },
+    {
+      "id": 20015030,
+      "area_id": 20015000,
+      "release_stage_id": 20015020,
+      "live_id": 13100040,
+      "name": "中級"
+    },
+    {
+      "id": 20015040,
+      "area_id": 20015000,
+      "release_stage_id": 20015030,
+      "live_id": 13100040,
+      "name": "上級"
+    },
+    {
+      "id": 20015050,
+      "area_id": 20015000,
+      "release_stage_id": 20015040,
+      "live_id": 13100040,
+      "name": "最上級"
+    },
+    {
+      "id": 20016010,
+      "area_id": 20016000,
+      "release_stage_id": 0,
+      "live_id": 13100041,
+      "name": "初心者"
+    },
+    {
+      "id": 20016020,
+      "area_id": 20016000,
+      "release_stage_id": 20016010,
+      "live_id": 13200049,
+      "name": "初級"
+    },
+    {
+      "id": 20016030,
+      "area_id": 20016000,
+      "release_stage_id": 20016020,
+      "live_id": 13100041,
+      "name": "中級"
+    },
+    {
+      "id": 20016040,
+      "area_id": 20016000,
+      "release_stage_id": 20016030,
+      "live_id": 13200049,
+      "name": "上級"
+    },
+    {
+      "id": 20016050,
+      "area_id": 20016000,
+      "release_stage_id": 20016040,
+      "live_id": 13100041,
+      "name": "最上級"
+    },
+    {
+      "id": 20017010,
+      "area_id": 20017000,
+      "release_stage_id": 0,
+      "live_id": 13100042,
+      "name": "初心者"
+    },
+    {
+      "id": 20017020,
+      "area_id": 20017000,
+      "release_stage_id": 20017010,
+      "live_id": 13100042,
+      "name": "初級"
+    },
+    {
+      "id": 20017030,
+      "area_id": 20017000,
+      "release_stage_id": 20017020,
+      "live_id": 13100042,
+      "name": "中級"
+    },
+    {
+      "id": 20017040,
+      "area_id": 20017000,
+      "release_stage_id": 20017030,
+      "live_id": 13100042,
+      "name": "上級"
+    },
+    {
+      "id": 20017050,
+      "area_id": 20017000,
+      "release_stage_id": 20017040,
+      "live_id": 13100042,
+      "name": "最上級"
+    },
+    {
+      "id": 20018010,
+      "area_id": 20018000,
+      "release_stage_id": 0,
+      "live_id": 13100043,
+      "name": "初心者"
+    },
+    {
+      "id": 20018020,
+      "area_id": 20018000,
+      "release_stage_id": 20018010,
+      "live_id": 13100043,
+      "name": "初級"
+    },
+    {
+      "id": 20018030,
+      "area_id": 20018000,
+      "release_stage_id": 20018020,
+      "live_id": 13100043,
+      "name": "中級"
+    },
+    {
+      "id": 20018040,
+      "area_id": 20018000,
+      "release_stage_id": 20018030,
+      "live_id": 13100043,
+      "name": "上級"
+    },
+    {
+      "id": 20018050,
+      "area_id": 20018000,
+      "release_stage_id": 20018040,
+      "live_id": 13100043,
+      "name": "最上級"
+    },
+    {
+      "id": 20019010,
+      "area_id": 20019000,
+      "release_stage_id": 0,
+      "live_id": 13200050,
+      "name": "初心者"
+    },
+    {
+      "id": 20019020,
+      "area_id": 20019000,
+      "release_stage_id": 20019010,
+      "live_id": 13200050,
+      "name": "初級"
+    },
+    {
+      "id": 20019030,
+      "area_id": 20019000,
+      "release_stage_id": 20019020,
+      "live_id": 13200050,
+      "name": "中級"
+    },
+    {
+      "id": 20019040,
+      "area_id": 20019000,
+      "release_stage_id": 20019030,
+      "live_id": 13200050,
+      "name": "上級"
+    },
+    {
+      "id": 20019050,
+      "area_id": 20019000,
+      "release_stage_id": 20019040,
+      "live_id": 13200050,
+      "name": "最上級"
+    },
+    {
+      "id": 20020010,
+      "area_id": 20020000,
+      "release_stage_id": 0,
+      "live_id": 13100044,
+      "name": "初心者"
+    },
+    {
+      "id": 20020020,
+      "area_id": 20020000,
+      "release_stage_id": 20020010,
+      "live_id": 13100044,
+      "name": "初級"
+    },
+    {
+      "id": 20020030,
+      "area_id": 20020000,
+      "release_stage_id": 20020020,
+      "live_id": 13100044,
+      "name": "中級"
+    },
+    {
+      "id": 20020040,
+      "area_id": 20020000,
+      "release_stage_id": 20020030,
+      "live_id": 13100044,
+      "name": "上級"
+    },
+    {
+      "id": 20020050,
+      "area_id": 20020000,
+      "release_stage_id": 20020040,
+      "live_id": 13100044,
+      "name": "最上級"
+    },
+    {
+      "id": 20021010,
+      "area_id": 20021000,
+      "release_stage_id": 0,
+      "live_id": 13100021,
+      "name": "初心者"
+    },
+    {
+      "id": 20021020,
+      "area_id": 20021000,
+      "release_stage_id": 20021010,
+      "live_id": 13100012,
+      "name": "初級"
+    },
+    {
+      "id": 20021030,
+      "area_id": 20021000,
+      "release_stage_id": 20021020,
+      "live_id": 13100034,
+      "name": "中級"
+    },
+    {
+      "id": 20021040,
+      "area_id": 20021000,
+      "release_stage_id": 20021030,
+      "live_id": 13100028,
+      "name": "上級"
+    },
+    {
+      "id": 20021050,
+      "area_id": 20021000,
+      "release_stage_id": 20021040,
+      "live_id": 13100020,
+      "name": "最上級"
+    },
+    {
+      "id": 20022010,
+      "area_id": 20022000,
+      "release_stage_id": 0,
+      "live_id": 13200054,
+      "name": "初心者"
+    },
+    {
+      "id": 20022020,
+      "area_id": 20022000,
+      "release_stage_id": 20022010,
+      "live_id": 13200054,
+      "name": "初級"
+    },
+    {
+      "id": 20022030,
+      "area_id": 20022000,
+      "release_stage_id": 20022020,
+      "live_id": 13200054,
+      "name": "中級"
+    },
+    {
+      "id": 20022040,
+      "area_id": 20022000,
+      "release_stage_id": 20022030,
+      "live_id": 13200054,
+      "name": "上級"
+    },
+    {
+      "id": 20022050,
+      "area_id": 20022000,
+      "release_stage_id": 20022040,
+      "live_id": 13200054,
+      "name": "最上級"
+    },
+    {
+      "id": 20023010,
+      "area_id": 20023000,
+      "release_stage_id": 0,
+      "live_id": 13200056,
+      "name": "初心者"
+    },
+    {
+      "id": 20023020,
+      "area_id": 20023000,
+      "release_stage_id": 20023010,
+      "live_id": 13200056,
+      "name": "初級"
+    },
+    {
+      "id": 20023030,
+      "area_id": 20023000,
+      "release_stage_id": 20023020,
+      "live_id": 13200056,
+      "name": "中級"
+    },
+    {
+      "id": 20023040,
+      "area_id": 20023000,
+      "release_stage_id": 20023030,
+      "live_id": 13200056,
+      "name": "上級"
+    },
+    {
+      "id": 20023050,
+      "area_id": 20023000,
+      "release_stage_id": 20023040,
+      "live_id": 13200056,
+      "name": "最上級"
+    },
+    {
+      "id": 20024010,
+      "area_id": 20024000,
+      "release_stage_id": 0,
+      "live_id": 13200057,
+      "name": "初心者"
+    },
+    {
+      "id": 20024020,
+      "area_id": 20024000,
+      "release_stage_id": 20024010,
+      "live_id": 13200057,
+      "name": "初級"
+    },
+    {
+      "id": 20024030,
+      "area_id": 20024000,
+      "release_stage_id": 20024020,
+      "live_id": 13200057,
+      "name": "中級"
+    },
+    {
+      "id": 20024040,
+      "area_id": 20024000,
+      "release_stage_id": 20024030,
+      "live_id": 13200057,
+      "name": "上級"
+    },
+    {
+      "id": 20024050,
+      "area_id": 20024000,
+      "release_stage_id": 20024040,
+      "live_id": 13200057,
+      "name": "最上級"
+    },
+    {
+      "id": 20025010,
+      "area_id": 20025000,
+      "release_stage_id": 0,
+      "live_id": 13200059,
+      "name": "初心者"
+    },
+    {
+      "id": 20025020,
+      "area_id": 20025000,
+      "release_stage_id": 20025010,
+      "live_id": 13200058,
+      "name": "初級"
+    },
+    {
+      "id": 20025030,
+      "area_id": 20025000,
+      "release_stage_id": 20025020,
+      "live_id": 13200059,
+      "name": "中級"
+    },
+    {
+      "id": 20025040,
+      "area_id": 20025000,
+      "release_stage_id": 20025030,
+      "live_id": 13200058,
+      "name": "上級"
+    },
+    {
+      "id": 20025050,
+      "area_id": 20025000,
+      "release_stage_id": 20025040,
+      "live_id": 13200059,
+      "name": "最上級"
+    }
+  ],
+  "music": [
+    {
+      "id": 13100001,
+      "name": "シャンプーの匂いがした",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100001,
+      "preview_bgm_id": 61100001
+    },
+    {
+      "id": 13100002,
+      "name": "理解者",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100002,
+      "preview_bgm_id": 61100002
+    },
+    {
+      "id": 13100003,
+      "name": "僕は存在していなかった",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100003,
+      "preview_bgm_id": 61100003
+    },
+    {
+      "id": 13100004,
+      "name": "11人が集まった理由",
+      "category": "ORIGINAL",
+      "locked": 1,
+      "obtain_type": "STORY",
+      "bgm_id": 13100004,
+      "preview_bgm_id": 61100004
+    },
+    {
+      "id": 13100005,
+      "name": "やさしい記憶",
+      "category": "ORIGINAL",
+      "locked": 1,
+      "obtain_type": "STORY",
+      "bgm_id": 13100005,
+      "preview_bgm_id": 61100005
+    },
+    {
+      "id": 13100006,
+      "name": "叫ぶしかない青春",
+      "category": "ORIGINAL",
+      "locked": 1,
+      "obtain_type": "STORY",
+      "bgm_id": 13100006,
+      "preview_bgm_id": 61100006
+    },
+    {
+      "id": 13100007,
+      "name": "循環バス",
+      "category": "ORIGINAL",
+      "locked": 1,
+      "obtain_type": "STORY",
+      "bgm_id": 13100007,
+      "preview_bgm_id": 61100007
+    },
+    {
+      "id": 13100008,
+      "name": "人格崩壊",
+      "category": "ORIGINAL",
+      "locked": 1,
+      "obtain_type": "STORY",
+      "bgm_id": 13100008,
+      "preview_bgm_id": 61100008
+    },
+    {
+      "id": 13100009,
+      "name": "絶望の花",
+      "category": "ORIGINAL",
+      "locked": 1,
+      "obtain_type": "STORY",
+      "bgm_id": 13100009,
+      "preview_bgm_id": 61100009
+    },
+    {
+      "id": 13100010,
+      "name": "地下鉄抵抗主義",
+      "category": "ORIGINAL",
+      "locked": 1,
+      "obtain_type": "STORY",
+      "bgm_id": 13100010,
+      "preview_bgm_id": 61100010
+    },
+    {
+      "id": 13100011,
+      "name": "不確かな青春",
+      "category": "ORIGINAL",
+      "locked": 1,
+      "obtain_type": "STORY",
+      "bgm_id": 13100011,
+      "preview_bgm_id": 61100011
+    },
+    {
+      "id": 13100012,
+      "name": "未来があるから",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100012,
+      "preview_bgm_id": 61100012
+    },
+    {
+      "id": 13100013,
+      "name": "韋駄天娘",
+      "category": "ORIGINAL",
+      "locked": 1,
+      "obtain_type": "STORY",
+      "bgm_id": 13100013,
+      "preview_bgm_id": 61100013
+    },
+    {
+      "id": 13100014,
+      "name": "何もしてあげられない",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100014,
+      "preview_bgm_id": 61100014
+    },
+    {
+      "id": 13100015,
+      "name": "Rain of lies",
+      "category": "ORIGINAL",
+      "locked": 1,
+      "obtain_type": "STORY",
+      "bgm_id": 13100015,
+      "preview_bgm_id": 61100015
+    },
+    {
+      "id": 13100016,
+      "name": "とんぼの気持ち",
+      "category": "ORIGINAL",
+      "locked": 1,
+      "obtain_type": "STORY",
+      "bgm_id": 13100016,
+      "preview_bgm_id": 61100016
+    },
+    {
+      "id": 13100017,
+      "name": "君はMoon",
+      "category": "ORIGINAL",
+      "locked": 1,
+      "obtain_type": "STORY",
+      "bgm_id": 13100017,
+      "preview_bgm_id": 61100017
+    },
+    {
+      "id": 13100018,
+      "name": "ロマンスの積み木",
+      "category": "ORIGINAL",
+      "locked": 1,
+      "obtain_type": "STORY",
+      "bgm_id": 13100018,
+      "preview_bgm_id": 61100018
+    },
+    {
+      "id": 13100019,
+      "name": "ムズイ",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100019,
+      "preview_bgm_id": 61100019
+    },
+    {
+      "id": 13100020,
+      "name": "空のエメラルド",
+      "category": "ORIGINAL",
+      "locked": 1,
+      "obtain_type": "STORY",
+      "bgm_id": 13100020,
+      "preview_bgm_id": 61100020
+    },
+    {
+      "id": 13100021,
+      "name": "風は吹いてるか？",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100021,
+      "preview_bgm_id": 61100021
+    },
+    {
+      "id": 13100022,
+      "name": "僕らの環境",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100022,
+      "preview_bgm_id": 61100022
+    },
+    {
+      "id": 13100023,
+      "name": "孤独は嫌いじゃない",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100023,
+      "preview_bgm_id": 61100023
+    },
+    {
+      "id": 13100024,
+      "name": "ポニーテールは振り向かせない",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100024,
+      "preview_bgm_id": 61100024
+    },
+    {
+      "id": 13100025,
+      "name": "人生はワルツ",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100025,
+      "preview_bgm_id": 61100025
+    },
+    {
+      "id": 13100026,
+      "name": "生きることに楽になりたい",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100026,
+      "preview_bgm_id": 61100026
+    },
+    {
+      "id": 13100027,
+      "name": "感情無用論",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100027,
+      "preview_bgm_id": 61100027
+    },
+    {
+      "id": 13100028,
+      "name": "永遠はいらない",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100028,
+      "preview_bgm_id": 61100028
+    },
+    {
+      "id": 13100029,
+      "name": "優等生じゃつまらない",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100029,
+      "preview_bgm_id": 61100029
+    },
+    {
+      "id": 13100030,
+      "name": "半チャーハン",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100030,
+      "preview_bgm_id": 61100030
+    },
+    {
+      "id": 13100031,
+      "name": "タトゥー・ラブ",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100031,
+      "preview_bgm_id": 61100031
+    },
+    {
+      "id": 13100032,
+      "name": "ソフトクリーム落としちゃった",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100032,
+      "preview_bgm_id": 61100032
+    },
+    {
+      "id": 13100033,
+      "name": "Moonlight",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100033,
+      "preview_bgm_id": 61100033
+    },
+    {
+      "id": 13100034,
+      "name": "僕が持ってるものなら",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100034,
+      "preview_bgm_id": 61100034
+    },
+    {
+      "id": 13100035,
+      "name": "雷鳴のDelay",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100035,
+      "preview_bgm_id": 61100035
+    },
+    {
+      "id": 13100036,
+      "name": "キウイの主張",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100036,
+      "preview_bgm_id": 61100036
+    },
+    {
+      "id": 13100037,
+      "name": "足を洗え！",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100037,
+      "preview_bgm_id": 61100037
+    },
+    {
+      "id": 13100038,
+      "name": "願いの眼差し",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100038,
+      "preview_bgm_id": 61100038
+    },
+    {
+      "id": 13100039,
+      "name": "神様に指を差された僕たち",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100039,
+      "preview_bgm_id": 61100039
+    },
+    {
+      "id": 13100040,
+      "name": "夢の船",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100040,
+      "preview_bgm_id": 61100040
+    },
+    {
+      "id": 13100041,
+      "name": "タチツテトパワー",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100041,
+      "preview_bgm_id": 61100041
+    },
+    {
+      "id": 13100042,
+      "name": "One of them",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100042,
+      "preview_bgm_id": 61100042
+    },
+    {
+      "id": 13100043,
+      "name": "好きと言ったのは嘘だ",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100043,
+      "preview_bgm_id": 61100043
+    },
+    {
+      "id": 13100044,
+      "name": "ヒヤシンス",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100044,
+      "preview_bgm_id": 61100044
+    },
+    {
+      "id": 13100045,
+      "name": "空を飛んでみよう",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100045,
+      "preview_bgm_id": 61100045
+    },
+    {
+      "id": 13100046,
+      "name": "交換条件",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100046,
+      "preview_bgm_id": 61100046
+    },
+    {
+      "id": 13100047,
+      "name": "好きになるのは自由だし...",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100047,
+      "preview_bgm_id": 61100047
+    },
+    {
+      "id": 13100048,
+      "name": "To goでよろしく！",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13100048,
+      "preview_bgm_id": 61100048
+    },
+    {
+      "id": 13200001,
+      "name": "コネクト",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200001,
+      "preview_bgm_id": 61200001
+    },
+    {
+      "id": 13200002,
+      "name": "oath sign",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200002,
+      "preview_bgm_id": 61200002
+    },
+    {
+      "id": 13200003,
+      "name": "恋するフォーチュンクッキー",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200003,
+      "preview_bgm_id": 61200003
+    },
+    {
+      "id": 13200004,
+      "name": "走れ!ペンギン",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200004,
+      "preview_bgm_id": 61200004
+    },
+    {
+      "id": 13200005,
+      "name": "ヘビーローテーション",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200005,
+      "preview_bgm_id": 61200005
+    },
+    {
+      "id": 13200006,
+      "name": "オーマイガー!",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200006,
+      "preview_bgm_id": 61200006
+    },
+    {
+      "id": 13200007,
+      "name": "桜、みんなで食べた",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200007,
+      "preview_bgm_id": 61200007
+    },
+    {
+      "id": 13200008,
+      "name": "SPEED STAR",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200008,
+      "preview_bgm_id": 61200008
+    },
+    {
+      "id": 13200009,
+      "name": "センチメンタルクライシス",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200009,
+      "preview_bgm_id": 61200009
+    },
+    {
+      "id": 13200010,
+      "name": "IGNITE",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200010,
+      "preview_bgm_id": 61200010
+    },
+    {
+      "id": 13200011,
+      "name": "ideal white",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200011,
+      "preview_bgm_id": 61200011
+    },
+    {
+      "id": 13200012,
+      "name": "Preserved Roses",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200012,
+      "preview_bgm_id": 61200012
+    },
+    {
+      "id": 13200013,
+      "name": "名前のない怪物",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200013,
+      "preview_bgm_id": 61200013
+    },
+    {
+      "id": 13200014,
+      "name": "桃色タイフーン",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200014,
+      "preview_bgm_id": 61200014
+    },
+    {
+      "id": 13200015,
+      "name": "象さんのすきゃんてぃ",
+      "category": "COVER",
+      "locked": 1,
+      "obtain_type": "MISSION",
+      "bgm_id": 13200015,
+      "preview_bgm_id": 61200015
+    },
+    {
+      "id": 13200016,
+      "name": "青いスタスィオン",
+      "category": "COVER",
+      "locked": 1,
+      "obtain_type": "MISSION",
+      "bgm_id": 13200016,
+      "preview_bgm_id": 61200016
+    },
+    {
+      "id": 13200017,
+      "name": "時の河を越えて",
+      "category": "COVER",
+      "locked": 1,
+      "obtain_type": "MISSION",
+      "bgm_id": 13200017,
+      "preview_bgm_id": 61200017
+    },
+    {
+      "id": 13200018,
+      "name": "色彩",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200018,
+      "preview_bgm_id": 61200018
+    },
+    {
+      "id": 13200019,
+      "name": "君の知らない物語",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200019,
+      "preview_bgm_id": 61200019
+    },
+    {
+      "id": 13200020,
+      "name": "staple stable",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200020,
+      "preview_bgm_id": 61200020
+    },
+    {
+      "id": 13200021,
+      "name": "帰り道",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200021,
+      "preview_bgm_id": 61200021
+    },
+    {
+      "id": 13200022,
+      "name": "marshmallow justice",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200022,
+      "preview_bgm_id": 61200022
+    },
+    {
+      "id": 13200023,
+      "name": "ambivalent world",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200023,
+      "preview_bgm_id": 61200023
+    },
+    {
+      "id": 13200024,
+      "name": "恋愛サーキュレーション",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200024,
+      "preview_bgm_id": 61200024
+    },
+    {
+      "id": 13200025,
+      "name": "sugar sweet nightmare",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200025,
+      "preview_bgm_id": 61200025
+    },
+    {
+      "id": 13200026,
+      "name": "白金ディスコ",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200026,
+      "preview_bgm_id": 61200026
+    },
+    {
+      "id": 13200027,
+      "name": "wicked prince",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200027,
+      "preview_bgm_id": 61200027
+    },
+    {
+      "id": 13200028,
+      "name": "Everyday、カチューシャ",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200028,
+      "preview_bgm_id": 61200028
+    },
+    {
+      "id": 13200029,
+      "name": "ナギイチ",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200029,
+      "preview_bgm_id": 61200029
+    },
+    {
+      "id": 13200030,
+      "name": "パレオはエメラルド",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200030,
+      "preview_bgm_id": 61200030
+    },
+    {
+      "id": 13200031,
+      "name": "motto☆派手にね！",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200031,
+      "preview_bgm_id": 61200031
+    },
+    {
+      "id": 13200032,
+      "name": "Non stop road",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200032,
+      "preview_bgm_id": 61200032
+    },
+    {
+      "id": 13200033,
+      "name": "adrenaline!!!",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200033,
+      "preview_bgm_id": 61200033
+    },
+    {
+      "id": 13200034,
+      "name": "紅蓮華",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200034,
+      "preview_bgm_id": 61200034
+    },
+    {
+      "id": 13200035,
+      "name": "from the edge",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200035,
+      "preview_bgm_id": 61200035
+    },
+    {
+      "id": 13200036,
+      "name": "Rising Hope",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200036,
+      "preview_bgm_id": 61200036
+    },
+    {
+      "id": 13200037,
+      "name": "grilletto",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200037,
+      "preview_bgm_id": 61200037
+    },
+    {
+      "id": 13200038,
+      "name": "ミレナリオ",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200038,
+      "preview_bgm_id": 61200038
+    },
+    {
+      "id": 13200039,
+      "name": "Mirror",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200039,
+      "preview_bgm_id": 61200039
+    },
+    {
+      "id": 13200040,
+      "name": "Magia",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200040,
+      "preview_bgm_id": 61200040
+    },
+    {
+      "id": 13200041,
+      "name": "ゆずれない願い",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200041,
+      "preview_bgm_id": 61200041
+    },
+    {
+      "id": 13200042,
+      "name": "フライングゲット",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200042,
+      "preview_bgm_id": 61200042
+    },
+    {
+      "id": 13200043,
+      "name": "言い訳Maybe",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200043,
+      "preview_bgm_id": 61200043
+    },
+    {
+      "id": 13200044,
+      "name": "ギンガムチェック",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200044,
+      "preview_bgm_id": 61200044
+    },
+    {
+      "id": 13200045,
+      "name": "チカっとチカ千花っ♡",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200045,
+      "preview_bgm_id": 61200045
+    },
+    {
+      "id": 13200046,
+      "name": "バレンタイン・キッス",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200046,
+      "preview_bgm_id": 61200046
+    },
+    {
+      "id": 13200047,
+      "name": "EQUALロマンス",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200047,
+      "preview_bgm_id": 61200047
+    },
+    {
+      "id": 13200048,
+      "name": "逆光",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200048,
+      "preview_bgm_id": 61200048
+    },
+    {
+      "id": 13200049,
+      "name": "sweets parade",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200049,
+      "preview_bgm_id": 61200049
+    },
+    {
+      "id": 13200050,
+      "name": "SOMEONE ELSE",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200050,
+      "preview_bgm_id": 61200050
+    },
+    {
+      "id": 13200051,
+      "name": "夜に駆ける",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200051,
+      "preview_bgm_id": 61200051
+    },
+    {
+      "id": 13200052,
+      "name": "怪物",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200052,
+      "preview_bgm_id": 61200052
+    },
+    {
+      "id": 13200053,
+      "name": "群青",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200053,
+      "preview_bgm_id": 61200053
+    },
+    {
+      "id": 13200054,
+      "name": "不可思議のカルテ",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200054,
+      "preview_bgm_id": 61200054
+    },
+    {
+      "id": 13200055,
+      "name": "君のせい",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200055,
+      "preview_bgm_id": 61200055
+    },
+    {
+      "id": 13200056,
+      "name": "めてお☆いんぱくと",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200056,
+      "preview_bgm_id": 61200056
+    },
+    {
+      "id": 13200057,
+      "name": "TRUTH〜A Great Detective of Love〜",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200057,
+      "preview_bgm_id": 61200057
+    },
+    {
+      "id": 13200058,
+      "name": "glory days",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200058,
+      "preview_bgm_id": 61200058
+    },
+    {
+      "id": 13200059,
+      "name": "オレンジ",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200059,
+      "preview_bgm_id": 61200059
+    },
+    {
+      "id": 13200060,
+      "name": "1/2",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200060,
+      "preview_bgm_id": 61200060
+    },
+    {
+      "id": 13200061,
+      "name": "スケッチスイッチ",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "SHOP",
+      "bgm_id": 13200061,
+      "preview_bgm_id": 61200061
+    },
+    {
+      "id": 13200062,
+      "name": "secret base ～君がくれたもの～",
+      "category": "COVER",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13200062,
+      "preview_bgm_id": 61200062
+    },
+    {
+      "id": 13900001,
+      "name": "ムズイ",
+      "category": "ORIGINAL",
+      "locked": 0,
+      "obtain_type": "NONE",
+      "bgm_id": 13900001,
+      "preview_bgm_id": 61100019
+    }
+  ],
+  "lives": [
+    {
+      "id": 13100001,
+      "music_id": 13100001,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100002,
+      "music_id": 13100002,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100003,
+      "music_id": 13100003,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100004,
+      "music_id": 13100004,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100005,
+      "music_id": 13100005,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100006,
+      "music_id": 13100006,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100007,
+      "music_id": 13100007,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100008,
+      "music_id": 13100008,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100009,
+      "music_id": 13100009,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100010,
+      "music_id": 13100010,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100011,
+      "music_id": 13100011,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100012,
+      "music_id": 13100012,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100013,
+      "music_id": 13100013,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100014,
+      "music_id": 13100014,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100015,
+      "music_id": 13100015,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100016,
+      "music_id": 13100016,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100017,
+      "music_id": 13100017,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100018,
+      "music_id": 13100018,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100019,
+      "music_id": 13100019,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100020,
+      "music_id": 13100020,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100021,
+      "music_id": 13100021,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100022,
+      "music_id": 13100022,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100023,
+      "music_id": 13100023,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100024,
+      "music_id": 13100024,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100025,
+      "music_id": 13100025,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100026,
+      "music_id": 13100026,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100027,
+      "music_id": 13100027,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100028,
+      "music_id": 13100028,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100029,
+      "music_id": 13100029,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100030,
+      "music_id": 13100030,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100031,
+      "music_id": 13100031,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100032,
+      "music_id": 13100032,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100033,
+      "music_id": 13100033,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100034,
+      "music_id": 13100034,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100035,
+      "music_id": 13100035,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100036,
+      "music_id": 13100036,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100037,
+      "music_id": 13100037,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100038,
+      "music_id": 13100038,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100039,
+      "music_id": 13100039,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100040,
+      "music_id": 13100040,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100041,
+      "music_id": 13100041,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100042,
+      "music_id": 13100042,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100043,
+      "music_id": 13100043,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100044,
+      "music_id": 13100044,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100045,
+      "music_id": 13100045,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100046,
+      "music_id": 13100046,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100047,
+      "music_id": 13100047,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13100048,
+      "music_id": 13100048,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200001,
+      "music_id": 13200001,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200002,
+      "music_id": 13200002,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200003,
+      "music_id": 13200003,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200004,
+      "music_id": 13200004,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200005,
+      "music_id": 13200005,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200006,
+      "music_id": 13200006,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200007,
+      "music_id": 13200007,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200008,
+      "music_id": 13200008,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200009,
+      "music_id": 13200009,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200010,
+      "music_id": 13200010,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200011,
+      "music_id": 13200011,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200012,
+      "music_id": 13200012,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200013,
+      "music_id": 13200013,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200014,
+      "music_id": 13200014,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200015,
+      "music_id": 13200015,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200016,
+      "music_id": 13200016,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200017,
+      "music_id": 13200017,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200018,
+      "music_id": 13200018,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200019,
+      "music_id": 13200019,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200020,
+      "music_id": 13200020,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200021,
+      "music_id": 13200021,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200022,
+      "music_id": 13200022,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200023,
+      "music_id": 13200023,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200024,
+      "music_id": 13200024,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200025,
+      "music_id": 13200025,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200026,
+      "music_id": 13200026,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200027,
+      "music_id": 13200027,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200028,
+      "music_id": 13200028,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200029,
+      "music_id": 13200029,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200030,
+      "music_id": 13200030,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200031,
+      "music_id": 13200031,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200032,
+      "music_id": 13200032,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200033,
+      "music_id": 13200033,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200034,
+      "music_id": 13200034,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200035,
+      "music_id": 13200035,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200036,
+      "music_id": 13200036,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200037,
+      "music_id": 13200037,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200038,
+      "music_id": 13200038,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200039,
+      "music_id": 13200039,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200040,
+      "music_id": 13200040,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200041,
+      "music_id": 13200041,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200042,
+      "music_id": 13200042,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200043,
+      "music_id": 13200043,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200044,
+      "music_id": 13200044,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200045,
+      "music_id": 13200045,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200046,
+      "music_id": 13200046,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200047,
+      "music_id": 13200047,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200048,
+      "music_id": 13200048,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200049,
+      "music_id": 13200049,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200050,
+      "music_id": 13200050,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200051,
+      "music_id": 13200051,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200052,
+      "music_id": 13200052,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200053,
+      "music_id": 13200053,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200054,
+      "music_id": 13200054,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200055,
+      "music_id": 13200055,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200056,
+      "music_id": 13200056,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200057,
+      "music_id": 13200057,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200058,
+      "music_id": 13200058,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200059,
+      "music_id": 13200059,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200060,
+      "music_id": 13200060,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200061,
+      "music_id": 13200061,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 13200062,
+      "music_id": 13200062,
+      "music_type": "NORMAL"
+    },
+    {
+      "id": 30000100,
+      "music_id": 13900001,
+      "music_type": "TUTORIAL"
+    },
+    {
+      "id": 20000100,
+      "music_id": 13200019,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20000200,
+      "music_id": 13200020,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20000300,
+      "music_id": 13200021,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20000400,
+      "music_id": 13200022,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20000500,
+      "music_id": 13200023,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20000600,
+      "music_id": 13200024,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20000700,
+      "music_id": 13200025,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20000800,
+      "music_id": 13200026,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20000900,
+      "music_id": 13200027,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20001000,
+      "music_id": 13100024,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20001100,
+      "music_id": 13200028,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20001200,
+      "music_id": 13200029,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20001300,
+      "music_id": 13200030,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20001400,
+      "music_id": 13200031,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20001500,
+      "music_id": 13200032,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20001600,
+      "music_id": 13200033,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20001700,
+      "music_id": 13200034,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20001800,
+      "music_id": 13200035,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20001900,
+      "music_id": 13200036,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20002000,
+      "music_id": 13200037,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20002100,
+      "music_id": 13200038,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20002200,
+      "music_id": 13200039,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20002300,
+      "music_id": 13200040,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20002400,
+      "music_id": 13200041,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20002500,
+      "music_id": 13100028,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20002600,
+      "music_id": 13100001,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20002700,
+      "music_id": 13200022,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20002800,
+      "music_id": 13100026,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20002900,
+      "music_id": 13100015,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20003000,
+      "music_id": 13200030,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20003100,
+      "music_id": 13100013,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20003200,
+      "music_id": 13200034,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20003300,
+      "music_id": 13200042,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20003400,
+      "music_id": 13200043,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20003500,
+      "music_id": 13200044,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20003600,
+      "music_id": 13100029,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20003700,
+      "music_id": 13200010,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20003800,
+      "music_id": 13100019,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20003900,
+      "music_id": 13200040,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20004000,
+      "music_id": 13100007,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20004100,
+      "music_id": 13200013,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20004200,
+      "music_id": 13200036,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20004300,
+      "music_id": 13100033,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20004400,
+      "music_id": 13200024,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20004500,
+      "music_id": 13100009,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20004600,
+      "music_id": 13200015,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20004700,
+      "music_id": 13100024,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20004800,
+      "music_id": 13200027,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20004900,
+      "music_id": 13100021,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20005000,
+      "music_id": 13100034,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20005100,
+      "music_id": 13200045,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20005200,
+      "music_id": 13100037,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20005300,
+      "music_id": 13200012,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20005400,
+      "music_id": 13100016,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20005500,
+      "music_id": 13200035,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20005600,
+      "music_id": 13100022,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20005700,
+      "music_id": 13200044,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20005800,
+      "music_id": 13200008,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20005900,
+      "music_id": 13100038,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20006000,
+      "music_id": 13200046,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20006100,
+      "music_id": 13200047,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20006200,
+      "music_id": 13100039,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20006300,
+      "music_id": 13200026,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20006400,
+      "music_id": 13200042,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20006500,
+      "music_id": 13100006,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20006600,
+      "music_id": 13200014,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20006700,
+      "music_id": 13100017,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20006800,
+      "music_id": 13200037,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20006900,
+      "music_id": 13200048,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20007000,
+      "music_id": 13100040,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20007100,
+      "music_id": 13200018,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20007200,
+      "music_id": 13100030,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20007300,
+      "music_id": 13200023,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20007400,
+      "music_id": 13100014,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20007500,
+      "music_id": 13200041,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20007600,
+      "music_id": 13200011,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20007700,
+      "music_id": 13100041,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20007800,
+      "music_id": 13200049,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20007900,
+      "music_id": 13100042,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20008000,
+      "music_id": 13200016,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20008100,
+      "music_id": 13200020,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20008200,
+      "music_id": 13200029,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20008300,
+      "music_id": 13100034,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20008400,
+      "music_id": 13200038,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20008500,
+      "music_id": 13100003,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20008600,
+      "music_id": 13100043,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20008700,
+      "music_id": 13200050,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20008800,
+      "music_id": 13100027,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20008900,
+      "music_id": 13100036,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20009000,
+      "music_id": 13200005,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20009100,
+      "music_id": 13100004,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20009200,
+      "music_id": 13200048,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20009300,
+      "music_id": 13100031,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20009400,
+      "music_id": 13200025,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20009500,
+      "music_id": 13100010,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20009600,
+      "music_id": 13200019,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20009700,
+      "music_id": 13100044,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20009800,
+      "music_id": 13100021,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20009900,
+      "music_id": 13200054,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20010000,
+      "music_id": 13100026,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20010100,
+      "music_id": 13200007,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20010200,
+      "music_id": 13100020,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20010300,
+      "music_id": 13200002,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20010400,
+      "music_id": 13100043,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20010500,
+      "music_id": 13200045,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20010600,
+      "music_id": 13100005,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20010700,
+      "music_id": 13200051,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20010800,
+      "music_id": 13200056,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20010900,
+      "music_id": 13200057,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20011000,
+      "music_id": 13100041,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20011100,
+      "music_id": 13200006,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20011200,
+      "music_id": 13100035,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20011300,
+      "music_id": 13200047,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20011400,
+      "music_id": 13100011,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20011500,
+      "music_id": 13200032,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20011600,
+      "music_id": 13100012,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20011700,
+      "music_id": 13200001,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20011800,
+      "music_id": 13200058,
+      "music_type": "EVENT"
+    },
+    {
+      "id": 20011900,
+      "music_id": 13200059,
+      "music_type": "EVENT"
+    }
+  ],
+  "music_shop_ids": [
+    13200002,
+    13200003,
+    13200004,
+    13200006,
+    13200007,
+    13200008,
+    13200009,
+    13200010,
+    13200011,
+    13200013,
+    13200014,
+    13200018,
+    13200020,
+    13200021,
+    13200022,
+    13200023,
+    13200024,
+    13200025,
+    13200026,
+    13200029,
+    13200030,
+    13200032,
+    13200033,
+    13200035,
+    13200037,
+    13200038,
+    13200039,
+    13200040,
+    13200042,
+    13200044,
+    13200045,
+    13200047,
+    13200049,
+    13200051,
+    13200053,
+    13200061
+  ]
+}
