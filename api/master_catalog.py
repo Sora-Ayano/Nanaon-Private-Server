@@ -41,6 +41,24 @@ def music_shop_ids() -> list[int]:
     return sorted(int(item) for item in load_master_catalog()["music_shop_ids"])
 
 
+def live_three_d_ids() -> list[int]:
+    """Return protocol 3D Live ownership IDs from LiveMst."""
+    return sorted({
+        int(item.get("three_d_id", 0))
+        for item in load_master_catalog()["lives"]
+        if int(item.get("three_d_id", 0))
+    })
+
+
+def live_music_video_ids() -> list[int]:
+    return sorted({
+        int(video_id)
+        for item in load_master_catalog()["lives"]
+        for video_id in item.get("music_video_ids", [])
+        if int(video_id)
+    })
+
+
 def battle_area_ids() -> list[int]:
     return sorted(int(item["id"]) for item in load_master_catalog()["battle_areas"])
 

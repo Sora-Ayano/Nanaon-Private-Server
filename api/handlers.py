@@ -30,6 +30,7 @@ from api.models import (
     Costume,
 )
 from api.storage import UserStore
+from api.card_costume_catalog import available_rewards_for_card
 
 logger = logging.getLogger("nanaon.handlers")
 
@@ -1167,6 +1168,28 @@ def handle_card_evolve(request: ParsedRequest) -> dict:
     if card is None:
         return make_response(data=None, code=ResultCode.ERROR_INVALID_PARAM)
     card.evolve = 1
+    reward_ids = available_rewards_for_card(card.master_card_id)
+    if reward_ids:
+        character_id = int(card.master_card_id) // 100_000 * 100_000
+        costume = next(
+            (
+                item for item in user_data.costume_list
+                if int(item.master_character_id) == character_id
+            ),
+            None,
+        )
+        if costume is None:
+            costume = Costume(
+                master_character_id=character_id,
+                master_costume_ids=[],
+                master_costume_id=reward_ids[0],
+            )
+            user_data.costume_list.append(costume)
+        costume.master_costume_ids = sorted(
+            set(costume.master_costume_ids) | set(reward_ids)
+        )
+        if not costume.master_costume_id:
+            costume.master_costume_id = reward_ids[0]
     _persist_user(user_data)
     return make_response(data={
         "card": asdict_safe(card),

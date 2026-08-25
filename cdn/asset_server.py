@@ -116,11 +116,11 @@ class AssetServer:
         try:
             with catalog_path.open(encoding="utf-8") as stream:
                 raw = json.load(stream)
-            workspace = Path(__file__).resolve().parent.parent.parent
+            server_root = Path(__file__).resolve().parent.parent
             return {
                 key.lower(): (
                     Path(value) if Path(value).is_absolute()
-                    else workspace / Path(value)
+                    else server_root / Path(value)
                 )
                 for key, value in raw.items()
             }
@@ -134,7 +134,14 @@ class AssetServer:
         try:
             with self.SOUND_OVERRIDE_CATALOG.open(encoding="utf-8") as stream:
                 raw = json.load(stream)
-            return {key.lower(): Path(value) for key, value in raw.items()}
+            server_root = Path(__file__).resolve().parent.parent
+            return {
+                key.lower(): (
+                    Path(value) if Path(value).is_absolute()
+                    else server_root / Path(value)
+                )
+                for key, value in raw.items()
+            }
         except (OSError, ValueError, TypeError) as exc:
             logger.error("Cannot load sound override catalog: %s", exc)
             return {}

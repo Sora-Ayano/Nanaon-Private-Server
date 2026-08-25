@@ -1,0 +1,687 @@
+{
+  "schema_version": 1,
+  "source": "NanaOn v2.4.0 CardMst/CostumeMst plus packaged resource index",
+  "cards": {
+    "10140001": {
+      "master_character_id": 10100000,
+      "costume_ids": [
+        24001101
+      ],
+      "available_costume_ids": [
+        24001101
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10240001": {
+      "master_character_id": 10200000,
+      "costume_ids": [
+        24001102
+      ],
+      "available_costume_ids": [
+        24001102
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10340001": {
+      "master_character_id": 10300000,
+      "costume_ids": [
+        24001103
+      ],
+      "available_costume_ids": [
+        24001103
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10440001": {
+      "master_character_id": 10400000,
+      "costume_ids": [
+        24001104
+      ],
+      "available_costume_ids": [
+        24001104
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10540001": {
+      "master_character_id": 10500000,
+      "costume_ids": [
+        24001105
+      ],
+      "available_costume_ids": [
+        24001105
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10640001": {
+      "master_character_id": 10600000,
+      "costume_ids": [
+        24001106
+      ],
+      "available_costume_ids": [
+        24001106
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10740001": {
+      "master_character_id": 10700000,
+      "costume_ids": [
+        24001107
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        24001107
+      ]
+    },
+    "10840001": {
+      "master_character_id": 10800000,
+      "costume_ids": [
+        24001108
+      ],
+      "available_costume_ids": [
+        24001108
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10940001": {
+      "master_character_id": 10900000,
+      "costume_ids": [
+        24001109
+      ],
+      "available_costume_ids": [
+        24001109
+      ],
+      "unavailable_costume_ids": []
+    },
+    "11040001": {
+      "master_character_id": 11000000,
+      "costume_ids": [
+        24001110
+      ],
+      "available_costume_ids": [
+        24001110
+      ],
+      "unavailable_costume_ids": []
+    },
+    "11140001": {
+      "master_character_id": 11100000,
+      "costume_ids": [
+        24001111
+      ],
+      "available_costume_ids": [
+        24001111
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10340002": {
+      "master_character_id": 10300000,
+      "costume_ids": [
+        36003101,
+        36003102,
+        36003103,
+        36003104,
+        36003105,
+        36003106,
+        36003107,
+        36003108,
+        36003109,
+        36003110,
+        36003111
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        36003101,
+        36003102,
+        36003103,
+        36003104,
+        36003105,
+        36003106,
+        36003107,
+        36003108,
+        36003109,
+        36003110,
+        36003111
+      ]
+    },
+    "10640002": {
+      "master_character_id": 10600000,
+      "costume_ids": [
+        36001101,
+        36001102,
+        36001103,
+        36001104,
+        36001105,
+        36001106,
+        36001107,
+        36001108,
+        36001109,
+        36001110,
+        36001111
+      ],
+      "available_costume_ids": [
+        36001101,
+        36001102,
+        36001103,
+        36001104,
+        36001105,
+        36001106,
+        36001107,
+        36001108,
+        36001109,
+        36001110,
+        36001111
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10540002": {
+      "master_character_id": 10500000,
+      "costume_ids": [
+        36006101,
+        36006102,
+        36006103,
+        36006104,
+        36006105,
+        36006106,
+        36006107,
+        36006108,
+        36006109,
+        36006110,
+        36006111
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        36006101,
+        36006102,
+        36006103,
+        36006104,
+        36006105,
+        36006106,
+        36006107,
+        36006108,
+        36006109,
+        36006110,
+        36006111
+      ]
+    },
+    "11040002": {
+      "master_character_id": 11000000,
+      "costume_ids": [
+        36005101,
+        36005102,
+        36005103,
+        36005104,
+        36005105,
+        36005106,
+        36005107,
+        36005108,
+        36005109,
+        36005110,
+        36005111
+      ],
+      "available_costume_ids": [
+        36005101,
+        36005102,
+        36005103,
+        36005104,
+        36005105,
+        36005106,
+        36005107,
+        36005108,
+        36005109,
+        36005110,
+        36005111
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10240002": {
+      "master_character_id": 10200000,
+      "costume_ids": [
+        24002102
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        24002102
+      ]
+    },
+    "10940002": {
+      "master_character_id": 10900000,
+      "costume_ids": [
+        24002109
+      ],
+      "available_costume_ids": [
+        24002109
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10340003": {
+      "master_character_id": 10300000,
+      "costume_ids": [
+        24003103
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        24003103
+      ]
+    },
+    "10440002": {
+      "master_character_id": 10400000,
+      "costume_ids": [
+        24003104
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        24003104
+      ]
+    },
+    "10640003": {
+      "master_character_id": 10600000,
+      "costume_ids": [
+        24003106
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        24003106
+      ]
+    },
+    "10740002": {
+      "master_character_id": 10700000,
+      "costume_ids": [
+        24003107
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        24003107
+      ]
+    },
+    "10840002": {
+      "master_character_id": 10800000,
+      "costume_ids": [
+        24003108
+      ],
+      "available_costume_ids": [
+        24003108
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10940003": {
+      "master_character_id": 10900000,
+      "costume_ids": [
+        24003109
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        24003109
+      ]
+    },
+    "11140002": {
+      "master_character_id": 11100000,
+      "costume_ids": [
+        24003111
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        24003111
+      ]
+    },
+    "10140002": {
+      "master_character_id": 10100000,
+      "costume_ids": [
+        24003101
+      ],
+      "available_costume_ids": [
+        24003101
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10240003": {
+      "master_character_id": 10200000,
+      "costume_ids": [
+        24003102
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        24003102
+      ]
+    },
+    "10540003": {
+      "master_character_id": 10500000,
+      "costume_ids": [
+        24003105
+      ],
+      "available_costume_ids": [
+        24003105
+      ],
+      "unavailable_costume_ids": []
+    },
+    "11040003": {
+      "master_character_id": 11000000,
+      "costume_ids": [
+        24003110
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        24003110
+      ]
+    },
+    "10840003": {
+      "master_character_id": 10800000,
+      "costume_ids": [
+        24002108
+      ],
+      "available_costume_ids": [
+        24002108
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10740003": {
+      "master_character_id": 10700000,
+      "costume_ids": [
+        24004107
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        24004107
+      ]
+    },
+    "11140003": {
+      "master_character_id": 11100000,
+      "costume_ids": [
+        24004111
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        24004111
+      ]
+    },
+    "10440003": {
+      "master_character_id": 10400000,
+      "costume_ids": [
+        24002104
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        24002104
+      ]
+    },
+    "10140003": {
+      "master_character_id": 10100000,
+      "costume_ids": [
+        36008101,
+        36008102,
+        36008103,
+        36008104,
+        36008105,
+        36008106,
+        36008107,
+        36008108,
+        36008109,
+        36008110,
+        36008111
+      ],
+      "available_costume_ids": [
+        36008101
+      ],
+      "unavailable_costume_ids": [
+        36008102,
+        36008103,
+        36008104,
+        36008105,
+        36008106,
+        36008107,
+        36008108,
+        36008109,
+        36008110,
+        36008111
+      ]
+    },
+    "10240004": {
+      "master_character_id": 10200000,
+      "costume_ids": [
+        36007101,
+        36007102,
+        36007103,
+        36007104,
+        36007105,
+        36007106,
+        36007107,
+        36007108,
+        36007109,
+        36007110,
+        36007111
+      ],
+      "available_costume_ids": [
+        36007102
+      ],
+      "unavailable_costume_ids": [
+        36007101,
+        36007103,
+        36007104,
+        36007105,
+        36007106,
+        36007107,
+        36007108,
+        36007109,
+        36007110,
+        36007111
+      ]
+    },
+    "10540004": {
+      "master_character_id": 10500000,
+      "costume_ids": [
+        24002105
+      ],
+      "available_costume_ids": [
+        24002105
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10840004": {
+      "master_character_id": 10800000,
+      "costume_ids": [
+        24005108
+      ],
+      "available_costume_ids": [
+        24005108
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10940004": {
+      "master_character_id": 10900000,
+      "costume_ids": [
+        24005109
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        24005109
+      ]
+    },
+    "10440004": {
+      "master_character_id": 10400000,
+      "costume_ids": [
+        24007104
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        24007104
+      ]
+    },
+    "11040004": {
+      "master_character_id": 11000000,
+      "costume_ids": [
+        24007110
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        24007110
+      ]
+    },
+    "10340004": {
+      "master_character_id": 10300000,
+      "costume_ids": [
+        24002103
+      ],
+      "available_costume_ids": [
+        24002103
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10740004": {
+      "master_character_id": 10700000,
+      "costume_ids": [
+        24002107
+      ],
+      "available_costume_ids": [
+        24002107
+      ],
+      "unavailable_costume_ids": []
+    },
+    "11140007": {
+      "master_character_id": 11100000,
+      "costume_ids": [
+        24002111
+      ],
+      "available_costume_ids": [
+        24002111
+      ],
+      "unavailable_costume_ids": []
+    },
+    "11040006": {
+      "master_character_id": 11000000,
+      "costume_ids": [
+        24002110
+      ],
+      "available_costume_ids": [
+        24002110
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10140006": {
+      "master_character_id": 10100000,
+      "costume_ids": [
+        24002101
+      ],
+      "available_costume_ids": [
+        24002101
+      ],
+      "unavailable_costume_ids": []
+    },
+    "10640007": {
+      "master_character_id": 10600000,
+      "costume_ids": [
+        24002106
+      ],
+      "available_costume_ids": [],
+      "unavailable_costume_ids": [
+        24002106
+      ]
+    }
+  },
+  "available_costumes": [
+    {
+      "master_character_id": 10100000,
+      "master_costume_ids": [
+        24001101,
+        24002101,
+        24003101,
+        36001101,
+        36005101,
+        36008101
+      ]
+    },
+    {
+      "master_character_id": 10200000,
+      "master_costume_ids": [
+        24001102,
+        36001102,
+        36005102,
+        36007102
+      ]
+    },
+    {
+      "master_character_id": 10300000,
+      "master_costume_ids": [
+        24001103,
+        24002103,
+        36001103,
+        36005103
+      ]
+    },
+    {
+      "master_character_id": 10400000,
+      "master_costume_ids": [
+        24001104,
+        36001104,
+        36005104
+      ]
+    },
+    {
+      "master_character_id": 10500000,
+      "master_costume_ids": [
+        24001105,
+        24002105,
+        24003105,
+        36001105,
+        36005105
+      ]
+    },
+    {
+      "master_character_id": 10600000,
+      "master_costume_ids": [
+        24001106,
+        36001106,
+        36005106
+      ]
+    },
+    {
+      "master_character_id": 10700000,
+      "master_costume_ids": [
+        24002107,
+        36001107,
+        36005107
+      ]
+    },
+    {
+      "master_character_id": 10800000,
+      "master_costume_ids": [
+        24001108,
+        24002108,
+        24003108,
+        24005108,
+        36001108,
+        36005108
+      ]
+    },
+    {
+      "master_character_id": 10900000,
+      "master_costume_ids": [
+        24001109,
+        24002109,
+        36001109,
+        36005109
+      ]
+    },
+    {
+      "master_character_id": 11000000,
+      "master_costume_ids": [
+        24001110,
+        24002110,
+        36001110,
+        36005110
+      ]
+    },
+    {
+      "master_character_id": 11100000,
+      "master_costume_ids": [
+        24001111,
+        24002111,
+        36001111,
+        36005111
+      ]
+    }
+  ],
+  "counts": {
+    "reward_cards": 45,
+    "available_reward_references": 46,
+    "unavailable_reward_references": 59,
+    "available_unique_costumes": 46
+  }
+}

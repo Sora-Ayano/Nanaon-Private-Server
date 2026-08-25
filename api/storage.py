@@ -24,6 +24,7 @@ from api.models import (
 DEFAULT_DB_PATH = Path(__file__).resolve().parent.parent / "data" / "private_server.sqlite3"
 LOTTERY_CATALOG_PATH = DEFAULT_DB_PATH.parent / "preservation_lottery.json"
 COSTUME_CATALOG_PATH = DEFAULT_DB_PATH.parent / "costume_movie_catalog.json"
+CARD_COSTUME_CATALOG_PATH = DEFAULT_DB_PATH.parent / "card_costume_catalog.json"
 
 
 class UserStore:
@@ -529,6 +530,8 @@ class UserStore:
             self._upgrade_wall_seal_balance(db)
             self._upgrade_wall_ticket_balance(db)
             self._upgrade_full_3d_costume_inventory(db)
+            self._upgrade_correct_live_unlock_inventory(db)
+            self._upgrade_verified_2d_costume_inventory(db)
 
     @staticmethod
     def _upgrade_base_accounts(db: sqlite3.Connection) -> None:
@@ -837,6 +840,94 @@ class UserStore:
         )
 
     @staticmethod
+    def _upgrade_correct_live_unlock_inventory(db: sqlite3.Connection) -> None:
+        """Add LiveMst protocol IDs, replacing the old Timeline-ID assumption."""
+        migration_version = 7
+        if db.execute(
+            "SELECT 1 FROM schema_migrations WHERE version = ?",
+            (migration_version,),
+        ).fetchone():
+            return
+
+        now = int(time.time())
+        rows = []
+        for row in db.execute("SELECT user_id FROM users").fetchall():
+            user_id = int(row[0])
+            baseline = UserGetData.create_default(user_id)
+            rows.extend(
+                (user_id, "three_d", int(content_id), now, "live_mst_v7")
+                for content_id in baseline.master_live_three_d_ids
+            )
+            rows.extend(
+                (user_id, "music_video", int(content_id), now, "live_mst_v7")
+                for content_id in baseline.master_live_music_video_ids
+            )
+        db.executemany(
+            "INSERT OR IGNORE INTO user_content_unlocks VALUES (?, ?, ?, ?, ?)",
+            rows,
+        )
+        db.execute(
+            "INSERT INTO schema_migrations VALUES (?, ?, ?)",
+            (migration_version, "live_mst_protocol_unlock_inventory", now),
+        )
+
+    @staticmethod
+    def _grant_verified_2d_costumes(
+        db: sqlite3.Connection, user_id: int, now: Optional[int] = None
+    ) -> int:
+        """Grant only costumes whose complete Live2D chain is in the package."""
+        if not CARD_COSTUME_CATALOG_PATH.is_file():
+            return 0
+        catalog = json.loads(CARD_COSTUME_CATALOG_PATH.read_text(encoding="utf-8"))
+        unlocked_at = int(time.time()) if now is None else int(now)
+        ownership_rows = []
+        selection_rows = []
+        for group in catalog.get("available_costumes", []) or []:
+            character_id = int(group.get("master_character_id", 0) or 0)
+            costume_ids = sorted({
+                int(costume_id)
+                for costume_id in group.get("master_costume_ids", []) or []
+                if int(costume_id)
+            })
+            if not character_id or not costume_ids:
+                continue
+            ownership_rows.extend(
+                (int(user_id), "2d", character_id, costume_id, 0, unlocked_at)
+                for costume_id in costume_ids
+            )
+            selection_rows.append(
+                (int(user_id), "2d", character_id, 0, costume_ids[0], unlocked_at)
+            )
+        db.executemany(
+            "INSERT OR IGNORE INTO user_costumes VALUES (?, ?, ?, ?, ?, ?)",
+            ownership_rows,
+        )
+        db.executemany(
+            "INSERT OR IGNORE INTO user_costume_selections VALUES (?, ?, ?, ?, ?, ?)",
+            selection_rows,
+        )
+        return len(ownership_rows)
+
+    @classmethod
+    def _upgrade_verified_2d_costume_inventory(
+        cls, db: sqlite3.Connection
+    ) -> None:
+        migration_version = 8
+        if db.execute(
+            "SELECT 1 FROM schema_migrations WHERE version = ?",
+            (migration_version,),
+        ).fetchone():
+            return
+
+        now = int(time.time())
+        for row in db.execute("SELECT user_id FROM users").fetchall():
+            cls._grant_verified_2d_costumes(db, int(row[0]), now)
+        db.execute(
+            "INSERT INTO schema_migrations VALUES (?, ?, ?)",
+            (migration_version, "verified_2d_evolution_costumes", now),
+        )
+
+    @staticmethod
     def _install_preservation_lottery(db: sqlite3.Connection) -> None:
         """Install the distributable real base pool into every new database."""
         if not LOTTERY_CATALOG_PATH.is_file():
@@ -919,6 +1010,7 @@ class UserStore:
         self.save_user(uuid_param, user_data)
         with self._connect() as db:
             self._grant_full_3d_costumes(db, resolved_id)
+            self._grant_verified_2d_costumes(db, resolved_id)
         return self.load_user(resolved_id) or user_data
 
     def save_user(self, uuid_param: str, data: UserGetData) -> None:
@@ -1370,11 +1462,17 @@ class UserStore:
             )
             # Music ownership is projected solely from user_music.  The
             # generic unlock table is kept only as an audit/migration record.
+            # Old releases stored resource Timeline IDs in the 3D protocol
+            # field. Project both inventories through the current LiveMst so
+            # stale generated values are never sent back to the client.
+            valid_music_videos = set(catalog_data.master_live_music_video_ids)
             data.master_live_music_video_ids = sorted(
-                set(data.master_live_music_video_ids) | set(unlocked.get("music_video", []))
+                valid_music_videos
+                | (set(unlocked.get("music_video", [])) & valid_music_videos)
             )
+            valid_three_d = set(catalog_data.master_live_three_d_ids)
             data.master_live_three_d_ids = sorted(
-                set(data.master_live_three_d_ids) | set(unlocked.get("three_d", []))
+                valid_three_d | (set(unlocked.get("three_d", [])) & valid_three_d)
             )
             data.master_stamp_ids = sorted(
                 set(data.master_stamp_ids) | set(unlocked.get("stamp", []))
@@ -1489,6 +1587,10 @@ class UserStore:
             }
             for item in live_rows
         ]
+        if data.match_live is None:
+            # The owned stamp gallery is opened from Match Live's room-select
+            # scene. Older snapshots stored null here and hid the entry.
+            data.match_live = catalog_data.match_live
         return data
 
     @staticmethod

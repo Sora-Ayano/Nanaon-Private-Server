@@ -15,6 +15,8 @@ from dataclasses import dataclass, field, asdict
 from pathlib import Path
 from typing import Optional, List, Dict, Any
 
+from api.card_costume_catalog import available_costume_inventory
+from api.master_catalog import live_music_video_ids, live_three_d_ids
 from api.master_catalog import music_ids as master_music_ids
 from api.master_catalog import music_shop_ids, story_inventory
 
@@ -342,6 +344,18 @@ class UserGetData:
         area_item_ids = catalog.get("area_item_ids", [])
         item_catalog = _load_item_catalog()
         stories = story_inventory()
+        two_d_costumes = [
+            Costume(
+                master_character_id=int(group["master_character_id"]),
+                master_costume_ids=list(group["master_costume_ids"]),
+                # A non-zero selection is required when a character has an
+                # acquired costume group. Existing selections are preserved
+                # by storage migrations.
+                master_costume_id=int(group["master_costume_ids"][0]),
+            )
+            for group in available_costume_inventory()
+            if group["master_costume_ids"]
+        ]
         return cls(
             user=User(
                 id=user_id,
@@ -376,15 +390,15 @@ class UserGetData:
             deck_list=[Deck(slot=1, main_card_ids=live_deck_card_ids)],
             master_music_ids=music_ids,
             music_shop_releases=music_shop_ids(),
-            master_live_three_d_ids=list(catalog.get("three_d_timeline_ids", [])),
+            master_live_music_video_ids=live_music_video_ids(),
+            master_live_three_d_ids=live_three_d_ids(),
             # This protocol list is read history, not an unlock inventory.
             # Home talk scripts are unlocked by the installed master/assets;
             # pre-filling this list suppresses every character speech bubble.
             master_talk_ids=[],
-            # Defaults are resolved from CharacterMst locally.  This protocol
-            # list is acquired/equipped inventory; fabricated IDs crash the
-            # client's CostumeMst downloader before either 2D or 3D can open.
-            costume_list=[],
+            # Only evolution costumes with a complete, exact-size Live2D
+            # resource chain are advertised to the client.
+            costume_list=two_d_costumes,
             area_item_list=[
                 AreaItem(id=index, master_area_item_id=master_id, level=10)
                 for index, master_id in enumerate(area_item_ids, 1)
@@ -397,6 +411,15 @@ class UserGetData:
                 Group(master_character_id=character_id)
                 for character_id in character_ids
             ],
+            # StampSettingScene is reached from Match Live's room-select UI.
+            # A null MatchLive object suppresses that entry before the local
+            # stamp collection can be opened.
+            match_live={
+                "match_point": 0,
+                "rank": 1,
+                "is_set_match_title": 0,
+                "is_set_ranking_title": 0,
+            },
             start_time=int(time.time()),
         )
 
