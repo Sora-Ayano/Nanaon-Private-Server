@@ -1,0 +1,39 @@
+# Version control and local tooling
+.git
+.gitignore
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Runtime state
+var/
+
+# Game resource packs
+resources/
+data/runtime/
+data/private_server.before_*.sqlite3
+backups/
+
+# Bundled Windows runtime (adb/python) is not part of container images
+runtime/
+
+# TLS
+*.key
+*.pem
+*.csr
+*.cer
+*.crt
+c[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].0
+
+# Windows-only installer scripts
+Install-And-Run.cmd
+Install-And-Run.ps1
+Stop-Server.cmd
+Push-All-Resources.cmd
+
+# Deployment descriptors
+compose.yml
+.env
+.env.*

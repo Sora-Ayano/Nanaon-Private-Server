@@ -1,0 +1,23 @@
+name: nanaon-server
+
+services:
+  server:
+    image: ${IMAGE_REPO:-nanaon-private-server}:${IMAGE_TAG:-latest}
+    container_name: nanaon-server
+    restart: unless-stopped
+    ports:
+      - 443:443
+    volumes:
+      - ./var/db/private_server.sqlite3:/app/app/data/private_server.sqlite3
+      - ./var:/app/app/var
+      # resource packs
+      - ${RESOURCES_ROOT:-..}/main.5465.com.aniplex.nananiji/assets:/app/main.5465.com.aniplex.nananiji/assets:ro
+      - ${RESOURCES_ROOT:-..}/com.aniplex.nananiji:/app/com.aniplex.nananiji:ro
+
+    environment:
+      TZ: Asia/Tokyo
+
+    deploy:
+      resources:
+        limits:
+          memory: 1g
