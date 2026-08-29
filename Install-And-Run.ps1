@@ -26,7 +26,16 @@ $Domains = @(
     '1d8r7iwbqc.execute-api.ap-northeast-1.amazonaws.com',
     'api.gaudiy.com'
 )
-$CertNames = @('c8750f0d.0', 'd6dc44f9.0', '543b6ca4.0')
+# Android indexes system CAs by the OpenSSL subject hash in the filename.
+# Keep the legacy release hashes and the hashes of the Docker generator's
+# stable subject (CN=Nanaon Private Gateway) for old/new Android providers.
+$CertNames = @(
+    'c8750f0d.0',
+    'd6dc44f9.0',
+    '543b6ca4.0',
+    '0485b453.0',
+    '1a6db830.0'
+)
 
 function Assert-File([string]$Path, [string]$Description) {
     if (-not (Test-Path -LiteralPath $Path -PathType Leaf)) {
