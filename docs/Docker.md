@@ -117,7 +117,18 @@ docker compose up -d   # 启动
 docker compose logs -f # 查看日志
 ```
 
+PowerShell 首次启动：
+
+```powershell
+New-Item -ItemType Directory -Force var\db | Out-Null
+New-Item -ItemType File -Force var\db\private_server.sqlite3 | Out-Null
+docker bake
+docker compose up -d
+docker compose logs -f
+```
+
 - 首次启动会在 `var/certs` 生成自签名 TLS 证书（`gateway_trust_cert.pem`）；
+- 游戏连接前必须把该证书安装为测试模拟器的 Android 系统 CA。Docker 证书的安装文件名为 `0485b453.0` / `1a6db830.0`；这会扩大该模拟器的信任边界，不应安装到日常使用的真机；
 - 活库以文件形式被挂载到容器内(见Compose)；文件为空时，entrypoint 自动重置为默认状态(镜像内`seed.sqlite3`)；已有数据则跳过。重置玩家数据 = 删除该文件后重新 `touch`；
 - 静态游戏内容数据在构建时被冻结在镜像中；`var/`（证书、日志、进程状态）挂载到仓库目录，便于直接查看；
 

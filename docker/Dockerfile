@@ -14,8 +14,9 @@ RUN pip install --no-cache-dir -r /app/app/requirements.txt
 # Copy application code
 COPY . /app/app
 
-# Setup: permissions, seed database, asset directories
-RUN chmod +x /app/app/docker/entrypoint.sh && \
+# Setup: normalize Windows checkouts, permissions, seed database, asset directories
+RUN sed -i 's/\r$//' /app/app/docker/entrypoint.sh && \
+    chmod +x /app/app/docker/entrypoint.sh && \
     mv /app/app/data/private_server.sqlite3 /app/app/seed.sqlite3 && \
     mkdir -p /app/app/data /app/main.5465.com.aniplex.nananiji/assets /app/com.aniplex.nananiji
 
