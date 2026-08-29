@@ -222,6 +222,9 @@ private_server/
 `-- run.py                       服务进程入口
 ```
 
+## 容器部署 (Docker)
+见 [Docker.md](docs/Docker.md)
+
 ## 已知问题
 
 1. 无法抽卡；
