@@ -1,17 +1,13 @@
 #!/usr/bin/env python3
-"""Flask API process used behind the local TLS gateway."""
+"""Flask API and CDN application used by the LAN launcher."""
 
-import argparse
 import base64
 import json
 import logging
-import os
-import sys
 import time
 from pathlib import Path
 from typing import Optional
 
-from process_guard import start_parent_guard
 
 BASE_DIR = Path(__file__).parent
 LOG_DIR = BASE_DIR / "var" / "logs"
@@ -181,7 +177,7 @@ def _record_request(host, path, func_id, body_preview, resp_preview):
 # ═══════════════════════════════════════════════════════════
 
 def create_app(config: dict):
-    from flask import Flask, request, jsonify, Response
+    from flask import Flask, request, jsonify, Response, abort
     from crypto.funcid import FuncId
     from crypto import NanaPacker
     from api.router import router
@@ -193,6 +189,13 @@ def create_app(config: dict):
 
     app = Flask(__name__)
     app.config["MAX_CONTENT_LENGTH"] = config.get("max_request_size", 10 * 1024 * 1024)
+    capture_traffic = bool(config.get("capture_traffic", False))
+
+    @app.before_request
+    def restrict_diagnostics():
+        if request.path.startswith("/admin/"):
+            if not config.get("diagnostics", False) or request.remote_addr not in ("127.0.0.1", "::1"):
+                abort(404)
 
     crypto_cfg = config.get("crypto", {})
     packer = None
@@ -237,7 +240,8 @@ def create_app(config: dict):
         if packer and packer.has_key and body_text:
             try:
                 decrypted = packer.decode_string(body_text.strip())
-                logger.debug(f"DECRYPT OK: {decrypted[:200]}")
+                if capture_traffic:
+                    logger.debug(f"DECRYPT OK: {decrypted[:200]}")
                 json_data = json.loads(decrypted)
                 if isinstance(json_data, dict) and "func_id" in json_data:
                     func_id = json_data["func_id"]
@@ -268,7 +272,7 @@ def create_app(config: dict):
             func_id = _infer_func_id_from_path(request.path, request.method)
 
         # 4) 落盘未解密的密文 (抓密文主力，无论是否有密钥都落)
-        if body_text and not decrypted_ok:
+        if capture_traffic and body_text and not decrypted_ok:
             try:
                 fid_tag = func_id if func_id is not None else "unk"
                 ts = int(time.time())
@@ -281,7 +285,7 @@ def create_app(config: dict):
         if func_id is None:
             func_id = 0
 
-        if decrypted_ok:
+        if capture_traffic and decrypted_ok:
             try:
                 capture = {
                     "timestamp": int(time.time()),
@@ -323,8 +327,9 @@ def create_app(config: dict):
             response_body = base64.b64encode(response_json.encode("utf-8")).decode("ascii")
             logger.debug(f"Plain+Base64 response ({len(response_body)} chars)")
 
-        body_preview = body_text[:120] if body_text else ""
-        _record_request(host, request.path, func_id, body_preview, response_body[:120])
+        if capture_traffic:
+            body_preview = body_text[:120] if body_text else ""
+            _record_request(host, request.path, func_id, body_preview, response_body[:120])
 
         return Response(
             response_body,
@@ -332,9 +337,6 @@ def create_app(config: dict):
             mimetype="application/json",
             headers={
                 "X-Server": "NanaOn-Private-Server",
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Headers": "*",
-                "Access-Control-Allow-Methods": "*",
             },
         )
 
@@ -362,7 +364,11 @@ def create_app(config: dict):
         iv = data.get("aes_iv", crypto_cfg.get("aes_iv"))
         if not (fname and key and iv):
             return jsonify({"error": "need file, aes_key, aes_iv"}), 400
-        fp = ENC_REQ_DIR / fname
+        if not isinstance(fname, str) or Path(fname).name != fname or ":" in fname or "\\" in fname:
+            abort(400)
+        fp = (ENC_REQ_DIR / fname).resolve()
+        if not fp.is_relative_to(ENC_REQ_DIR.resolve()):
+            abort(400)
         if not fp.exists():
             return jsonify({"error": f"file not found: {fname}"}), 404
         body = fp.read_text(encoding="utf-8").strip()
@@ -380,70 +386,10 @@ def create_app(config: dict):
 
     @app.after_request
     def add_cors(response):
-        response.headers["Access-Control-Allow-Origin"] = "*"
-        response.headers["Access-Control-Allow-Headers"] = "*"
-        response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+        if config.get("cors", False):
+            response.headers["Access-Control-Allow-Origin"] = "*"
+            response.headers["Access-Control-Allow-Headers"] = "*"
+            response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
         return response
 
     return app
-
-
-# ═══════════════════════════════════════════════════════════
-# 主入口
-# ═══════════════════════════════════════════════════════════
-
-def main():
-    start_parent_guard()
-    if pid_file := os.environ.get("NANAON_PID_FILE"):
-        Path(pid_file).write_text(str(os.getpid()), encoding="ascii")
-    parser = argparse.ArgumentParser(description="ナナオン Private Server (Flask API)")
-    parser.add_argument("--host", default=None)
-    parser.add_argument("--port", type=int, default=None)
-    parser.add_argument("--debug", action="store_true", default=None)
-    parser.add_argument("--config", default="config.yaml")
-    args = parser.parse_args()
-
-    config = load_config(args.config)
-
-    # 命令行覆盖
-    if args.host is not None:
-        config["host"] = args.host
-    if args.port is not None:
-        config["port"] = args.port
-    if args.debug is not None:
-        config["debug"] = args.debug
-
-    # 日志
-    logging.basicConfig(
-        level=getattr(logging, config.get("log_level", "DEBUG").upper(), logging.DEBUG),
-        format="[%(asctime)s] %(levelname)s %(name)s: %(message)s",
-        datefmt="%H:%M:%S",
-        handlers=[
-            logging.StreamHandler(sys.stdout),
-            logging.FileHandler(str(LOG_DIR / "server.log"), encoding="utf-8"),
-        ],
-    )
-
-    print(f"""
-╔══════════════════════════════════════════════╗
-║  ナナオン Private Server v2.4.0 (API)        ║
-╠══════════════════════════════════════════════╣
-║  Listen:  {config['host']}:{config['port']:<24}║
-║  Enc:    {'ENABLED' if config.get('crypto',{}).get('aes_key') else 'DISABLED (capture mode)':<24}║
-║  EncReq: {str(ENC_REQ_DIR):<24}║
-║  Debug:  {'ON' if config.get('debug') else 'OFF':<24}║
-╚══════════════════════════════════════════════╝
-""")
-
-    app = create_app(config)
-    app.run(
-        host=config["host"],
-        port=config["port"],
-        debug=config.get("debug", False),
-        threaded=True,
-        use_reloader=False,
-    )
-
-
-if __name__ == "__main__":
-    main()

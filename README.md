@@ -4,229 +4,99 @@
 
 《22/7 音乐的时间》（22/7 音楽の時間）本地服务器。
 
-Windows 一键安装器以 **雷电模拟器 9（LDPlayer 9）** 为主，内置的 Python 与 ADB。
+## 2026.9.13：独立局域网服务端
 
-## 发行包结构
+本仓库 `main` 只发布服务端代码、数据库结构、静态数据目录、必要的兼容资源与文档。**不上传 APK、客户端构建工具、完整游戏资源、中文二进制补丁、运行环境、个人存档、签名材料或日志。** 新数据库由服务端首次启动创建，数据库结构参考 `data/schema.sql`，以 `api/storage.py` 的实际初始化逻辑为准。
 
-不要改变以下相对位置：
+新版从自己的目录读取数据，不搜索旧服务端和父目录。准备好新版自身依赖与资源，迁移需要保留的存档后，即可删除旧服务端；也可以按下面说明覆盖程序文件。原来的 USB 推送、证书网关和 Docker 入口不再使用。
+
+## 首次准备与启动
+
+1. 下载本仓库到新的可写目录。源码运行需要 Windows x64 的 Python 3.12；完整本地便携包如已有 `runtime/python/python.exe`，可跳过安装 Python 依赖这一步。
+2. 在服务端根目录打开 PowerShell，准备独立环境：
+
+```powershell
+py -3.12 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+```
+
+3. 将配套完整资源包放入**新版自己的** `resources/`。不要通过链接指向旧服务端；删除旧目录前确认这些是已复制完成的真实文件。资源包不在 GitHub 中。
+4. 若有语言包，将其中的 `patches/` 放到新版根目录。没有语言包时，日语使用原始日文资源；选择中文时必须提供相应补丁清单和文件。
+5. 有旧存档时先按下一节迁移；没有旧存档则直接双击 **`Start-Server.cmd`**。回车或输入 `1` 默认日语，输入 `2` 为简体中文实验选项。中文运行验收状态见 [验证记录](docs/VALIDATION.md)。
+6. 手机与电脑连接同一局域网，使用配套的 **Nanaon LAN** 客户端。运行期间保持服务窗口打开；关闭窗口或按 Ctrl+C 停止。
+
+服务自动检测私有 IPv4，默认使用 TCP 18080。手机可用浏览器访问窗口显示的 `/play` 地址。若 Windows 弹出防火墙请求，允许专用网络访问，不必关闭整个防火墙。
+
+**客户端制作与服务端启动分开。** 本 GitHub 仓库只启动服务，不重打包 APK。另行使用配套客户端构建包生成安装包；可将生成的 `nanaon-lan-*.apk` 放入本机 `dist/`，安装页会自动提供下载。已有 LAN 客户端可以在启动器中更新服务器地址。
+
+## 保留旧服务端的游玩数据
+
+旧版通常将存档存为 `data/private_server.sqlite3`；上一版 LAN 服务为 `var/data/users.sqlite3`。如果改过数据库路径，请使用实际文件。**先停止旧、新两个服务端，再迁移。** 不要从仍在运行的 SQLite 库中单独拖拽主文件并漏掉 WAL 事务。
+
+推荐把旧存档备份到服务目录以外，并保留原文件，直到确认新版本的昵称、卡片、编队、道具和成绩均正确。在新版根目录运行：
+
+```powershell
+.\.venv\Scripts\python.exe tools/migrate_save.py --source '<旧数据库的绝对路径>'
+```
+
+便携包把命令开头替换为 ` .\runtime\python\python.exe `。默认导入到新版的 `var/data/users.sqlite3`。
+
+迁移工具执行 SQLite 一致性备份，在临时副本上升级表结构，然后恢复并逐表对比原有玩家记录，避免旧升级逻辑重置卡片或余额。源库不修改；通过完整性、外键和玩家记录校验后才替换目标文件。测试覆盖了旧库的实际副本及缺少较新升级标记的旧结构情形。
+
+- **目标已有存档**：默认停止，保留两边数据。确定采用旧库覆盖新库时，加 `--replace`；目标库会先自动备份到新版 `var/backups/`。
+- **旧库有多个账号**：所有账号均保留。单账号自动选用；多账号中存在旧版内置账号 `100004` 时默认选它，否则要求通过 `--user-id <账号ID>` 指定。选定账号记录在数据库中，新客户端登录后继续使用它，不会因为安装 UUID 改变而创建空白账号。
+- **不是合并**：`--replace` 替换当前存档，不会合并两台电脑的游玩进度。
+- **回滚**：停止服务后，使用相同工具将 `var/backups/` 中的备份作为 `--source`，并加 `--replace`。当前存档仍会先备份。也可以保留原服务和原存档，直接回到原环境。
+
+覆盖原目录更新时，先把数据库备份到该目录之外，再覆盖新版程序文件。保留需要的 `resources/` 和 `var/`；首次启动新版前，使用上述命令从备份导入。不要用旧的 Install-And-Run、USB、Docker 或证书脚本启动新版。新版没有“自动猜测并读取旧数据库”的回退行为。
+
+如果还使用本地客户端构建包，另行备份它的 `var/signing/`，以便保持 APK 更新签名。**数据库迁移不需要旧证书或 APK 签名密钥**，也不会把它们上传。迁移完成且验证无误后，旧服务端可直接删除；新版继续使用自己的资源、存档和依赖。
+
+## 日常语言选择与网络设置
+
+日常启动仅运行服务，不生成 APK。切换语言不需要重新安装：先退出手机游戏并停止服务，再启动选择语言，随后重新打开客户端。文件通过局域网按资源版本下载，支持大小 / SHA-256 校验和断点续传。一个服务实例的语言对所有连接它的客户端生效。
+
+```powershell
+.\Start-Server.cmd --locale ja-JP
+.\Start-Server.cmd --locale zh-Hans
+.\Start-Server.cmd --ip <电脑局域网IPv4> --port 18080
+```
+
+不带 `--locale` 的非交互启动也默认日语。VPN、多网卡和访客 Wi-Fi / AP 隔离可能影响连通性；先用手机浏览器访问 `/play` 检查。服务不会强制终止占用端口的其他程序。
+
+## 独立目录布局
 
 ```text
-Nanaon Private Server/
-|-- private_server/                       服务端、数据库、兼容资源与运行环境
-|-- com.aniplex.nananiji/                 Android 外部资源包
-|-- main.5465.com.aniplex.nananiji/       服务端读取的基础资源
-`-- main.5465.com.aniplex.nananiji.obb     Android OBB
+Nanaon-Server/
+|-- Start-Server.cmd               日常启动与语言选择
+|-- api/ cdn/ crypto/ lan/         服务端代码
+|-- data/                         静态 JSON 数据与 schema.sql
+|-- compat_assets/                服务端必需的兼容资源
+|-- tools/migrate_save.py          存档迁移
+|-- .venv/ 或 runtime/            新版自己的运行依赖，不提交 Git
+|-- patches/                      可选语言包，不提交 Git
+|-- resources/                    新版完整资源，不提交 Git
+|   |-- main.5465.com.aniplex.nananiji.obb
+|   |-- main.5465.com.aniplex.nananiji/assets/
+|   `-- com.aniplex.nananiji/files/
+|       |-- TTSCriProject.acf
+|       `-- DownloadCache/
+|-- dist/                         可选的本地客户端分发，不提交 Git
+`-- var/
+    |-- data/users.sqlite3         本机存档，不提交 Git
+    |-- backups/                  迁移前备份，不提交 Git
+    `-- logs/                     本机日志，不提交 Git
 ```
 
-`private_server/compat_assets` 是服务端核心内容，包含已恢复的剧情/结算 EventScript 兼容 Bundle，以及补回的完整歌曲资源。它用于补足原档中不存在或只含试听版的资源，不能删除。
+`var/` 中含有真实存档与备份，不是可以随意删除的缓存。当前仍为单人保存模式，同一实例的客户端可能共享账号，尚不是独立多用户服务。
 
-`private_server/var` 不属于发行内容。首次启动时会自动生成，用于保存本机 TLS 证书、进程状态、设备安装临时文件和日志；停止服务后可以删除，下次启动会重新创建。
-
-## 一键安装前的要求
-
-1. Windows 10 或 Windows 11；
-2. 雷电设置中已开启 ADB 调试和 root 权限，雷电模拟器需开启系统盘可写入模式（设置->磁盘->系统盘设置->勾选“可写入”）；
-3. 雷电模拟器 9 （安卓 9 / Android 9）启动并进入桌面；
-4. 游戏APK `ナナオン_2.4.0.apk` 已安装；
-5. 模拟器至少有约 8GB 可用空间；
-6. Windows 上的 TCP 443、8000、8888 未被其他程序占用；
-7. Windows 防火墙允许发行包内置 Python 在专用网络监听上述端口。
-
-有 Magisk 时使用 systemless 模块；无 Magisk 时需要雷电的可写 `/system`。
-
-## 一键安装并运行
-
-在项目目录双击：
-
-```text
-private_server\Install-And-Run.cmd
-```
-
-也可以先进入服务端目录再执行：
+## 开发与验证
 
 ```powershell
-cd "<发行根目录>\private_server"
-.\Install-And-Run.cmd
+.\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
+.\.venv\Scripts\python.exe -m pytest tests -q
 ```
 
-安装器会依次完成：
+[验证记录](docs/VALIDATION.md) · [补丁接入](docs/CHINESE_PATCH_INTEGRATION.md) · [运行环境](docs/PORTABLE_RUNTIME.md)
 
-1. 使用 `runtime\python\python.exe` 启动 API、CDN 和 TLS 网关；
-2. 首次运行时在 `var\certs` 生成本地 TLS 证书；
-3. 使用 `runtime\platform-tools\adb.exe` 探测雷电常用的 5555、7555 端口；
-4. 自动读取电脑可用 IPv4，并从 Android 端测试可达地址；
-5. 增量推送 `com.aniplex.nananiji` 和 OBB；
-6. 在 Android 端安装五个原游戏域名的 hosts 映射和系统 CA；
-7. 必要时重启 Android，随后校验资源、hosts、CA 与三个服务端口；
-8. 默认启动游戏，并等待客户端访问本地 API。
-
-成功时应看到：
-
-```text
-Server: OK
-Hosts: OK (5 domains)
-Android system CA: OK
-Port 443: LISTENING
-Port 8000: LISTENING
-Port 8888: LISTENING
-Client API connection: OK
-```
-
-首次运行会推送全量资源包，请耐心等待。
-
-同一台雷电实例可能同时显示为 `emulator-<编号>` 和 `127.0.0.1:<端口>`。安装器会按 Android 设备身份去重，只配置一次。
-
-## 常用参数
-
-先查看内置 ADB 识别到的设备：
-
-```powershell
-cd "<发行根目录>\private_server"
-.\runtime\platform-tools\adb.exe devices -l
-```
-
-指定设备：
-
-```powershell
-.\Install-And-Run.cmd -Serial <设备序列号>
-```
-
-配置设备并启动服务器，但不自动打开游戏：
-
-```powershell
-.\Install-And-Run.cmd -Serial <设备序列号> -NoLaunch
-```
-
-资源已经同步完成时跳过资源推送：
-
-```powershell
-.\Install-And-Run.cmd -SkipResources
-```
-
-延长等待客户端连接的时间：
-
-```powershell
-.\Install-And-Run.cmd -ConnectionWaitSeconds 90
-```
-
-## 一键推送全部资源
-
-只推送资源目录和 OBB，不启动服务器、不修改 hosts/CA，也不要求 root：
-
-```text
-private_server\Push-All-Resources.cmd
-```
-
-指定设备：
-
-```powershell
-cd "<发行根目录>\private_server"
-.\Push-All-Resources.cmd -Serial <设备序列号>
-```
-
-推送脚本使用内置 ADB，检查模拟器剩余空间，增量补齐文件并核对文件数、目录大小和 OBB 字节数。它不删除客户端已有文件。
-
-## 手工启动和停止服务
-
-设备已经配置好 hosts 与系统 CA 时，可以只启动服务：
-
-```powershell
-cd "<发行根目录>\private_server"
-.\runtime\python\python.exe -B .\run.py
-```
-
-停止全部服务：
-
-```powershell
-.\Stop-Server.cmd
-```
-
-也可以执行：
-
-```powershell
-.\runtime\python\python.exe -B .\run.py --stop
-```
-
-健康检查地址为 <http://127.0.0.1:8888/health>。
-
-关闭运行 `run.py` 的前台 CMD 窗口会停止其 API、CDN 和 TLS 网关子进程。通过一键安装器启动时，服务会在后台继续运行，需要使用 `Stop-Server.cmd` 停止。
-
-## 常见错误
-
-### `No Android device is connected`
-
-在雷电设置中开启 ADB，完全重启模拟器，再运行安装器。若使用自定义端口，先手工连接：
-
-```powershell
-.\runtime\platform-tools\adb.exe connect 127.0.0.1:<模拟器端口>
-```
-
-### `has no working root shell`
-
-雷电 ADB 已连接，但 `su -c id` 没有返回 `uid=0(root)`。在雷电设置中开启 root 后完全重启实例。
-
-### `root bind-mount fallback failed`
-
-模拟器有 root，但安装器无法绑定 Android hosts 或系统 CA。先完全重启模拟器并确认雷电 root 已开启，再重新运行安装器。正常的只读 `/system` 不会触发此错误，安装器会自动使用当前启动周期有效的绑定挂载。
-
-### `Trust anchor for certification path not found`
-
-Android 未加载当前服务器 CA。重新运行安装器；如果脚本刚更新过证书，等待 Android 重启完成后再运行一次，并确认输出包含 `Android system CA: OK`。
-
-### 端口被占用
-
-安装器只检测和报告 443、8000、8888 的占用程序与 PID，不会终止其他程序，也不会新增、修改或删除 Windows `portproxy` 规则。先运行 `Stop-Server.cmd`；仍冲突时检查：
-
-```powershell
-Get-NetTCPConnection -State Listen -LocalPort 443,8000,8888
-netsh interface portproxy show all
-```
-
-关闭占用端口的程序或由用户自行处理旧端口转发规则，然后重新启动。
-
-### 游戏启动黑屏
-
-确认 OBB 位于 Android 的 `/sdcard/Android/obb/com.aniplex.nananiji/`。可以运行 `Push-All-Resources.cmd` 自动补齐并校验。
-
-### 连接失败
-
-按顺序检查：
-
-1. 一键窗口是否显示 `Server: OK`；
-2. 三个端口是否全部为 `LISTENING`；
-3. Windows 防火墙是否允许内置 Python；
-4. Android hosts 与系统 CA 是否均为 `OK`；
-5. `var\logs\gateway.log` 是否出现客户端请求。
-
-## 2026-08-25 内容恢复更新
-
-1. 修复部分卡面显示出错；
-2. 修复部分音频下载闪退；
-3. 修复部分歌曲无法游玩。
-
-## 服务端目录
-
-```text
-private_server/
-|-- api/                         API、数据模型与 SQLite 存储
-|-- cdn/                         本地资源解析与 CDN
-|-- compat_assets/               剧情、结算与歌曲兼容资源
-|-- crypto/                      NanaPacker 协议与 FuncId
-|-- data/                        主数据目录与内置用户数据库
-|-- runtime/python/              内置 Python 与依赖
-|-- runtime/platform-tools/      内置 ADB
-|-- Install-And-Run.cmd          雷电 9 一键安装并运行
-|-- Push-All-Resources.cmd       一键增量推送资源和 OBB
-|-- Stop-Server.cmd              停止服务
-|-- config.yaml                  本地监听与协议配置
-`-- run.py                       服务进程入口
-```
-
-## 容器部署 (Docker)
-见 [Docker.md](docs/Docker.md)
-
-## 已知问题
-
-1. 无法抽卡；
-2. 部分剧情因缺少音频或文本会直接跳过或报错；
-3. 一些额外功能未作修复（例如：自制谱面）。
+配套客户端基线仍为 Unity 2018.4.18f1 / IL2CPP。已有 Android 14、16、17 的 4 KiB 页设备启动测试或用户确认，不等于所有机型、16 KiB 页设备与全部功能都已适配。

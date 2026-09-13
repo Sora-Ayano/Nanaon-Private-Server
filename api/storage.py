@@ -8,6 +8,7 @@ object between server restarts.
 from __future__ import annotations
 
 import json
+import os
 import sqlite3
 import time
 from contextlib import contextmanager
@@ -21,10 +22,11 @@ from api.models import (
 )
 
 
-DEFAULT_DB_PATH = Path(__file__).resolve().parent.parent / "data" / "private_server.sqlite3"
-LOTTERY_CATALOG_PATH = DEFAULT_DB_PATH.parent / "preservation_lottery.json"
-COSTUME_CATALOG_PATH = DEFAULT_DB_PATH.parent / "costume_movie_catalog.json"
-CARD_COSTUME_CATALOG_PATH = DEFAULT_DB_PATH.parent / "card_costume_catalog.json"
+BASE_DIR = Path(__file__).resolve().parent.parent
+DEFAULT_DB_PATH = Path(os.environ.get("NANAON_DB_PATH", BASE_DIR / "var/data/users.sqlite3"))
+LOTTERY_CATALOG_PATH = BASE_DIR / "data/preservation_lottery.json"
+COSTUME_CATALOG_PATH = BASE_DIR / "data/costume_movie_catalog.json"
+CARD_COSTUME_CATALOG_PATH = BASE_DIR / "data/card_costume_catalog.json"
 
 
 class UserStore:
@@ -162,6 +164,11 @@ class UserStore:
                     version INTEGER PRIMARY KEY,
                     name TEXT NOT NULL,
                     applied_at INTEGER NOT NULL
+                );
+
+                CREATE TABLE IF NOT EXISTS server_settings (
+                    key TEXT PRIMARY KEY,
+                    value TEXT NOT NULL
                 );
 
                 -- Trusted static definitions.  Binary assets remain on the

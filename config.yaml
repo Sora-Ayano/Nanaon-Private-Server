@@ -1,20 +1,4 @@
-# NanaonPrivate Server runtime configuration
-
-api:
-  host: "0.0.0.0"
-  port: 8888
-  debug: false
-
-cdn:
-  host: "0.0.0.0"
-  port: 8000
-
-gateway:
-  # The client network must route the original HTTPS hosts to this gateway.
-  host: "0.0.0.0"
-  port: 443
-  cert: "var/certs/gateway_trust_cert.pem"
-  key: "var/certs/game_key.pem"
+# LAN protocol configuration. Address and port are selected at startup.
 
 crypto:
   # Released v2.4.0 NanaPacker AES-256 key, encoded as hexadecimal bytes.

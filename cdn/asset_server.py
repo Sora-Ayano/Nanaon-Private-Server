@@ -15,16 +15,18 @@ class AssetServer:
     本地 CDN 服务器
 
     游戏通过 AssetServerURL 访问资源文件。
-    需要将 ../main.5465.com.aniplex.nananiji/assets/ 映射到 /assets/
+    资源来自当前服务端 resources/，不搜索旧服务端或父目录。
     """
 
-    # Resource packs are siblings of private_server in the release root.
-    ASSET_BASE = Path(__file__).parent.parent.parent / "main.5465.com.aniplex.nananiji" / "assets"
+    RESOURCE_ROOT = Path(__file__).resolve().parent.parent / 'resources'
+    ASSET_BASE = RESOURCE_ROOT / "main.5465.com.aniplex.nananiji" / "assets"
 
     # 额外的资源目录 (OBB 提取的缓存)
-    CACHE_BASE = Path(__file__).parent.parent.parent / "com.aniplex.nananiji"
+    CACHE_BASE = RESOURCE_ROOT / "com.aniplex.nananiji"
     DOWNLOAD_CACHE = CACHE_BASE / "files" / "DownloadCache"
     EXTRA_DOWNLOAD_CACHES: tuple[Path, ...] = ()
+    LOCALE_OVERRIDES = {}
+    LOCALE_ROOT = None
     # The recovered cache is nearly complete, but NOTICE_STORY_10000400 is
     # absent from every known archive. A valid ACB is used as a silent
     # compatibility substitute for that single unavailable voice cue.
@@ -209,6 +211,19 @@ class AssetServer:
         if not self.ASSET_BASE.exists():
             logger.warning(f"Asset base directory not found: {self.ASSET_BASE}")
 
+    @staticmethod
+    def _safe_path(value):
+        return not ("\\" in value or ":" in value or any(ord(c) < 32 for c in value)
+                    or any(p in (".", "..") for p in value.split("/")))
+
+    def _allowed(self, path):
+        roots = (self.ASSET_BASE, self.CACHE_BASE / "files" / "DownloadCache",
+                 self.CACHE_BASE / "cache", *self.EXTRA_DOWNLOAD_CACHES,
+                 Path(__file__).resolve().parent.parent / "compat_assets")
+        resolved = path.resolve()
+        return any(resolved.is_relative_to(root.resolve()) for root in roots) or (
+            self.LOCALE_ROOT is not None and resolved.is_relative_to(self.LOCALE_ROOT.resolve()))
+
     def resolve_path(self, asset_path: str) -> Optional[Path]:
         """
         解析资产路径为本地文件路径
@@ -223,10 +238,15 @@ class AssetServer:
         relative = asset_path.lstrip("/")
         if relative.startswith("assets/"):
             relative = relative[7:]
+        if not self._safe_path(relative):
+            return None
 
         parts = Path(relative).parts
         cache_candidates = []
         normalized_relative = relative.replace("\\", "/").lower()
+        localized = self.LOCALE_OVERRIDES.get(normalized_relative)
+        if localized is not None:
+            return localized if self._allowed(localized) and localized.is_file() else None
         fallback = self._sound_overrides.get(normalized_relative)
         if fallback is None:
             fallback = self._movie_overrides.get(normalized_relative)
@@ -277,12 +297,14 @@ class AssetServer:
         ]
 
         for candidate in candidates:
+            if not self._allowed(candidate):
+                continue
             if candidate.exists() and candidate.is_file():
                 return candidate
             # 也尝试添加 Unity 哈希子目录
             if candidate.parent.exists():
                 for child in candidate.parent.iterdir():
-                    if child.is_file() and child.name.startswith(candidate.name[:8]):
+                    if self._allowed(child) and child.is_file() and child.name.startswith(candidate.name[:8]):
                         return child
 
         return None
@@ -298,9 +320,9 @@ class AssetServer:
     def list_available_assets(self, subdir: str = "") -> list:
         """列出可用的资产文件"""
         target = self.ASSET_BASE / subdir if subdir else self.ASSET_BASE
-        if not target.exists():
+        if not self._safe_path(subdir) or not target.resolve().is_relative_to(self.ASSET_BASE.resolve()) or not target.exists():
             return []
-        return [str(p.relative_to(self.ASSET_BASE)) for p in target.rglob("*") if p.is_file()]
+        return [str(p.relative_to(self.ASSET_BASE)) for p in target.rglob("*") if p.is_file() and self._allowed(p)]
 
 
 # ═══════════════════════════════════════════════════════════
@@ -396,6 +418,5 @@ def list_root():
     files = asset_server.list_available_assets()
     return jsonify({
         "status": "ok",
-        "asset_base": str(asset_server.ASSET_BASE),
         "file_count": len(files),
     })

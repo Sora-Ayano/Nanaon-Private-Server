@@ -113,6 +113,8 @@ def _live_result_card_projection(user_data: UserGetData) -> list[dict]:
 
 def configure_game(game_cfg: dict):
     """由 server.py 启动时调用，注入 config.yaml 的 game 段"""
+    global BUILTIN_USER_ID
+    BUILTIN_USER_ID=int(game_cfg.get('local_user_id',100004))
     if game_cfg:
         _GAME_CONFIG.update({
             k: game_cfg[k] for k in (

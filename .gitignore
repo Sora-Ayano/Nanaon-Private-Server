@@ -1,27 +1,33 @@
-# Local runtime state and logs
-var/
-__pycache__/
-*.py[cod]
-.pytest_cache/
-
-# Bundled Python and ADB are shipped with release archives, not source control.
+# Local dependencies, complete resource archive and generated clients
 runtime/
-
-# Game resource packs (multi-GB, shipped in release archives).
+runtime-windows-x64.zip
+runtime-windows-x64.sha256
 resources/
+dist/
+.venv/
 
-# Per-install TLS material. Generate locally; never publish private keys.
+# Accounts, signing keys, logs and developer captures
+var/
+backups/
+.env
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.keystore
+*.p12
 *.key
 *.pem
 *.csr
 *.cer
 *.crt
-c[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].0
 
-# Automatic database backups and temporary exports.
-data/private_server.before_*.sqlite3
-data/runtime/
-backups/
+# Tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
 
-# Container deployment environment overrides.
-.env
+# Client build kits and language/game assets are distributed separately.
+client/
+patches/
+Build-APK.cmd
+build_client.py
