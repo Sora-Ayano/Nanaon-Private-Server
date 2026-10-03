@@ -17,7 +17,7 @@ def safe_relative(value):
 
 
 class ResourceCatalog:
-    def __init__(self, root, index_path, overrides=None, patch_root=None, locale='ja-JP'):
+    def __init__(self, root, index_path, overrides=None, patch_root=None, locale='ja-JP', compatibility=None):
         self.root = Path(root).resolve()
         self.index_path = Path(index_path)
         self.paths = {}
@@ -25,6 +25,9 @@ class ResourceCatalog:
         self.manifest = None
         self.overrides = overrides or {}
         self.allowed_roots = [self.root] + ([Path(patch_root).resolve()] if patch_root else [])
+        self.compatibility = compatibility or {}
+        self.allowed_roots += [Path(__file__).resolve().parents[1]/'compat_assets',
+                               self.index_path.resolve().parent/'generated-resources']
         self.locale = locale
         self._lock = threading.Lock()
 
@@ -36,7 +39,8 @@ class ResourceCatalog:
             except (OSError, ValueError):
                 pass
             cache = self.root / 'com.aniplex.nananiji/files/DownloadCache'
-            inputs = [('obb', 'main.5465.obb', self.root / 'main.5465.com.aniplex.nananiji.obb'),
+            inputs = [('obb', 'main.5465.obb', self.overrides.get('main.5465.obb',
+                       self.root / 'main.5465.com.aniplex.nananiji.obb')),
                       ('acf', 'TTSCriProject.acf', self.root / 'com.aniplex.nananiji/files/TTSCriProject.acf')]
             if not cache.is_dir():
                 raise FileNotFoundError(f'资源目录不存在：{cache}')
@@ -46,12 +50,18 @@ class ResourceCatalog:
                 if path.is_file():
                     name = safe_relative(path.relative_to(cache).as_posix())
                     inputs.append(('cache', name, self.overrides.get(name, path)))
-            names = {name for kind, name, _ in inputs if kind == 'cache'}
+            by_target = {(kind,name):path for kind,name,path in inputs}
+            for name,path in self.compatibility.items():
+                safe_relative(name)
+                by_target[('cache',name)] = self.overrides.get(name,path)
+            inputs = [(kind,name,path) for (kind,name),path in by_target.items()]
+            names = {name for kind, name, _ in inputs}
             if not set(self.overrides).issubset(names):
                 raise ValueError('Patch targets do not match this resource archive')
             records, stamps, paths = [], {}, {}
             for kind, name, path in inputs:
-                if not path.is_file() or path.is_symlink() or not any(path.resolve().is_relative_to(r) for r in self.allowed_roots):
+                resolved = path.resolve()
+                if not path.is_file() or path.is_symlink() or not any(resolved.is_relative_to(r) for r in self.allowed_roots):
                     raise FileNotFoundError(f'资源缺失或超出指定目录：{path}')
                 stat = path.stat()
                 key = kind + ':' + name
@@ -66,7 +76,7 @@ class ResourceCatalog:
                 identity = hashlib.sha256((key + ':' + digest).encode()).hexdigest()
                 records.append(dict(id=identity, kind=kind, path=name, size=stat.st_size, sha256=digest,
                                     url='/bootstrap/files/' + identity))
-                if kind=='cache' and name in self.overrides:
+                if name in self.overrides:
                     records[-1]['startup_check']=True
                 paths[identity] = (path, stat.st_size, stat.st_mtime_ns)
                 stamps[key] = dict(stamp=stamp, sha256=digest)
@@ -86,7 +96,8 @@ class ResourceCatalog:
         if record is None:
             return None
         path, size, mtime = record
-        if path.is_symlink() or not any(path.resolve().is_relative_to(r) for r in self.allowed_roots):
+        resolved = path.resolve()
+        if path.is_symlink() or not any(resolved.is_relative_to(r) for r in self.allowed_roots):
             return None
         stat = path.stat()
         if (stat.st_size, stat.st_mtime_ns) != (size, mtime):

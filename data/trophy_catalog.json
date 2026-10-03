@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "source": "v2.4.0 master tables",
+  "trophies": [
+    {
+      "id": 1,
+      "type": "CARD",
+      "grades": [
+        {
+          "master_trophy_grade_id": 1,
+          "achievement_condition_count": 0,
+          "point": 0,
+          "master_area_item_id": 51070801
+        },
+        {
+          "master_trophy_grade_id": 2,
+          "achievement_condition_count": 50,
+          "point": 10,
+          "master_area_item_id": 51070802
+        },
+        {
+          "master_trophy_grade_id": 3,
+          "achievement_condition_count": 100,
+          "point": 20,
+          "master_area_item_id": 51070803
+        },
+        {
+          "master_trophy_grade_id": 4,
+          "achievement_condition_count": 150,
+          "point": 30,
+          "master_area_item_id": 51070804
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "MUSIC",
+      "grades": [
+        {
+          "master_trophy_grade_id": 1,
+          "achievement_condition_count": 0,
+          "point": 0,
+          "master_area_item_id": 51070601
+        },
+        {
+          "master_trophy_grade_id": 2,
+          "achievement_condition_count": 30,
+          "point": 10,
+          "master_area_item_id": 51070602
+        },
+        {
+          "master_trophy_grade_id": 3,
+          "achievement_condition_count": 60,
+          "point": 20,
+          "master_area_item_id": 51070603
+        },
+        {
+          "master_trophy_grade_id": 4,
+          "achievement_condition_count": 90,
+          "point": 30,
+          "master_area_item_id": 51070604
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "COSTUME",
+      "grades": [
+        {
+          "master_trophy_grade_id": 1,
+          "achievement_condition_count": 0,
+          "point": 0,
+          "master_area_item_id": 51070501
+        },
+        {
+          "master_trophy_grade_id": 2,
+          "achievement_condition_count": 100,
+          "point": 10,
+          "master_area_item_id": 51070502
+        },
+        {
+          "master_trophy_grade_id": 3,
+          "achievement_condition_count": 200,
+          "point": 20,
+          "master_area_item_id": 51070503
+        },
+        {
+          "master_trophy_grade_id": 4,
+          "achievement_condition_count": 300,
+          "point": 30,
+          "master_area_item_id": 51070504
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "AREA_ITEM",
+      "grades": [
+        {
+          "master_trophy_grade_id": 1,
+          "achievement_condition_count": 0,
+          "point": 0,
+          "master_area_item_id": 51070701
+        },
+        {
+          "master_trophy_grade_id": 2,
+          "achievement_condition_count": 100,
+          "point": 10,
+          "master_area_item_id": 51070702
+        },
+        {
+          "master_trophy_grade_id": 3,
+          "achievement_condition_count": 200,
+          "point": 20,
+          "master_area_item_id": 51070703
+        },
+        {
+          "master_trophy_grade_id": 4,
+          "achievement_condition_count": 300,
+          "point": 30,
+          "master_area_item_id": 51070704
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "TITLE",
+      "grades": [
+        {
+          "master_trophy_grade_id": 1,
+          "achievement_condition_count": 0,
+          "point": 0,
+          "master_area_item_id": 51070101
+        },
+        {
+          "master_trophy_grade_id": 2,
+          "achievement_condition_count": 50,
+          "point": 10,
+          "master_area_item_id": 51070102
+        },
+        {
+          "master_trophy_grade_id": 3,
+          "achievement_condition_count": 100,
+          "point": 20,
+          "master_area_item_id": 51070103
+        },
+        {
+          "master_trophy_grade_id": 4,
+          "achievement_condition_count": 150,
+          "point": 30,
+          "master_area_item_id": 51070104
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "STAMP",
+      "grades": [
+        {
+          "master_trophy_grade_id": 1,
+          "achievement_condition_count": 0,
+          "point": 0,
+          "master_area_item_id": 51070301
+        },
+        {
+          "master_trophy_grade_id": 2,
+          "achievement_condition_count": 20,
+          "point": 10,
+          "master_area_item_id": 51070302
+        },
+        {
+          "master_trophy_grade_id": 3,
+          "achievement_condition_count": 40,
+          "point": 20,
+          "master_area_item_id": 51070303
+        },
+        {
+          "master_trophy_grade_id": 4,
+          "achievement_condition_count": 60,
+          "point": 30,
+          "master_area_item_id": 51070304
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "MOVIE",
+      "grades": [
+        {
+          "master_trophy_grade_id": 1,
+          "achievement_condition_count": 0,
+          "point": 0,
+          "master_area_item_id": 51070201
+        },
+        {
+          "master_trophy_grade_id": 2,
+          "achievement_condition_count": 5,
+          "point": 10,
+          "master_area_item_id": 51070202
+        },
+        {
+          "master_trophy_grade_id": 3,
+          "achievement_condition_count": 10,
+          "point": 20,
+          "master_area_item_id": 51070203
+        },
+        {
+          "master_trophy_grade_id": 4,
+          "achievement_condition_count": 15,
+          "point": 30,
+          "master_area_item_id": 51070204
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "ALL_PERFECT",
+      "grades": [
+        {
+          "master_trophy_grade_id": 1,
+          "achievement_condition_count": 0,
+          "point": 0,
+          "master_area_item_id": 51070401
+        },
+        {
+          "master_trophy_grade_id": 2,
+          "achievement_condition_count": 30,
+          "point": 10,
+          "master_area_item_id": 51070402
+        },
+        {
+          "master_trophy_grade_id": 3,
+          "achievement_condition_count": 60,
+          "point": 20,
+          "master_area_item_id": 51070403
+        },
+        {
+          "master_trophy_grade_id": 4,
+          "achievement_condition_count": 90,
+          "point": 30,
+          "master_area_item_id": 51070404
+        }
+      ]
+    }
+  ],
+  "showrooms": [
+    {
+      "master_trophy_grade_id": 1,
+      "point": 0,
+      "master_area_item_id": 41070101
+    }
+  ]
+}

@@ -30,7 +30,10 @@ from api.models import (
     Costume,
 )
 from api.storage import UserStore
-from api.card_costume_catalog import available_rewards_for_card
+from api.card_costume_catalog import (
+    available_rewards_for_card, costume_is_available,
+    ensure_available_costumes, playable_costume_inventory,
+)
 
 logger = logging.getLogger("nanaon.handlers")
 
@@ -115,6 +118,7 @@ def configure_game(game_cfg: dict):
     """由 server.py 启动时调用，注入 config.yaml 的 game 段"""
     global BUILTIN_USER_ID
     BUILTIN_USER_ID=int(game_cfg.get('local_user_id',100004))
+    _GAME_CONFIG['multi_user'] = bool(game_cfg.get('multi_user', False))
     if game_cfg:
         _GAME_CONFIG.update({
             k: game_cfg[k] for k in (
@@ -202,6 +206,7 @@ def _get_or_create_user(uuid_param: str) -> int:
     user_data = USER_STORE.load_user(BUILTIN_USER_ID)
     if user_data is None:
         user_data = UserGetData.create_default(BUILTIN_USER_ID)
+    ensure_available_costumes(user_data)
     USER_DB[BUILTIN_USER_ID] = user_data
     USER_STORE.save_user(uuid_param, user_data)
     USER_STORE.complete_story_catalog(BUILTIN_USER_ID, user_data.story_list)
@@ -215,6 +220,10 @@ def _get_user_by_token(access_token: str) -> int:
 
 
 def _request_user_id(request: ParsedRequest) -> int:
+    if request.authenticated_user_id is not None:
+        return request.authenticated_user_id
+    if _GAME_CONFIG.get('multi_user'):
+        raise PermissionError('authenticated player required')
     if request.user_id:
         return int(request.user_id)
     if request.access_token:
@@ -264,13 +273,14 @@ def handle_login(request: ParsedRequest) -> dict:
     """
     global _LAST_AUTHENTICATED_USER_ID
     uuid_param = request.uuid_param or str(uuid.uuid4())
-    user_id = _get_or_create_user(uuid_param)
+    user_id = request.authenticated_user_id if request.authenticated_user_id is not None else _get_or_create_user(uuid_param)
 
     login_data = LoginData.create()
-    TOKEN_MAP[login_data.access_token] = user_id
-    _LAST_AUTHENTICATED_USER_ID = user_id
+    if request.authenticated_user_id is None:
+        TOKEN_MAP[login_data.access_token] = user_id
+        _LAST_AUTHENTICATED_USER_ID = user_id
 
-    logger.info(f"LOGIN: uuid={uuid_param}, user_id={user_id}, token={login_data.access_token[:8]}...")
+    logger.info("LOGIN completed")
 
     return make_response(data=asdict_safe(login_data))
 
@@ -295,7 +305,7 @@ def handle_start(request: ParsedRequest) -> dict:
     # 不标记为停服
     start_data.is_service_closed = False
 
-    logger.info(f"START: token={start_data.token[:8]}...")
+    logger.info("START completed")
 
     return make_response(data=asdict_safe(start_data))
 
@@ -310,10 +320,11 @@ def handle_start_user(request: ParsedRequest) -> dict:
     """Device authentication/session recovery for RecvStartUserRData."""
     global _LAST_AUTHENTICATED_USER_ID
     uuid_param = request.uuid_param or str(uuid.uuid4())
-    user_id = _get_or_create_user(uuid_param)
+    user_id = request.authenticated_user_id if request.authenticated_user_id is not None else _get_or_create_user(uuid_param)
     access_token = str(uuid.uuid4())
-    TOKEN_MAP[access_token] = user_id
-    _LAST_AUTHENTICATED_USER_ID = user_id
+    if request.authenticated_user_id is None:
+        TOKEN_MAP[access_token] = user_id
+        _LAST_AUTHENTICATED_USER_ID = user_id
 
     data = StartUserData(
         user_id=user_id,
@@ -321,12 +332,7 @@ def handle_start_user(request: ParsedRequest) -> dict:
         is_service_closed=False,
         message=None,
     )
-    logger.info(
-        "START_USER: uuid=%s, user_id=%s, token=%s...",
-        uuid_param,
-        user_id,
-        access_token[:8],
-    )
+    logger.info("START_USER completed")
     return make_response(data=asdict_safe(data))
 
 
@@ -343,21 +349,24 @@ def handle_user_get(request: ParsedRequest) -> dict:
     user_data = USER_STORE.load_user(user_id) or UserGetData.create_default(user_id)
     USER_DB[user_id] = user_data
     _repair_exchange_costume_ownership(user_data)
+    from api.area_layout import ensure_room_layout
+    layout_changed = ensure_room_layout(user_data)
+    if ensure_available_costumes(user_data) or layout_changed:
+        _persist_user(user_data)
 
     # The v2.4.0 client sends the title selection to POST /api/user, but that
     # path is identified as USER_GET (1000) by the endpoint table.  Treat the
     # presence of the update field as the discriminator, persist it, and still
     # return the full USER_GET payload expected by the client.
     request_payload = request.json_data or {}
-    if "master_title_ids" in request_payload:
-        selected = [int(item) for item in request_payload.get("master_title_ids", []) or []]
-        if len(selected) > 3 or any(item not in user_data.master_title_ids for item in selected):
+    if any(key in request_payload for key in ("master_title_ids", "favorite_master_card_id", "favorite_card_evolve")):
+        if not _apply_user_profile_update(user_data, request_payload):
             return make_response(data=None, code=ResultCode.ERROR_INVALID_PARAM)
-        user_data.user.master_title_ids = selected
         _persist_user(user_data)
-        logger.info("USER_GET title update persisted: user=%s titles=%s", user_id, selected)
+        logger.info("USER_GET profile update persisted: user=%s", user_id)
 
     payload = user_data.to_dict()
+    payload["costume_list"] = playable_costume_inventory(user_data)
     # Do not advertise media which the preservation package cannot serve.
     # A 404 makes the v2.4.0 downloader retry forever; omitting ownership lets
     # the client keep the corresponding movie/MV option unavailable instead.
@@ -382,7 +391,9 @@ def handle_user_get(request: ParsedRequest) -> dict:
             "ability_card_ids": [],
         }]
         payload["user"]["main_deck_slot"] = 1
-        payload["user"]["favorite_master_card_id"] = PLAYABLE_CARD_MASTER_IDS[0]
+        if payload["user"]["favorite_master_card_id"] not in PLAYABLE_CARD_MASTER_IDS:
+            payload["user"]["favorite_master_card_id"] = PLAYABLE_CARD_MASTER_IDS[0]
+        payload["user"]["favorite_card_evolve"] = 0
 
     logger.info(
         "USER_GET: user_id=%s cards=%s exposed_cards=%s decks=%s music=%s "
@@ -452,6 +463,8 @@ def _request_user(request: ParsedRequest) -> UserGetData:
     USER_DB[user_id] = (
         USER_STORE.load_user(user_id) or UserGetData.create_default(user_id)
     )
+    if ensure_available_costumes(USER_DB[user_id]):
+        _persist_user(USER_DB[user_id])
     return USER_DB[user_id]
 
 
@@ -560,23 +573,53 @@ def handle_user_migration(request: ParsedRequest) -> dict:
     return make_response(data={"user_name": user.name, "user_rank": 50})
 
 
+def _apply_user_profile_update(user_data: UserGetData, payload: dict) -> bool:
+    """Validate the entire profile edit before changing any selected member."""
+    user = copy.deepcopy(user_data.user)
+    try:
+        for key in ("name", "comment"):
+            if key in payload:
+                if not isinstance(payload[key], str):
+                    return False
+                setattr(user, key, payload[key])
+        if "main_deck_slot" in payload:
+            slot = int(payload["main_deck_slot"])
+            if slot not in {int(deck.slot) for deck in user_data.deck_list}:
+                return False
+            user.main_deck_slot = slot
+        if "favorite_master_card_id" in payload or "favorite_card_evolve" in payload:
+            master_id = int(payload.get("favorite_master_card_id", user.favorite_master_card_id))
+            # A new favorite defaults to its base illustration if an older
+            # client omits the evolution field; never inherit another card's.
+            evolve = int(payload.get("favorite_card_evolve", 0))
+            owned = [card for card in user_data.card_list if int(card.master_card_id) == master_id]
+            if not owned or evolve not in (0, 1) or (evolve and not any(card.evolve for card in owned)):
+                return False
+            if _GAME_CONFIG.get("playable_minimal_cards") and (master_id not in PLAYABLE_CARD_MASTER_IDS or evolve):
+                return False
+            user.favorite_master_card_id = master_id
+            user.favorite_card_evolve = evolve
+        if "master_title_ids" in payload:
+            selected = [int(item) for item in payload["master_title_ids"] or []]
+            if len(selected) > 3 or any(item not in user_data.master_title_ids for item in selected):
+                return False
+            user.master_title_ids = selected
+    except (TypeError, ValueError, OverflowError):
+        return False
+    user_data.user = user
+    return True
+
+
 @router.register(FuncId.USER_UPDATE)
 @router.register(FuncId.USER_UPDATE_FAVORITE_CARD_ID)
 @router.register(FuncId.USER_UPDATE_TITLE_ID)
 def handle_user_update(request: ParsedRequest) -> dict:
     user_data = _request_user(request)
-    user = user_data.user
     payload = request.json_data or {}
-    for key in ("name", "comment", "main_deck_slot", "favorite_master_card_id"):
-        if key in payload and hasattr(user, key):
-            setattr(user, key, payload[key])
-    if request.func_id == FuncId.USER_UPDATE_TITLE_ID and "master_title_ids" in payload:
-        selected = [int(item) for item in payload.get("master_title_ids", []) or []]
-        if len(selected) > 3 or any(item not in user_data.master_title_ids for item in selected):
-            return make_response(data=None, code=ResultCode.ERROR_INVALID_PARAM)
-        user.master_title_ids = selected
+    if not _apply_user_profile_update(user_data, payload):
+        return make_response(data=None, code=ResultCode.ERROR_INVALID_PARAM)
     _persist_user(user_data)
-    return make_response(data={"user": asdict_safe(user), "clear_mission_ids": []})
+    return make_response(data={"user": asdict_safe(user_data.user), "clear_mission_ids": []})
 
 
 @router.register(FuncId.USER_UPDATE_MAIN_DECK_SLOT)
@@ -584,13 +627,34 @@ def handle_user_update(request: ParsedRequest) -> dict:
 @router.register(FuncId.USER_UPDATE_BIRTH_DATE)
 def handle_user_settings_update(request: ParsedRequest) -> dict:
     user_data = _request_user(request)
-    user = user_data.user
     payload = request.json_data or {}
-    for key, value in payload.items():
-        if hasattr(user, key):
-            setattr(user, key, value)
+    # Settings requests must never write identity or progress fields. In cloud
+    # mode an arbitrary user.id here could otherwise redirect a later save.
+    if any(key in payload for key in (
+        "id", "exp", "vip_point", "last_login_time",
+        "nanacomi_shop_dialog_unconfirmed",
+    )):
+        return make_response(data=None, code=ResultCode.ERROR_INVALID_PARAM)
+    if request.func_id == FuncId.USER_UPDATE_MAIN_DECK_SLOT:
+        if "main_deck_slot" not in payload or not _apply_user_profile_update(
+            user_data, {"main_deck_slot": payload["main_deck_slot"]}
+        ):
+            return make_response(data=None, code=ResultCode.ERROR_INVALID_PARAM)
+    elif request.func_id == FuncId.USER_UPDATE_PROFILE_SETTINGS:
+        settings = payload.get("profile_settings")
+        if not isinstance(settings, list) or len(settings) > 128 or any(
+            type(value) is not int or not 0 <= value <= 2_147_483_647
+            for value in settings
+        ):
+            return make_response(data=None, code=ResultCode.ERROR_INVALID_PARAM)
+        user_data.user.profile_settings = list(settings)
+    elif request.func_id == FuncId.USER_UPDATE_BIRTH_DATE:
+        birth_date = payload.get("birth_date")
+        if not isinstance(birth_date, str) or len(birth_date) > 32:
+            return make_response(data=None, code=ResultCode.ERROR_INVALID_PARAM)
+        user_data.user.birth_date = birth_date
     _persist_user(user_data)
-    return make_response(data={"user": asdict_safe(user)})
+    return make_response(data={"user": asdict_safe(user_data.user)})
 
 
 @router.register(FuncId.DECK_UPDATE)
@@ -1270,6 +1334,7 @@ def handle_card_sub_exchange(request: ParsedRequest) -> dict:
 
 @router.register(FuncId.LOTTERY_DRAW)
 def handle_lottery_draw(request: ParsedRequest) -> dict:
+    from api.lottery import InsufficientTicket, DrawLimitReached
     user_data = _request_user(request)
     payload = request.json_data or {}
     lottery_id = int(payload.get("master_lottery_id", 0) or 0)
@@ -1277,20 +1342,37 @@ def handle_lottery_draw(request: ParsedRequest) -> dict:
     uuid_param = USER_STORE.uuid_for_user_id(user_data.user.id)
     if not uuid_param:
         return make_response(data=None, code=ResultCode.ERROR_USER_NOT_FOUND)
+    before = {field: {x.id: asdict_safe(x) for x in getattr(user_data, field)}
+              for field in ('card_list', 'card_sub_list', 'item_list')}
     try:
         lottery_items, _cost = USER_STORE.complete_lottery_draw(
             uuid_param, user_data, lottery_id, price_number, payload
         )
     except OverflowError:
         return make_response(data=None, code=ResultCode.ERROR_INSUFFICIENT_GEM)
+    except InsufficientTicket:
+        return make_response(data=None, code=ResultCode.ERROR_INSUFFICIENT_ITEM)
+    except DrawLimitReached:
+        return make_response(data=None, code=ResultCode.ERROR_EXCEED_LIMIT)
     except ValueError:
         return make_response(data=None, code=ResultCode.ERROR_INVALID_PARAM)
+    updated_values = _empty_updated_values(user_data)
+    for field, previous in before.items():
+        updated_values[field] = [asdict_safe(x) for x in getattr(user_data, field)
+                                 if previous.get(x.id) != asdict_safe(x)]
+    effects = getattr(user_data, '_lottery_effects', {})
+    updated_values['card_breakthrough_list'] = effects.get('card_breakthrough_list', [])
+    updated_values['ability_card_level_up_list'] = effects.get('ability_card_level_up_list', [])
+    updated_values['ability_card_list'] = user_data.ability_card_list
+    updated_values['point_list'] = [asdict_safe(x) for x in user_data.point_list]
+    updated_values['master_title_ids'] = user_data.master_title_ids
+    updated_values['model_costumes'] = effects.get('model_costumes', [])
     return make_response(data={
         "lottery_item_list": lottery_items,
         "is_send_gift": 0,
-        "updated_value_list": _empty_updated_values(user_data),
+        "updated_value_list": updated_values,
         "clear_mission_ids": [],
-        "reward_list": [],
+        "reward_list": effects.get('reward_list', []),
     })
 
 
@@ -1340,7 +1422,9 @@ def handle_area_item_buy(request: ParsedRequest) -> dict:
     """Create an owned furniture instance; existing items are levelled up."""
     user_data = _request_user(request)
     master_id = int((request.json_data or {}).get("master_area_item_id", 0) or 0)
-    if not master_id:
+    from api.area_layout import max_level
+    limit=max_level(master_id)
+    if limit<1:
         return make_response(data=None, code=ResultCode.ERROR_INVALID_PARAM)
     item = next(
         (row for row in user_data.area_item_list if row.master_area_item_id == master_id),
@@ -1354,7 +1438,7 @@ def handle_area_item_buy(request: ParsedRequest) -> dict:
             user_data.released_master_area_item_ids.append(master_id)
             user_data.released_master_area_item_ids.sort()
     else:
-        item.level = min(10, item.level + 1)
+        item.level = min(limit, item.level + 1)
     _persist_user(user_data)
     return make_response(data={
         "area_item": asdict_safe(item),
@@ -1486,16 +1570,23 @@ def handle_music_buy(request: ParsedRequest) -> dict:
     return make_response(data={"item_list": [], "clear_mission_ids": []})
 
 
-def _update_costume(user_data: UserGetData, raw: dict) -> bool:
-    character_id = int(raw.get("master_character_id", 0) or 0)
-    costume_id = int(raw.get("master_costume_id", 0) or 0)
+def _update_costume(user_data: UserGetData, raw: dict, *, apply: bool = True) -> bool:
+    if not isinstance(raw, dict):
+        return False
+    try:
+        character_id = int(raw.get("master_character_id", 0) or 0)
+        costume_id = int(raw.get("master_costume_id", 0) or 0)
+    except (TypeError, ValueError, OverflowError):
+        return False
     row = next(
         (item for item in user_data.costume_list if item.master_character_id == character_id),
         None,
     )
-    if row is None or costume_id not in row.master_costume_ids:
+    if (row is None or costume_id not in row.master_costume_ids
+            or not costume_is_available(character_id, costume_id)):
         return False
-    row.master_costume_id = costume_id
+    if apply:
+        row.master_costume_id = costume_id
     return True
 
 
@@ -1538,11 +1629,13 @@ def handle_costume_update(request: ParsedRequest) -> dict:
     payload = request.json_data or {}
     settings = payload.get("costume_setting_request_list")
     settings = settings if isinstance(settings, list) else [payload]
-    if not settings or any(not _update_costume(user_data, item) for item in settings):
+    if not settings or any(not _update_costume(user_data, item, apply=False) for item in settings):
         return make_response(data=None, code=ResultCode.ERROR_INVALID_PARAM)
+    for item in settings:
+        _update_costume(user_data, item)
     _persist_user(user_data)
     return make_response(data={
-        "costume_list": [asdict_safe(item) for item in user_data.costume_list],
+        "costume_list": playable_costume_inventory(user_data),
         "clear_mission_ids": [],
     })
 
@@ -1653,7 +1746,34 @@ def handle_local_movie_secret_path(request: ParsedRequest) -> dict:
 
 @router.register(FuncId.SHOP)
 def handle_shop(request: ParsedRequest) -> dict:
-    return make_response(data={"shop_list": []})
+    from api.shop import inventory
+    return make_response(data={"shop_list": inventory(USER_STORE, _request_user_id(request))})
+
+
+@router.register(FuncId.SHOP_ITEM_BUY)
+def handle_shop_item_buy(request: ParsedRequest) -> dict:
+    from api.shop import purchase
+    from api.lottery import DrawLimitReached
+    user_data = _request_user(request)
+    try:
+        item_id = int((request.json_data or {}).get("master_shop_item_id", 0))
+        item = purchase(USER_STORE, user_data, item_id)
+    except OverflowError:
+        return make_response(data=None, code=ResultCode.ERROR_INSUFFICIENT_GEM)
+    except DrawLimitReached:
+        return make_response(data=None, code=ResultCode.ERROR_EXCEED_LIMIT)
+    except (ValueError, TypeError):
+        return make_response(data=None, code=ResultCode.ERROR_INVALID_PARAM)
+    updated = _empty_updated_values(user_data)
+    updated['live_battle_point'] = user_data.live_battle_point
+    return make_response(data={"gem": asdict_safe(user_data.gem), "shop_list": item,
+                               "updated_value_list": updated})
+
+
+@router.register(FuncId.TROPHY)
+def handle_trophy(request: ParsedRequest) -> dict:
+    from api.trophy import showroom_response
+    return make_response(data=showroom_response(_request_user(request)))
 
 
 @router.register(FuncId.CLIENT_ERROR)

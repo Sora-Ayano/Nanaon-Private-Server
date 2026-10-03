@@ -15,7 +15,8 @@ def load_patch(directory):
         bundle=name.startswith('Android/bundle/') and name.endswith('.unity3d')
         game_manifest=name.startswith('Android/manifest/manifest/') and name.endswith('/__data') and len(name.split('/'))==5
         cache_database=name=='Android/bundle/db'
-        if not (bundle or game_manifest or cache_database) or name in result:
+        builtin_fonts=name=='main.5465.obb'
+        if not (bundle or game_manifest or cache_database or builtin_fonts) or name in result:
             raise ValueError('Invalid/duplicate patch target')
         path=directory/name
         if not path.is_file() or not path.resolve().is_relative_to(directory) or path.is_symlink():

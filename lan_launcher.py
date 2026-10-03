@@ -9,6 +9,7 @@ import sys
 import webbrowser
 
 BASE=Path(__file__).resolve().parent
+STATE=Path(os.environ.get('NANAON_STATE_DIR',BASE/'var')).resolve()
 
 
 def choose_locale(explicit=None):
@@ -17,7 +18,7 @@ def choose_locale(explicit=None):
         return explicit
     if not sys.stdin.isatty():
         return 'ja-JP'
-    print('选择游戏语言：\n  1. 日本語（日语，默认）\n  2. 简体中文（实验版，运行验证未通过）')
+    print('选择游戏语言：\n  1. 日本語（日语，默认）\n  2. 简体中文（实验版，部分翻译）')
     while True:
         try:
             choice=input('输入 1 / 2，或直接回车使用日语：').strip()
@@ -33,7 +34,7 @@ def choose_locale(explicit=None):
 def create_lan_app(resource_root, public_url, state_dir=None, locale='ja-JP'):
     from lan.resources import ResourceCatalog
     from lan.web import make_blueprint
-    state=Path(state_dir) if state_dir else BASE/'var'
+    state=Path(state_dir) if state_dir else STATE
     state.mkdir(parents=True,exist_ok=True)
     # Set before api.handlers imports its singleton store.
     os.environ['NANAON_DB_PATH']=str(state/'data/users.sqlite3')
@@ -60,6 +61,8 @@ def create_lan_app(resource_root, public_url, state_dir=None, locale='ja-JP'):
     asset_server.LOCALE_ROOT=patch_root
     asset_server.LOCALE_OVERRIDES={}
     for name, path in overrides.items():
+        if name=='main.5465.obb':
+            continue
         # Game transport reverses the two hash components compared to its cache.
         parts=name.split('/')
         wire=Path(parts[-1])
@@ -71,7 +74,10 @@ def create_lan_app(resource_root, public_url, state_dir=None, locale='ja-JP'):
     asset_server.FALLBACK_ASSETS=dict(asset_server.FALLBACK_ASSETS)
     asset_server.FALLBACK_ASSETS[asset_server.NOTICE_STORY_FALLBACK_KEY]=asset_server.DOWNLOAD_CACHE/'Android/sound/118b868d886c15a8383d0ea1064b1d58/Voice/PART_10600000_000.acb'
     config=load_config(str(BASE/'config.yaml'))
-    config['game']={**config.get('game',{}),'api_url':public_url,'asset_url':public_url}
+    # UrlMst contains relative ``web/...`` paths. The client concatenates them
+    # directly; without this slash a port becomes ``18080web`` and login fails.
+    config['game']={**config.get('game',{}),'api_url':public_url.rstrip('/')+'/',
+                    'asset_url':public_url.rstrip('/')}
     import sqlite3
     from contextlib import closing
     with closing(sqlite3.connect(state/'data/users.sqlite3')) as db:
@@ -80,7 +86,9 @@ def create_lan_app(resource_root, public_url, state_dir=None, locale='ja-JP'):
             if active:config['game']['local_user_id']=int(active[0])
     config.update(capture_traffic=False, diagnostics=False, cors=False)
     app=create_app(config)
-    catalog=ResourceCatalog(root,state/'resource-index.json',overrides,patch_root,locale)
+    from cdn.bootstrap_sources import compatibility_sources
+    compatibility=compatibility_sources(asset_server,state/'generated-resources')
+    catalog=ResourceCatalog(root,state/'resource-index.json',overrides,patch_root,locale,compatibility)
     catalog.build()
     app.register_blueprint(make_blueprint(catalog,BASE/'dist',public_url))
     app.config['LAN_CATALOG']=catalog
@@ -99,7 +107,7 @@ def run():
     a.locale=choose_locale(a.locale)
     print('游戏语言：'+('日本語' if a.locale=='ja-JP' else '简体中文'),flush=True)
     if a.locale=='zh-Hans':
-        print('中文为实验选项，当前存在主数据资源加载错误；测试已暂停。日常游玩请选择日语。',flush=True)
+        print('中文为部分翻译的实验选项，实际兼容情况请参阅验证记录。',flush=True)
     from lan.network import detect_ip,validate_ip
     if not 1024<=a.port<=65535:p.error('Port must be 1024..65535')
     ip=validate_ip(a.ip) if a.ip else detect_ip()
@@ -109,14 +117,14 @@ def run():
         if os.name=='nt':probe.setsockopt(socket.SOL_SOCKET,socket.SO_EXCLUSIVEADDRUSE,1)
         try:probe.bind(('0.0.0.0',a.port))
         except OSError:raise SystemExit(f'端口 {a.port} 已占用，未终止其他程序。')
-    logs=BASE/'var/logs'; logs.mkdir(parents=True,exist_ok=True)
+    logs=STATE/'logs'; logs.mkdir(parents=True,exist_ok=True)
     logging.basicConfig(level=logging.INFO,format='%(asctime)s %(name)s %(message)s',
                         handlers=[logging.StreamHandler(),logging.FileHandler(logs/'lan.log',encoding='utf-8')])
     print('正在核对本地资源并生成清单…',flush=True)
     app=create_lan_app(root,public_url,locale=a.locale)
     info=dict(server_url=public_url,portal=public_url+'/play',resource_root=str(Path(root).resolve()),
               pid=os.getpid(),package='com.aniplex.nananiji.lan',locale=a.locale)
-    (BASE/'var/lan-session.json').write_text(json.dumps(info,indent=2),encoding='utf-8')
+    (STATE/'lan-session.json').write_text(json.dumps(info,indent=2),encoding='utf-8')
     print('\n手机浏览器打开：'+info['portal']+'\n同一局域网 · 无 root · 无 USB 资源推送\n关闭本窗口可停止服务。',flush=True)
     if a.prepare_only:return
     if not a.no_browser:webbrowser.open(info['portal'])
@@ -126,7 +134,7 @@ def run():
 
 def main():
     from lan.state_lock import StateLock
-    with StateLock(BASE/'var'):
+    with StateLock(STATE):
         run()
 
 

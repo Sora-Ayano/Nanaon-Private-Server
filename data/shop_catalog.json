@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "sources": {
+    "common_reward": "86050ff76135c6d046cdd9e2070422336abbfb46b8dbcbfdc5bb83d86aa82633",
+    "shop_item": "65ece41a22746e48b8e8810ded4f841cd4ba1dfd650d52e3abaa4e832fe3dc56"
+  },
+  "items": [
+    {
+      "id": 1,
+      "price": 50,
+      "buy_limit": 0,
+      "rewards": [
+        {
+          "type": "STAMINA",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "price": 100,
+      "buy_limit": 0,
+      "rewards": [
+        {
+          "type": "STAMINA",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "price": 100,
+      "buy_limit": 0,
+      "rewards": [
+        {
+          "type": "LIVE_BATTLE_POINT",
+          "amount": 5
+        }
+      ]
+    }
+  ]
+}

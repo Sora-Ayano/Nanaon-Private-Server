@@ -13,7 +13,6 @@ $taskStaging = Join-Path $taskRoot ('var\runtime-' + [guid]::NewGuid().ToString(
 New-Item -ItemType Directory -Path $taskStaging -Force | Out-Null
 Expand-Archive -LiteralPath $taskArchive -DestinationPath $taskStaging
 if (-not (Test-Path -LiteralPath (Join-Path $taskStaging 'python\python.exe'))) { throw 'Python is missing from runtime archive.' }
-if (-not (Test-Path -LiteralPath (Join-Path $taskStaging 'java\bin\java.exe'))) { throw 'Java is missing from runtime archive.' }
 Set-Content -LiteralPath (Join-Path $taskStaging 'READY') -Value '1' -Encoding Ascii
 if (-not ([IO.Path]::GetFullPath($taskStaging).StartsWith($taskRoot + '\', [StringComparison]::OrdinalIgnoreCase))) { throw 'Staging directory escaped the project.' }
 if ([IO.Path]::GetFullPath($taskRuntime) -ne (Join-Path $taskRoot 'runtime')) { throw 'Invalid runtime destination.' }

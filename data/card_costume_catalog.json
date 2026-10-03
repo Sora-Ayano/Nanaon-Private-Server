@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "source": "NanaOn v2.4.0 CardMst/CostumeMst plus packaged resource index",
+  "source": "NanaOn v2.4.0 CostumeMst/Live2DMst and packaged bundle dependency/size audit",
   "cards": {
     "10140001": {
       "master_character_id": 10100000,
@@ -579,102 +579,430 @@
     {
       "master_character_id": 10100000,
       "master_costume_ids": [
+        11002101,
+        11003101,
+        12001101,
+        12002101,
+        12003101,
+        13001101,
+        14001101,
+        14002101,
+        14004101,
         24001101,
         24002101,
         24003101,
+        35001101,
+        35002101,
+        35003101,
+        35004101,
+        35005101,
+        35006101,
+        35007101,
+        35008101,
+        35009101,
+        35010101,
+        35011101,
+        35012101,
+        35013101,
+        35014101,
+        35015101,
+        35016101,
         36001101,
+        36002101,
+        36004101,
         36005101,
-        36008101
+        36008101,
+        36009101,
+        36010101,
+        44001101
       ]
     },
     {
       "master_character_id": 10200000,
       "master_costume_ids": [
+        11002102,
+        11003102,
+        12001102,
+        12003102,
+        13001102,
+        14001102,
+        14002102,
         24001102,
+        35001102,
+        35002102,
+        35003102,
+        35004102,
+        35005102,
+        35006102,
+        35007102,
+        35008102,
+        35009102,
+        35010102,
+        35011102,
+        35012102,
+        35013102,
+        35014102,
+        35015102,
+        35016102,
         36001102,
+        36002102,
+        36004102,
         36005102,
-        36007102
+        36007102,
+        36009102,
+        36010102,
+        44001102
       ]
     },
     {
       "master_character_id": 10300000,
       "master_costume_ids": [
+        11002103,
+        11003103,
+        12001103,
+        12002103,
+        12003103,
+        13001103,
+        14001103,
+        14002103,
+        14005103,
         24001103,
         24002103,
+        35001103,
+        35002103,
+        35003103,
+        35004103,
+        35005103,
+        35006103,
+        35007103,
+        35008103,
+        35009103,
+        35010103,
+        35011103,
+        35012103,
+        35013103,
+        35014103,
+        35015103,
+        35016103,
         36001103,
-        36005103
+        36002103,
+        36004103,
+        36005103,
+        36009103,
+        36010103,
+        44001103
       ]
     },
     {
       "master_character_id": 10400000,
       "master_costume_ids": [
+        11002104,
+        11003104,
+        12001104,
+        13001104,
+        14001104,
+        14002104,
         24001104,
+        35001104,
+        35002104,
+        35003104,
+        35004104,
+        35005104,
+        35006104,
+        35007104,
+        35008104,
+        35009104,
+        35010104,
+        35011104,
+        35012104,
+        35013104,
+        35014104,
+        35015104,
+        35016104,
         36001104,
-        36005104
+        36002104,
+        36004104,
+        36005104,
+        36009104,
+        36010104,
+        44001104
       ]
     },
     {
       "master_character_id": 10500000,
       "master_costume_ids": [
+        11002105,
+        11003105,
+        12001105,
+        12003105,
+        13001105,
+        14001105,
+        14002105,
         24001105,
         24002105,
         24003105,
+        35001105,
+        35002105,
+        35003105,
+        35004105,
+        35005105,
+        35006105,
+        35007105,
+        35008105,
+        35009105,
+        35010105,
+        35011105,
+        35012105,
+        35013105,
+        35014105,
+        35015105,
+        35016105,
         36001105,
-        36005105
+        36002105,
+        36004105,
+        36005105,
+        36009105,
+        36010105,
+        44001105
       ]
     },
     {
       "master_character_id": 10600000,
       "master_costume_ids": [
+        11002106,
+        11003106,
+        12001106,
+        12002106,
+        12003106,
+        13001106,
+        14001106,
+        14002106,
         24001106,
+        35001106,
+        35002106,
+        35003106,
+        35004106,
+        35005106,
+        35006106,
+        35007106,
+        35008106,
+        35009106,
+        35010106,
+        35011106,
+        35012106,
+        35013106,
+        35014106,
+        35015106,
+        35016106,
         36001106,
-        36005106
+        36002106,
+        36004106,
+        36005106,
+        36009106,
+        36010106,
+        44001106
       ]
     },
     {
       "master_character_id": 10700000,
       "master_costume_ids": [
+        11002107,
+        11003107,
+        12001107,
+        13001107,
+        14001107,
+        14002107,
         24002107,
+        35001107,
+        35002107,
+        35003107,
+        35004107,
+        35005107,
+        35006107,
+        35007107,
+        35008107,
+        35009107,
+        35010107,
+        35011107,
+        35012107,
+        35013107,
+        35014107,
+        35015107,
+        35016107,
         36001107,
-        36005107
+        36002107,
+        36004107,
+        36005107,
+        36009107,
+        36010107,
+        44001107
       ]
     },
     {
       "master_character_id": 10800000,
       "master_costume_ids": [
+        11002108,
+        11003108,
+        12001108,
+        12003108,
+        13001108,
+        14001108,
+        14002108,
+        14005108,
         24001108,
         24002108,
         24003108,
         24005108,
+        35001108,
+        35002108,
+        35003108,
+        35004108,
+        35005108,
+        35006108,
+        35007108,
+        35008108,
+        35009108,
+        35010108,
+        35011108,
+        35012108,
+        35013108,
+        35014108,
+        35015108,
+        35016108,
         36001108,
-        36005108
+        36002108,
+        36004108,
+        36005108,
+        36009108,
+        36010108,
+        44001108
       ]
     },
     {
       "master_character_id": 10900000,
       "master_costume_ids": [
+        11002109,
+        11003109,
+        12001109,
+        12002109,
+        12003109,
+        13001109,
+        14001109,
         24001109,
         24002109,
+        35001109,
+        35002109,
+        35003109,
+        35004109,
+        35005109,
+        35006109,
+        35007109,
+        35008109,
+        35009109,
+        35010109,
+        35011109,
+        35012109,
+        35013109,
+        35014109,
+        35015109,
+        35016109,
         36001109,
-        36005109
+        36002109,
+        36004109,
+        36005109,
+        36009109,
+        36010109,
+        44001109
       ]
     },
     {
       "master_character_id": 11000000,
       "master_costume_ids": [
+        11002110,
+        11003110,
+        12001110,
+        13001110,
+        14001110,
         24001110,
         24002110,
+        35001110,
+        35002110,
+        35003110,
+        35004110,
+        35005110,
+        35006110,
+        35007110,
+        35008110,
+        35009110,
+        35010110,
+        35011110,
+        35012110,
+        35013110,
+        35014110,
+        35015110,
+        35016110,
         36001110,
-        36005110
+        36002110,
+        36004110,
+        36005110,
+        36009110,
+        36010110,
+        44001110
       ]
     },
     {
       "master_character_id": 11100000,
       "master_costume_ids": [
+        11002111,
+        11003111,
+        12001111,
+        12003111,
+        13001111,
+        14001111,
+        14005111,
         24001111,
         24002111,
+        35001111,
+        35002111,
+        35003111,
+        35004111,
+        35005111,
+        35006111,
+        35007111,
+        35008111,
+        35009111,
+        35010111,
+        35011111,
+        35012111,
+        35013111,
+        35014111,
+        35015111,
+        35016111,
         36001111,
-        36005111
+        36002111,
+        36004111,
+        36005111,
+        36009111,
+        36010111,
+        44001111
+      ]
+    },
+    {
+      "master_character_id": 20100000,
+      "master_costume_ids": [
+        11003201
+      ]
+    },
+    {
+      "master_character_id": 20200000,
+      "master_costume_ids": [
+        11003202
+      ]
+    },
+    {
+      "master_character_id": 20300000,
+      "master_costume_ids": [
+        11003203
       ]
     }
   ],
@@ -682,6 +1010,3662 @@
     "reward_cards": 45,
     "available_reward_references": 46,
     "unavailable_reward_references": 59,
-    "available_unique_costumes": 46
+    "available_unique_costumes": 359,
+    "total_unique_costumes": 483,
+    "unavailable_unique_costumes": 124
+  },
+  "costumes": {
+    "11001101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 11001101,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/11001101:not_in_manifest",
+        "textures/costumeicon/11001000_icon.png:not_in_manifest"
+      ]
+    },
+    "11001102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 11001102,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/11001102:not_in_manifest",
+        "textures/costumeicon/11001000_icon.png:not_in_manifest"
+      ]
+    },
+    "11001103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 11001103,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/11001103:not_in_manifest",
+        "textures/costumeicon/11001000_icon.png:not_in_manifest"
+      ]
+    },
+    "11001104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 11001104,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/11001104:not_in_manifest",
+        "textures/costumeicon/11001000_icon.png:not_in_manifest"
+      ]
+    },
+    "11001105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 11001105,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/11001105:not_in_manifest",
+        "textures/costumeicon/11001000_icon.png:not_in_manifest"
+      ]
+    },
+    "11001106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 11001106,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/11001106:not_in_manifest",
+        "textures/costumeicon/11001000_icon.png:not_in_manifest"
+      ]
+    },
+    "11001107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 11001107,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/11001107:not_in_manifest",
+        "textures/costumeicon/11001000_icon.png:not_in_manifest"
+      ]
+    },
+    "11001108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 11001108,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/11001108:not_in_manifest",
+        "textures/costumeicon/11001000_icon.png:not_in_manifest"
+      ]
+    },
+    "11001109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 11001109,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/11001109:not_in_manifest",
+        "textures/costumeicon/11001000_icon.png:not_in_manifest"
+      ]
+    },
+    "11001110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 11001110,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/11001110:not_in_manifest",
+        "textures/costumeicon/11001000_icon.png:not_in_manifest"
+      ]
+    },
+    "11001111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 11001111,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/11001111:not_in_manifest",
+        "textures/costumeicon/11001000_icon.png:not_in_manifest"
+      ]
+    },
+    "11002101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 11002101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11002102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 11002102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11002103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 11002103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11002104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 11002104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11002105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 11002105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11002106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 11002106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11002107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 11002107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11002108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 11002108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11002109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 11002109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11002110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 11002110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11002111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 11002111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11002201": {
+      "master_character_id": 20100000,
+      "master_live2d_id": 11002201,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/11002201:missing",
+        "textures/costumeicon/11001000_icon.png:not_in_manifest"
+      ]
+    },
+    "11002202": {
+      "master_character_id": 20200000,
+      "master_live2d_id": 11002202,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/11002202:missing",
+        "textures/costumeicon/11001000_icon.png:not_in_manifest"
+      ]
+    },
+    "11002203": {
+      "master_character_id": 20300000,
+      "master_live2d_id": 11002203,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/11002203:missing",
+        "textures/costumeicon/11001000_icon.png:not_in_manifest"
+      ]
+    },
+    "11003101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 11003101,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11003102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 11003102,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11003103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 11003103,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11003104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 11003104,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11003105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 11003105,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11003106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 11003106,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11003107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 11003107,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11003108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 11003108,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11003109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 11003109,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11003110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 11003110,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11003111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 11003111,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11003201": {
+      "master_character_id": 20100000,
+      "master_live2d_id": 11003201,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11003202": {
+      "master_character_id": 20200000,
+      "master_live2d_id": 11003202,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "11003203": {
+      "master_character_id": 20300000,
+      "master_live2d_id": 11003203,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12001101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 12001101,
+      "unlock_route": "CHARACTER_STORY",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12001102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 12001102,
+      "unlock_route": "CHARACTER_STORY",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12001103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 12001103,
+      "unlock_route": "CHARACTER_STORY",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12001104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 12001104,
+      "unlock_route": "CHARACTER_STORY",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12001105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 12001105,
+      "unlock_route": "CHARACTER_STORY",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12001106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 12001106,
+      "unlock_route": "CHARACTER_STORY",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12001107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 12001107,
+      "unlock_route": "CHARACTER_STORY",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12001108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 12001108,
+      "unlock_route": "CHARACTER_STORY",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12001109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 12001109,
+      "unlock_route": "CHARACTER_STORY",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12001110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 12001110,
+      "unlock_route": "CHARACTER_STORY",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12001111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 12001111,
+      "unlock_route": "CHARACTER_STORY",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12002101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 12002101,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12002102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 12002102,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/12002102:missing"
+      ]
+    },
+    "12002103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 12002103,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12002104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 12002104,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/12002104:missing"
+      ]
+    },
+    "12002105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 12002105,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/12002105:missing"
+      ]
+    },
+    "12002106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 12002106,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12002107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 12002107,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/12002107:missing"
+      ]
+    },
+    "12002108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 12002108,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/12002108:missing"
+      ]
+    },
+    "12002109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 12002109,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12002110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 12002110,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/12002110:missing"
+      ]
+    },
+    "12002111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 12002111,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/12002111:missing"
+      ]
+    },
+    "12003101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 12003101,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12003102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 12003102,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12003103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 12003103,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12003104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 12003104,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/12003104:missing"
+      ]
+    },
+    "12003105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 12003105,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12003106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 12003106,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12003107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 12003107,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/12003107:missing"
+      ]
+    },
+    "12003108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 12003108,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12003109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 12003109,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "12003110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 12003110,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/12003110:missing"
+      ]
+    },
+    "12003111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 12003111,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "13001101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 13001101,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "13001102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 13001102,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "13001103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 13001103,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "13001104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 13001104,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "13001105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 13001105,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "13001106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 13001106,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "13001107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 13001107,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "13001108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 13001108,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "13001109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 13001109,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "13001110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 13001110,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "13001111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 13001111,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14001101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 14001101,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14001102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 14001102,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14001103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 14001103,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14001104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 14001104,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14001105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 14001105,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14001106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 14001106,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14001107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 14001107,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14001108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 14001108,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14001109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 14001109,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14001110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 14001110,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14001111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 14001111,
+      "unlock_route": "NONE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14002101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 14002101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14002102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 14002102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14002103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 14002103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14002104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 14002104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14002105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 14002105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14002106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 14002106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14002107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 14002107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14002108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 14002108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14002109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 14002109,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14002109:missing"
+      ]
+    },
+    "14002110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 14002110,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14002110:missing"
+      ]
+    },
+    "14002111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 14002111,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14002111:missing"
+      ]
+    },
+    "14003101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 14003101,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14003101:missing"
+      ]
+    },
+    "14003102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 14003102,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14003102:missing"
+      ]
+    },
+    "14003103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 14003103,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14003103:missing"
+      ]
+    },
+    "14003104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 14003104,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14003104:missing"
+      ]
+    },
+    "14003105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 14003105,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14003105:missing"
+      ]
+    },
+    "14003106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 14003106,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14003106:missing"
+      ]
+    },
+    "14003107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 14003107,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14003107:missing"
+      ]
+    },
+    "14003108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 14003108,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14003108:missing"
+      ]
+    },
+    "14003109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 14003109,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14003109:missing"
+      ]
+    },
+    "14003110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 14003110,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14003110:missing"
+      ]
+    },
+    "14003111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 14003111,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14003111:missing"
+      ]
+    },
+    "14004101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 14004101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14004102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 14004102,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14004102:missing"
+      ]
+    },
+    "14004103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 14004103,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14004103:missing"
+      ]
+    },
+    "14004104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 14004104,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14004104:missing"
+      ]
+    },
+    "14004105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 14004105,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14004105:missing"
+      ]
+    },
+    "14004106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 14004106,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14004106:missing"
+      ]
+    },
+    "14004107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 14004107,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14004107:missing"
+      ]
+    },
+    "14004108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 14004108,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14004108:missing"
+      ]
+    },
+    "14004109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 14004109,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14004109:missing"
+      ]
+    },
+    "14004110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 14004110,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14004110:missing"
+      ]
+    },
+    "14004111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 14004111,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14004111:missing"
+      ]
+    },
+    "14005101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 14005101,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14005101:missing"
+      ]
+    },
+    "14005102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 14005102,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14005102:missing"
+      ]
+    },
+    "14005103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 14005103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14005104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 14005104,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14005104:missing"
+      ]
+    },
+    "14005105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 14005105,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14005105:missing"
+      ]
+    },
+    "14005106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 14005106,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14005106:missing"
+      ]
+    },
+    "14005107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 14005107,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14005107:missing"
+      ]
+    },
+    "14005108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 14005108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "14005109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 14005109,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14005109:missing"
+      ]
+    },
+    "14005110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 14005110,
+      "unlock_route": "EXCHANGE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/14005110:missing"
+      ]
+    },
+    "14005111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 14005111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24001101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 24001101,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24001102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 24001102,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24001103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 24001103,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24001104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 24001104,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24001105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 24001105,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24001106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 24001106,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24001107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 24001107,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24001107:missing"
+      ]
+    },
+    "24001108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 24001108,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24001109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 24001109,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24001110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 24001110,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24001111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 24001111,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24002101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 24002101,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24002102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 24002102,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24002102:missing"
+      ]
+    },
+    "24002103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 24002103,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24002104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 24002104,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24002104:missing"
+      ]
+    },
+    "24002105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 24002105,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24002106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 24002106,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24002106:missing"
+      ]
+    },
+    "24002107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 24002107,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24002108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 24002108,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24002109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 24002109,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24002110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 24002110,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24002111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 24002111,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24003101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 24003101,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24003102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 24003102,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24003102:missing"
+      ]
+    },
+    "24003103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 24003103,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24003103:missing"
+      ]
+    },
+    "24003104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 24003104,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24003104:missing"
+      ]
+    },
+    "24003105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 24003105,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24003106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 24003106,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24003106:missing"
+      ]
+    },
+    "24003107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 24003107,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24003107:missing"
+      ]
+    },
+    "24003108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 24003108,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24003109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 24003109,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24003109:missing"
+      ]
+    },
+    "24003110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 24003110,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24003110:missing"
+      ]
+    },
+    "24003111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 24003111,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24003111:missing"
+      ]
+    },
+    "24004107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 24004107,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24004107:missing"
+      ]
+    },
+    "24004111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 24004111,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24004111:missing"
+      ]
+    },
+    "24005108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 24005108,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "24005109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 24005109,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24005109:missing"
+      ]
+    },
+    "24006201": {
+      "master_character_id": 20100000,
+      "master_live2d_id": 24006201,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24006201:missing",
+        "textures/costumeicon/24001201_icon.png:not_in_manifest"
+      ]
+    },
+    "24006202": {
+      "master_character_id": 20200000,
+      "master_live2d_id": 24006202,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24006202:missing",
+        "textures/costumeicon/24001202_icon.png:not_in_manifest"
+      ]
+    },
+    "24006203": {
+      "master_character_id": 20300000,
+      "master_live2d_id": 24006203,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24006203:missing",
+        "textures/costumeicon/24001203_icon.png:not_in_manifest"
+      ]
+    },
+    "24007104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 24007104,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24007104:missing"
+      ]
+    },
+    "24007110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 24007110,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/24007110:missing"
+      ]
+    },
+    "35001101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 35001101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35001102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 35001102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35001103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 35001103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35001104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 35001104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35001105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 35001105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35001106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 35001106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35001107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 35001107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35001108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 35001108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35001109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 35001109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35001110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 35001110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35001111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 35001111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35002101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 35002101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35002102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 35002102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35002103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 35002103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35002104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 35002104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35002105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 35002105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35002106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 35002106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35002107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 35002107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35002108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 35002108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35002109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 35002109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35002110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 35002110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35002111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 35002111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35003101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 35003101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35003102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 35003102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35003103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 35003103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35003104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 35003104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35003105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 35003105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35003106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 35003106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35003107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 35003107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35003108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 35003108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35003109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 35003109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35003110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 35003110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35003111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 35003111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35004101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 35004101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35004102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 35004102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35004103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 35004103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35004104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 35004104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35004105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 35004105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35004106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 35004106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35004107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 35004107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35004108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 35004108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35004109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 35004109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35004110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 35004110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35004111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 35004111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35005101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 35005101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35005102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 35005102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35005103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 35005103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35005104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 35005104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35005105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 35005105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35005106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 35005106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35005107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 35005107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35005108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 35005108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35005109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 35005109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35005110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 35005110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35005111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 35005111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35006101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 35006101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35006102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 35006102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35006103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 35006103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35006104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 35006104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35006105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 35006105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35006106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 35006106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35006107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 35006107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35006108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 35006108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35006109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 35006109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35006110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 35006110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35006111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 35006111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35007101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 35007101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35007102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 35007102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35007103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 35007103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35007104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 35007104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35007105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 35007105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35007106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 35007106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35007107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 35007107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35007108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 35007108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35007109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 35007109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35007110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 35007110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35007111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 35007111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35008101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 35008101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35008102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 35008102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35008103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 35008103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35008104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 35008104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35008105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 35008105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35008106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 35008106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35008107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 35008107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35008108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 35008108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35008109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 35008109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35008110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 35008110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35008111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 35008111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35009101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 35009101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35009102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 35009102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35009103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 35009103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35009104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 35009104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35009105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 35009105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35009106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 35009106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35009107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 35009107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35009108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 35009108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35009109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 35009109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35009110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 35009110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35009111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 35009111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35010101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 35010101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35010102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 35010102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35010103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 35010103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35010104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 35010104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35010105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 35010105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35010106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 35010106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35010107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 35010107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35010108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 35010108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35010109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 35010109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35010110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 35010110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35010111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 35010111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35011101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 35011101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35011102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 35011102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35011103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 35011103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35011104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 35011104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35011105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 35011105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35011106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 35011106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35011107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 35011107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35011108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 35011108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35011109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 35011109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35011110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 35011110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35011111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 35011111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35012101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 35012101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35012102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 35012102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35012103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 35012103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35012104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 35012104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35012105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 35012105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35012106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 35012106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35012107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 35012107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35012108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 35012108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35012109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 35012109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35012110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 35012110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35012111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 35012111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35013101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 35013101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35013102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 35013102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35013103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 35013103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35013104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 35013104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35013105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 35013105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35013106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 35013106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35013107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 35013107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35013108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 35013108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35013109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 35013109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35013110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 35013110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35013111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 35013111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35014101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 35014101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35014102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 35014102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35014103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 35014103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35014104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 35014104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35014105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 35014105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35014106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 35014106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35014107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 35014107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35014108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 35014108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35014109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 35014109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35014110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 35014110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35014111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 35014111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35015101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 35015101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35015102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 35015102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35015103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 35015103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35015104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 35015104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35015105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 35015105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35015106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 35015106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35015107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 35015107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35015108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 35015108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35015109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 35015109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35015110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 35015110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35015111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 35015111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35016101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 35016101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35016102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 35016102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35016103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 35016103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35016104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 35016104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35016105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 35016105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35016106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 35016106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35016107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 35016107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35016108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 35016108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35016109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 35016109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35016110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 35016110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "35016111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 35016111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36001101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 36001101,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36001102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 36001102,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36001103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 36001103,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36001104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 36001104,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36001105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 36001105,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36001106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 36001106,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36001107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 36001107,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36001108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 36001108,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36001109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 36001109,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36001110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 36001110,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36001111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 36001111,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36002101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 36002101,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36002102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 36002102,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36002103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 36002103,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36002104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 36002104,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36002105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 36002105,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36002106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 36002106,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36002107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 36002107,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36002108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 36002108,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36002109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 36002109,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36002110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 36002110,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36002111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 36002111,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36003101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 36003101,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36003101:missing"
+      ]
+    },
+    "36003102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 36003102,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36003102:missing"
+      ]
+    },
+    "36003103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 36003103,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36003103:missing"
+      ]
+    },
+    "36003104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 36003104,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36003104:missing"
+      ]
+    },
+    "36003105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 36003105,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36003105:missing"
+      ]
+    },
+    "36003106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 36003106,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36003106:missing"
+      ]
+    },
+    "36003107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 36003107,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36003107:missing"
+      ]
+    },
+    "36003108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 36003108,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36003108:missing"
+      ]
+    },
+    "36003109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 36003109,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36003109:missing"
+      ]
+    },
+    "36003110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 36003110,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36003110:missing"
+      ]
+    },
+    "36003111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 36003111,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36003111:missing"
+      ]
+    },
+    "36004101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 36004101,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36004102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 36004102,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36004103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 36004103,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36004104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 36004104,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36004105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 36004105,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36004106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 36004106,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36004107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 36004107,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36004108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 36004108,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36004109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 36004109,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36004110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 36004110,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36004111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 36004111,
+      "unlock_route": "EVENT",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36005101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 36005101,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36005102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 36005102,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36005103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 36005103,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36005104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 36005104,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36005105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 36005105,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36005106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 36005106,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36005107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 36005107,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36005108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 36005108,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36005109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 36005109,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36005110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 36005110,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36005111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 36005111,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36006101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 36006101,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36006101:missing"
+      ]
+    },
+    "36006102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 36006102,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36006102:missing"
+      ]
+    },
+    "36006103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 36006103,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36006103:missing"
+      ]
+    },
+    "36006104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 36006104,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36006104:missing"
+      ]
+    },
+    "36006105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 36006105,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36006105:missing"
+      ]
+    },
+    "36006106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 36006106,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36006106:missing"
+      ]
+    },
+    "36006107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 36006107,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36006107:missing"
+      ]
+    },
+    "36006108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 36006108,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36006108:missing"
+      ]
+    },
+    "36006109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 36006109,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36006109:missing"
+      ]
+    },
+    "36006110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 36006110,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36006110:missing"
+      ]
+    },
+    "36006111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 36006111,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36006111:missing"
+      ]
+    },
+    "36007101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 36007101,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36007101:missing"
+      ]
+    },
+    "36007102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 36007102,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36007103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 36007103,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36007103:missing"
+      ]
+    },
+    "36007104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 36007104,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36007104:missing"
+      ]
+    },
+    "36007105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 36007105,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36007105:missing"
+      ]
+    },
+    "36007106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 36007106,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36007106:missing"
+      ]
+    },
+    "36007107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 36007107,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36007107:missing"
+      ]
+    },
+    "36007108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 36007108,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36007108:missing"
+      ]
+    },
+    "36007109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 36007109,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36007109:missing"
+      ]
+    },
+    "36007110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 36007110,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36007110:missing"
+      ]
+    },
+    "36007111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 36007111,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36007111:missing"
+      ]
+    },
+    "36008101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 36008101,
+      "unlock_route": "CARD",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36008102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 36008102,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36008102:missing"
+      ]
+    },
+    "36008103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 36008103,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36008103:missing"
+      ]
+    },
+    "36008104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 36008104,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36008104:missing"
+      ]
+    },
+    "36008105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 36008105,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36008105:missing"
+      ]
+    },
+    "36008106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 36008106,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36008106:missing"
+      ]
+    },
+    "36008107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 36008107,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36008107:missing"
+      ]
+    },
+    "36008108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 36008108,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36008108:missing"
+      ]
+    },
+    "36008109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 36008109,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36008109:missing"
+      ]
+    },
+    "36008110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 36008110,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36008110:missing"
+      ]
+    },
+    "36008111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 36008111,
+      "unlock_route": "CARD",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/36008111:missing"
+      ]
+    },
+    "36009101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 36009101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36009102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 36009102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36009103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 36009103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36009104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 36009104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36009105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 36009105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36009106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 36009106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36009107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 36009107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36009108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 36009108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36009109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 36009109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36009110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 36009110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36009111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 36009111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36010101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 36010101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36010102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 36010102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36010103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 36010103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36010104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 36010104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36010105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 36010105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36010106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 36010106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36010107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 36010107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36010108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 36010108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36010109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 36010109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36010110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 36010110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "36010111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 36010111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "44001101": {
+      "master_character_id": 10100000,
+      "master_live2d_id": 44001101,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "44001102": {
+      "master_character_id": 10200000,
+      "master_live2d_id": 44001102,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "44001103": {
+      "master_character_id": 10300000,
+      "master_live2d_id": 44001103,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "44001104": {
+      "master_character_id": 10400000,
+      "master_live2d_id": 44001104,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "44001105": {
+      "master_character_id": 10500000,
+      "master_live2d_id": 44001105,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "44001106": {
+      "master_character_id": 10600000,
+      "master_live2d_id": 44001106,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "44001107": {
+      "master_character_id": 10700000,
+      "master_live2d_id": 44001107,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "44001108": {
+      "master_character_id": 10800000,
+      "master_live2d_id": 44001108,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "44001109": {
+      "master_character_id": 10900000,
+      "master_live2d_id": 44001109,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "44001110": {
+      "master_character_id": 11000000,
+      "master_live2d_id": 44001110,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "44001111": {
+      "master_character_id": 11100000,
+      "master_live2d_id": 44001111,
+      "unlock_route": "EXCHANGE",
+      "available": true,
+      "unavailable_resources": []
+    },
+    "73001201": {
+      "master_character_id": 20100000,
+      "master_live2d_id": 73001201,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/73001201:missing",
+        "textures/costumeicon/73001000_icon.png:not_in_manifest"
+      ]
+    },
+    "73001202": {
+      "master_character_id": 20200000,
+      "master_live2d_id": 73001202,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/73001202:missing",
+        "textures/costumeicon/73001000_icon.png:not_in_manifest"
+      ]
+    },
+    "73001203": {
+      "master_character_id": 20300000,
+      "master_live2d_id": 73001203,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/73001203:missing",
+        "textures/costumeicon/73001000_icon.png:not_in_manifest"
+      ]
+    },
+    "74001201": {
+      "master_character_id": 20100000,
+      "master_live2d_id": 74001201,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/74001201:missing",
+        "textures/costumeicon/74001000_icon.png:not_in_manifest"
+      ]
+    },
+    "74001202": {
+      "master_character_id": 20200000,
+      "master_live2d_id": 74001202,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/74001202:missing",
+        "textures/costumeicon/74001000_icon.png:not_in_manifest"
+      ]
+    },
+    "74001203": {
+      "master_character_id": 20300000,
+      "master_live2d_id": 74001203,
+      "unlock_route": "NONE",
+      "available": false,
+      "unavailable_resources": [
+        "live2d/74001203:missing",
+        "textures/costumeicon/74001000_icon.png:not_in_manifest"
+      ]
+    }
   }
 }

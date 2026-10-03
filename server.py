@@ -53,6 +53,7 @@ _PATH_FUNCID_MAP = {
     "/api/user/update/title_id": 1140,
     "/api/user/update/birth_date": 1142,
     "/api/user/update": 1100,
+    "/api/user": 1100,
     "/api/home": 1200,
     "/api/gift/receive": 2010,
     "/api/gift": 2000,
@@ -71,17 +72,38 @@ _PATH_FUNCID_MAP = {
     "/api/card/episode_read": 4040,
     "/api/card/illust_change": 4050,
     "/api/card/sub_exchange": 4100,
+    "/api/card": 4050,
     "/api/deck": 5000,
     "/api/story/end_card": 13200,
     "/api/mission": 9000,
     "/api/login_bonus": 12000,
     "/api/title": 15000,
     "/api/shop": 22000,
+    "/api/shop/buy": 22100,
+    "/api/costume": 20000,
+    "/api/model_costume": 20002,
+    "/api/backstage/setting": 40000,
+    "/api/user/confirm_nanacomi_shop": 36000,
+    "/api/billing/limit_master_id": 24010,
+    "/api/message_user/read": 31004,
     "/api/error": 150,
 }
 
 
-def _infer_func_id_from_path(path: str, method: str = "GET") -> Optional[int]:
+def _infer_func_id_from_path(path: str, method: str = "GET", payload=None) -> Optional[int]:
+    # The original client reuses /api/user for several edits without sending
+    # FuncId. Select a settings handler by its actual protocol field.
+    if path == "/api/user" and isinstance(payload, dict):
+        for field, value in (
+            ("profile_settings", 1130), ("birth_date", 1142),
+            ("main_deck_slot", 1110),
+        ):
+            if field in payload:
+                return value
+    if path == "/api/photo_seal_exchange" and method.upper() == "POST":
+        return 14100
+    if path == "/api/tutorial/progress" and method.upper() == "GET":
+        return 17000
     # The released client uses the same /api/lottery path for both listing
     # (GET) and drawing (POST).  Treating POST as LOTTERY_GET returns the wrong
     # protocol object and crashes MngGachaData.SetLotteryResult.
@@ -204,7 +226,7 @@ def create_app(config: dict):
             key_hex=crypto_cfg["aes_key"],
             iv_hex=crypto_cfg.get("aes_iv") or None,  # 可选固定 IV; 默认随机前置
         )
-        logger.info(f"Encryption: ENABLED (key={crypto_cfg['aes_key'][:16]}...)")
+        logger.info("Encryption: ENABLED")
     else:
         logger.info("Encryption: DISABLED (no key yet — 落盘密文 + 明文回退)")
 
@@ -269,7 +291,7 @@ def create_app(config: dict):
                 except ValueError:
                     pass
         if func_id is None:
-            func_id = _infer_func_id_from_path(request.path, request.method)
+            func_id = _infer_func_id_from_path(request.path, request.method, json_data)
 
         # 4) 落盘未解密的密文 (抓密文主力，无论是否有密钥都落)
         if capture_traffic and body_text and not decrypted_ok:
@@ -315,7 +337,20 @@ def create_app(config: dict):
             client_version=json_data.get("client_version") if isinstance(json_data, dict) else None,
         )
 
-        response = router.dispatch(parsed)
+        identity = app.config.get('CLOUD_IDENTITY')
+        if identity and int(func_id) not in (100, 980):
+            secret = request.headers.get('X-Nanaon-Client-Key') or request.cookies.get('nanaon_client_key')
+            try:
+                user_id = identity.resolve(secret, create=int(func_id) in (970, 1040))
+            except PermissionError:
+                return jsonify(error='client_auth_required'), 401
+            if parsed.user_id is not None and int(parsed.user_id) != user_id:
+                return jsonify(error='player_mismatch'), 403
+            parsed.authenticated_user_id = user_id
+            with identity.lock(user_id):
+                response = router.dispatch(parsed)
+        else:
+            response = router.dispatch(parsed)
 
         # 构建响应体
         response_json = json.dumps(response, ensure_ascii=False)
@@ -341,10 +376,8 @@ def create_app(config: dict):
         )
 
     # ── CDN blueprint (gateway 通常把 CDN 流量直转 :8000，这里也挂一份兜底) ──
-    try:
+    if config.get('serve_assets', True):
         app.register_blueprint(asset_bp)
-    except Exception:
-        pass
 
     # ── 调试端点 ───────────────────────────────────────────
     @app.route("/admin/last_requests")

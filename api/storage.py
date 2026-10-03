@@ -11,7 +11,7 @@ import json
 import os
 import sqlite3
 import time
-from contextlib import contextmanager
+from contextlib import contextmanager, nullcontext
 from dataclasses import fields
 from pathlib import Path
 from typing import Optional
@@ -940,6 +940,10 @@ class UserStore:
         if not LOTTERY_CATALOG_PATH.is_file():
             return
         catalog = json.loads(LOTTERY_CATALOG_PATH.read_text(encoding="utf-8"))
+        if catalog.get('schema_version') == 2:
+            from api.lottery_catalog import install
+            install(db, catalog)
+            return
         lottery = catalog["lottery"]
         lottery_id = int(lottery["master_lottery_id"])
         db.execute("DELETE FROM master_lottery_items WHERE master_lottery_id = ?", (lottery_id,))
@@ -955,9 +959,7 @@ class UserStore:
                 int(lottery["cost_resource_id"]),
                 int(lottery["cost_amount"]),
                 int(lottery["draw_count"]),
-                json.dumps({
-                    "master_lottery_price_number": int(lottery["master_lottery_price_number"])
-                }),
+                json.dumps(lottery, ensure_ascii=False),
             ),
         )
         for item in catalog["items"]:
@@ -1020,9 +1022,9 @@ class UserStore:
             self._grant_verified_2d_costumes(db, resolved_id)
         return self.load_user(resolved_id) or user_data
 
-    def save_user(self, uuid_param: str, data: UserGetData) -> None:
+    def save_user(self, uuid_param: str, data: UserGetData, connection=None) -> None:
         now = int(time.time())
-        with self._connect() as db:
+        with self._connect() if connection is None else nullcontext(connection) as db:
             db.execute(
                 """
                 INSERT INTO users (
@@ -2206,11 +2208,23 @@ class UserStore:
         price_number: int,
         request_data: dict,
     ) -> tuple[list[dict], int]:
-        """Charge one verified local pool and record every draw atomically."""
+        """Charge, grant inventory and record the result in one transaction."""
+        from api.lottery_catalog import catalog, complete
+        if catalog().get('schema_version') == 2:
+            return complete(self, uuid_param, data, master_lottery_id, price_number, request_data)
+        from api.lottery import (
+            select_items, draw_counts, InsufficientTicket, DrawLimitReached,
+        )
         user_id = int(data.user.id)
         now = int(time.time())
         with self._connect() as db:
             db.execute("BEGIN IMMEDIATE")
+            account = db.execute('SELECT uuid FROM users WHERE user_id=?', (user_id,)).fetchone()
+            if account is None or account['uuid'] != uuid_param:
+                raise ValueError('unknown user')
+            # Re-read after acquiring the write lock. Concurrent draws must not
+            # each spend the same stale balance, nor mutate memory on rollback.
+            updated = self.load_user(user_id)
             lottery = db.execute(
                 """SELECT * FROM master_lotteries
                    WHERE master_lottery_id = ?
@@ -2220,11 +2234,35 @@ class UserStore:
             if lottery is None:
                 raise ValueError("unknown lottery")
             metadata = json.loads(lottery["data_json"])
-            if int(metadata.get("master_lottery_price_number", 0)) != price_number:
+            price = next((p for p in metadata.get('prices', [])
+                          if int(p['number']) == price_number), None)
+            if price is None:
                 raise ValueError("unknown lottery price")
-            cost = int(lottery["cost_amount"])
-            if data.gem.total < cost or data.gem.free < cost:
-                raise OverflowError("insufficient gem")
+            cost, count = int(price['price']), int(price['count'])
+            if cost < 0 or count not in (1, 10):
+                raise ValueError('invalid lottery price')
+            total_count, daily_count = draw_counts(db, user_id, master_lottery_id, price_number, now)
+            if ((price.get('limit_count', 0) and total_count >= price['limit_count']) or
+                    (price.get('daily_limit_count', 0) and daily_count >= price['daily_limit_count'])):
+                raise DrawLimitReached('lottery limit reached')
+            consume_type = price['consume_type']
+            consumed_item = None
+            if consume_type == 'ITEM':
+                consumed_item = next((x for x in updated.item_list
+                                      if x.master_item_id == int(price['master_item_id'])), None)
+                if consumed_item is None or consumed_item.amount < cost:
+                    raise InsufficientTicket('insufficient lottery tickets')
+                consumed_item.amount -= cost
+            elif consume_type in ('GEM', 'CHARGE_GEM'):
+                available = updated.gem.charge if consume_type == 'CHARGE_GEM' else updated.gem.total
+                if available < cost:
+                    raise OverflowError('insufficient gem')
+                free_cost = min(updated.gem.free, cost) if consume_type == 'GEM' else 0
+                updated.gem.free -= free_cost
+                updated.gem.charge -= cost - free_cost
+                updated.gem.total -= cost
+            else:
+                raise ValueError('unsupported lottery currency')
             items = db.execute(
                 """SELECT * FROM master_lottery_items
                    WHERE master_lottery_id = ? ORDER BY sequence""",
@@ -2233,23 +2271,30 @@ class UserStore:
             if not items:
                 raise ValueError("empty lottery")
 
-            data.gem.total -= cost
-            data.gem.free -= cost
+            selected = select_items(items, count, metadata['rarity_weights'],
+                                    metadata['guaranteed_weights'])
+            if any(x['reward_type'] != 'card' or int(x['reward_amount']) != 1 for x, _ in selected):
+                raise ValueError('unsupported lottery reward')
             db.execute(
-                """UPDATE users SET gem_total = ?, gem_free = ?, updated_at = ?
+                """UPDATE users SET gem_total = ?, gem_free = ?, gem_charge = ?, updated_at = ?
                    WHERE user_id = ?""",
-                (data.gem.total, data.gem.free, now, user_id),
+                (updated.gem.total, updated.gem.free, updated.gem.charge, now, user_id),
             )
             db.execute(
-                """UPDATE user_wallets SET amount = ?, free_amount = ?, updated_at = ?
+                """UPDATE user_wallets SET amount = ?, free_amount = ?, paid_amount = ?, updated_at = ?
                    WHERE user_id = ? AND resource_type = 'gem' AND resource_id = 0""",
-                (data.gem.total, data.gem.free, now, user_id),
+                (updated.gem.total, updated.gem.free, updated.gem.charge, now, user_id),
             )
+            if consumed_item is not None:
+                db.execute('UPDATE user_items SET amount=? WHERE user_id=? AND instance_id=?',
+                           (consumed_item.amount, user_id, consumed_item.id))
             cursor = db.execute(
                 """INSERT INTO state_transactions (
                        user_id, func_id, reason, request_json, created_at
                    ) VALUES (?, 7010, 'lottery_draw', ?, ?)""",
-                (user_id, json.dumps(request_data, ensure_ascii=False), now),
+                (user_id, json.dumps({**request_data,
+                    'master_lottery_id': master_lottery_id,
+                    'master_lottery_price_number': price_number}, ensure_ascii=False), now),
             )
             transaction_id = int(cursor.lastrowid)
             if cost:
@@ -2257,13 +2302,41 @@ class UserStore:
                     """INSERT INTO state_ledger_entries (
                            transaction_id, resource_type, resource_id,
                            delta, balance_after
-                       ) VALUES (?, 'gem', 0, ?, ?)""",
-                    (transaction_id, -cost, data.gem.total),
+                       ) VALUES (?, ?, ?, ?, ?)""",
+                    (transaction_id, 'item' if consumed_item else 'gem',
+                     consumed_item.master_item_id if consumed_item else 0, -cost,
+                     consumed_item.amount if consumed_item else updated.gem.total),
                 )
             results = []
-            for draw_index in range(int(lottery["draw_count"])):
-                item = items[draw_index % len(items)]
+            owned = {c.master_card_id: c for c in updated.card_list}
+            subs = {c.master_card_id: c for c in updated.card_sub_list}
+            for draw_index, (item, random_value) in enumerate(selected):
                 item_data = json.loads(item["data_json"])
+                card_id = int(item['reward_id'])
+                is_new = card_id not in owned
+                if is_new:
+                    card = Card(id=max((c.id for c in updated.card_list), default=0)+1,
+                                master_card_id=card_id)
+                    updated.card_list.append(card)
+                    owned[card_id] = card
+                    db.execute('INSERT INTO user_cards VALUES (?, ?, ?, 0, 0, 0, 0, 0, ?)',
+                               (user_id, card.id, card_id, '[]'))
+                    balance, resource_type = 1, 'card'
+                else:
+                    sub = subs.get(card_id)
+                    if sub is None:
+                        sub = CardSub(id=max((c.id for c in updated.card_sub_list), default=0)+1,
+                                      master_card_id=card_id)
+                        updated.card_sub_list.append(sub)
+                        subs[card_id] = sub
+                    sub.amount += 1
+                    db.execute('''INSERT INTO user_card_subs VALUES (?, ?, ?, ?)
+                        ON CONFLICT(user_id, instance_id) DO UPDATE SET amount=excluded.amount''',
+                        (user_id, sub.id, sub.master_card_id, sub.amount))
+                    balance, resource_type = sub.amount, 'card_sub'
+                db.execute('''INSERT INTO state_ledger_entries
+                    (transaction_id, resource_type, resource_id, delta, balance_after)
+                    VALUES (?, ?, ?, 1, ?)''', (transaction_id, resource_type, card_id, balance))
                 results.append({
                     "master_lottery_item_id": int(
                         item_data.get("master_lottery_item_id", master_lottery_id)
@@ -2271,16 +2344,16 @@ class UserStore:
                     "master_lottery_item_number": int(
                         item_data.get("master_lottery_item_number", item["sequence"])
                     ),
-                    "is_new": 0,
+                    "is_new": int(is_new),
                 })
                 db.execute(
                     """INSERT INTO lottery_draws (
                            transaction_id, user_id, master_lottery_id, draw_index,
                            reward_type, reward_id, reward_amount, random_value, created_at
-                       ) VALUES (?, ?, ?, ?, ?, ?, ?, 0, ?)""",
+                       ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
                     (
                         transaction_id, user_id, master_lottery_id, draw_index,
-                        item["reward_type"], item["reward_id"], item["reward_amount"], now,
+                        item["reward_type"], item["reward_id"], item["reward_amount"], random_value, now,
                     ),
                 )
             db.execute(
@@ -2290,11 +2363,13 @@ class UserStore:
                        state_json=excluded.state_json, updated_at=excluded.updated_at""",
                 (
                     user_id,
-                    json.dumps(data.to_dict(), ensure_ascii=False, separators=(",", ":")),
+                    json.dumps(updated.to_dict(), ensure_ascii=False, separators=(",", ":")),
                     now,
                 ),
             )
-            return results, cost
+        for field in ('gem', 'card_list', 'card_sub_list', 'item_list'):
+            setattr(data, field, getattr(updated, field))
+        return results, cost
 
     def mark_story_progress(
         self,
@@ -2351,29 +2426,22 @@ class UserStore:
             )
 
     def lottery_list(self, user_id: int) -> list[dict]:
+        from api.lottery import draw_counts
+        result = []
         with self._connect() as db:
             rows = db.execute(
-                """SELECT l.master_lottery_id, l.data_json,
-                          COUNT(d.id) AS draw_count
-                   FROM master_lotteries l
-                   LEFT JOIN lottery_draws d
-                     ON d.master_lottery_id = l.master_lottery_id AND d.user_id = ?
-                   WHERE l.verification_status IN ('observed', 'verified')
-                   GROUP BY l.master_lottery_id, l.data_json
-                   ORDER BY l.master_lottery_id""",
-                (user_id,),
+                """SELECT master_lottery_id, data_json FROM master_lotteries
+                   WHERE verification_status IN ('observed', 'verified')
+                   ORDER BY master_lottery_id""",
             ).fetchall()
-        return [
-            {
-                "master_lottery_id": row["master_lottery_id"],
-                "master_lottery_price_number": int(
-                    json.loads(row["data_json"]).get("master_lottery_price_number", 0)
-                ),
-                "count": row["draw_count"],
-                "daily_count": 0,
-            }
-            for row in rows
-        ]
+            for row in rows:
+                for price in json.loads(row['data_json']).get('prices', []):
+                    count, daily = draw_counts(db, user_id, row['master_lottery_id'],
+                                               price['number'], int(time.time()))
+                    result.append(dict(master_lottery_id=row['master_lottery_id'],
+                                       master_lottery_price_number=price['number'],
+                                       count=count, daily_count=daily))
+        return result
 
     def start_live_session(self, user_id: int, request_data: dict) -> int:
         """Open one durable solo-live session and supersede stale sessions."""

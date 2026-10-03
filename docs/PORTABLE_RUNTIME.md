@@ -6,4 +6,6 @@
 
 普通服务运行和数据库迁移不需要 Java、Android SDK、ADB、Unity、系统证书或 root。APK 生成属于独立客户端构建包；服务端仅可通过本地 `/play` 分发已经准备好的 APK。
 
+云端使用 `cloud_launcher.py`，在 Linux 或 Windows 安装 Python 3.12 与同一依赖列表即可运行，不要求 `resources/`、`patches/` 或 `dist/`。它只提供登录、游戏 API 和独立玩家存档；只有显式指定 `--updates-dir` 时才提供发布者准备的增量资源。启动参数与迁移方法见根目录 README。
+
 资源必须置于本目录 `resources/`，或者明确用 `--resource-root` 指定独立资源根目录。默认不搜索父目录。计划删除旧服务器时，先把资源复制到新目录，不要指定即将删除的旧路径，也不要使用目录链接。

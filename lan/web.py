@@ -7,6 +7,28 @@ def make_blueprint(catalog, distribution, public_url):
     bp = Blueprint('lan', __name__)
     distribution = Path(distribution).resolve()
 
+    @bp.get('/bootstrap/server.json')
+    def server_info():
+        return jsonify(schema=1, mode='local', multi_player=False, full_resources=True)
+
+    @bp.get('/web/announcement')
+    def announcement():
+        return render_template_string('''<!doctype html><html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nanaon LAN</title><style>body{font:18px/1.7 sans-serif;color:#16374c;padding:24px}</style>
+<h1>Nanaon 局域网服务</h1><p>游戏已连接本地服务器。</p>
+<p>账号进度保存在运行服务端的电脑上。退出前请保留数据库，迁移方法见配套 README。</p>
+<p>语言：{{ language }}。关闭本窗口可返回游戏。</p></html>''',
+            language='简体中文' if catalog.locale=='zh-Hans' else '日本語')
+
+    @bp.get('/web/tos/detail')
+    def local_information():
+        return '''<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>body{font:18px/1.7 sans-serif;padding:24px}</style>
+<h1>本地运行说明</h1><p>这是局域网保存项目的本地说明页。游戏资源与存档由本地服务端提供。</p>
+<p>本项目未接入付费充值或订阅服务。备份与迁移存档请参阅配套 README。</p></html>'''
+
     @bp.get('/bootstrap/manifest.json')
     def manifest():
         response = jsonify(catalog.manifest)
@@ -45,7 +67,7 @@ def make_blueprint(catalog, distribution, public_url):
 <p>服务器：<code>{{ url }}</code></p>{% for name in apks %}<a href="/client/{{ name }}">下载 {{ name }}</a>{% else %}<p>这里仅运行服务端。可将配套构建包生成的 nanaon-lan-*.apk 放入 dist 目录，再刷新本页下载。</p>{% endfor %}
 <p>首次下载约 {{ gib }} GiB，请保持服务器运行。下载中断后可继续，完整校验后才会启动游戏。</p>
 <p>当前游戏语言：{{ locale }}。在电脑启动服务端时可选择语言，默认日语。</p>
-{% if experimental %}<p>中文为实验版，当前存在主数据资源加载错误，尚未通过运行验证。日常游玩请选择日语。</p>{% endif %}
+{% if experimental %}<p>中文为实验选项，部分界面可能仍有日文或显示问题。</p>{% endif %}
 <small>独立包名 com.aniplex.nananiji.lan，保留原应用。IP 改变时可在启动器中更新服务器地址。</small></main></html>''', url=public_url, apks=apks, gib=round(catalog.manifest['total_bytes'] / 2**30, 2),locale='简体中文（实验版）' if catalog.locale=='zh-Hans' else '日本語（日语）',experimental=catalog.locale=='zh-Hans')
 
     return bp

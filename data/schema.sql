@@ -1,5 +1,12 @@
 -- Schema reference generated from api/storage.py. No player records.
 
+-- Created by api/identity.py for cloud mode. Stores credential digests only.
+CREATE TABLE cloud_accounts (
+    credential_hash TEXT PRIMARY KEY,
+    user_id INTEGER NOT NULL UNIQUE REFERENCES users(user_id),
+    created_at INTEGER NOT NULL
+);
+
 CREATE TABLE api_idempotency (
                     user_id INTEGER NOT NULL,
                     func_id INTEGER NOT NULL,

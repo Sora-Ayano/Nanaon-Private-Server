@@ -74,6 +74,25 @@ def test_rfc1918_addresses():
         assert validate_ip(value)==value
 
 
+def test_language_obb_overlay_is_scoped_and_japanese_remains_original(catalog,tmp_path):
+    from lan.patches import load_patch
+    patch=tmp_path/'patch';patch.mkdir()
+    content=b'Chinese built-in fonts'
+    (patch/'main.5465.obb').write_bytes(content)
+    spec=dict(schema=1,client_version_code=5465,files=[dict(path='main.5465.obb',
+              size=len(content),sha256=hashlib.sha256(content).hexdigest())])
+    (patch/'manifest.json').write_text(json.dumps(spec),encoding='utf8')
+    overrides,_=load_patch(patch)
+    chinese=ResourceCatalog(catalog.root,tmp_path/'cn-index.json',overrides,patch,'zh-Hans')
+    item=next(x for x in chinese.build()['files'] if x['kind']=='obb')
+    assert chinese.resolve(item['id']).read_bytes()==content and item['startup_check']
+    original=next(x for x in catalog.manifest['files'] if x['kind']=='obb')
+    assert catalog.resolve(original['id']).read_bytes().startswith(b'OBB')
+    spec['files'][0]['path']='main.9999.obb'
+    (patch/'manifest.json').write_text(json.dumps(spec),encoding='utf8')
+    with pytest.raises(ValueError):load_patch(patch)
+
+
 def test_cdn_confinement(tmp_path):
     from cdn.asset_server import AssetServer
     assets=tmp_path/'assets'; assets.mkdir()

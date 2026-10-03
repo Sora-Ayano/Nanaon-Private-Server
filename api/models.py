@@ -356,6 +356,7 @@ class UserGetData:
             for group in available_costume_inventory()
             if group["master_costume_ids"]
         ]
+        from api.area_layout import default_settings, max_level
         return cls(
             user=User(
                 id=user_id,
@@ -396,14 +397,15 @@ class UserGetData:
             # Home talk scripts are unlocked by the installed master/assets;
             # pre-filling this list suppresses every character speech bubble.
             master_talk_ids=[],
-            # Only evolution costumes with a complete, exact-size Live2D
-            # resource chain are advertised to the client.
+            # Include every costume with packaged Live2D dependencies and an
+            # icon, regardless of its original card/exchange/event unlock.
             costume_list=two_d_costumes,
             area_item_list=[
-                AreaItem(id=index, master_area_item_id=master_id, level=10)
+                AreaItem(id=index, master_area_item_id=master_id, level=max(1,max_level(master_id)))
                 for index, master_id in enumerate(area_item_ids, 1)
             ],
             released_master_area_item_ids=list(area_item_ids),
+            area_item_setting_list=default_settings(area_item_ids),
             story_list=stories,
             master_stamp_ids=list(stamp_ids),
             model_costume_list=[],
@@ -475,3 +477,4 @@ class ParsedRequest:
     timestamp: Optional[int] = None
     uuid_param: Optional[str] = None
     appsflyer_id: Optional[str] = None
+    authenticated_user_id: Optional[int] = None
